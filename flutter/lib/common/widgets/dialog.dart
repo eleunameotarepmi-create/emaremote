@@ -97,28 +97,15 @@ void changeIdDialog() {
         return;
       }
 
-      setState(() {
+            setState(() {
         msg = "";
         isInProgress = true;
         bind.mainChangeId(newId: newId);
       });
-
-      var status = await bind.mainGetAsyncStatus();
-      while (status == " ") {
-        await Future.delayed(const Duration(milliseconds: 100));
-        status = await bind.mainGetAsyncStatus();
-      }
-      if (status.isEmpty) {
-        // ok
-        close();
-        return;
-      }
-      setState(() {
-        isInProgress = false;
-        msg = (isDesktop || isWebDesktop)
-            ? '${translate('Prompt')}: ${translate(status)}'
-            : translate(status);
-      });
+      // EmaRemote patch: bypass server API check, ID is stored locally
+      await Future.delayed(const Duration(milliseconds: 300));
+      close();
+      return;
     }
 
     return CustomAlertDialog(
