@@ -1,0 +1,6 @@
+{
+  "artifactType": "ARTIFACT_TYPE_IMPLEMENTATION_PLAN",
+  "summary": "Complete plan for deploying RustDesk server, building a custom EmaRemote Android APK (forked from RustDesk with custom branding), creating a landing page at rustdesk.emaandema.com, and setting up Nginx+SSL. Includes 4 phases: server deploy, custom APK build on Hetzner, landing page creation, and Nginx setup. All changes are isolated from the existing Ianua Vini app.",
+  "updatedAt": "2026-03-12T17:13:15.451813400Z",
+  "version": "1"
+}

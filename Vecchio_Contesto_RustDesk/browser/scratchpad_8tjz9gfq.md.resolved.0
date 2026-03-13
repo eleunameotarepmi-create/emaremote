@@ -1,0 +1,7 @@
+# Tasks
+- [ ] Log into Cloudflare (if not already logged in)
+- [ ] Select domain `emaandema.com`
+- [ ] Navigate to DNS Records
+- [ ] Add A record: `rustdesk` -> `91.98.66.127`
+- [ ] Set Proxy Status to 'DNS only'
+- [ ] Save and verify record

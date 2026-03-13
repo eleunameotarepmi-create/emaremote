@@ -1,0 +1,38 @@
+# EmaRemote — Task List
+
+## Fase 1 — RustDesk Server
+- [x] Creare `/srv/apps/rustdesk/data`
+- [x] Creare `docker-compose.yml`
+- [x] Aprire porte UFW (21115-21119)
+- [x] Avviare container hbbs + hbbr
+- [x] Recuperare chiave pubblica → `Xxpl19Iv4q+JBFUzdGUtEGddvR+9Y7P6BOrBoJHAsWE=`
+
+## Fase 2 — Download client
+- [x] Scaricare APK Android (68MB)
+- [x] Scaricare Windows EXE (24MB)
+- [x] Scaricare Mac Intel DMG (31MB)
+- [x] Scaricare Mac Apple Silicon DMG (25MB)
+
+## Fase 3 — Landing Page
+- [x] Creare pagina HTML/CSS premium
+- [x] Deploy su `/srv/apps/rustdesk-landing/dist/`
+
+## Fase 4 — Nginx + SSL + DNS
+- [x] Creare config Nginx per `rustdesk.emaandema.com`
+- [x] Test nginx config → syntax ok
+- [x] Test landing page → 200 OK
+- [x] Test download → 200 OK
+- [x] Configurare DNS Cloudflare (record A)
+- [x] Certbot SSL
+
+## Verifiche finali
+- [x] Container RustDesk running (hbbs + hbbr)
+- [x] Landing page accessibile (localhost test → 200)
+- [x] Download APK funzionante (200 OK, 70MB)
+- [x] Ianua Vini ancora funzionante (301 redirect → OK)
+
+## Fase 5 — Sviluppo App Custom "EmaRemote"
+- [x] Creazione Hard fork repository RustDesk
+- [x] Bypass validazione API server per sblocco "Cambia ID"
+- [x] Configurazione pipeline build su GitHub Actions (`emaremote-build.yml`)
+- [/] Attesa completamento compilazione APK nativo Android

@@ -1,0 +1,435 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+Skip to content
+[0] (22,39)<button class='prc-Button-ButtonBase-9n-Xk styles-module__appHeaderButton__axedQ prc-Button-IconButton-fyge7' />
+[1] (53,39)<a class='prc-Button-ButtonBase-9n-Xk styles-module__appHeaderHome__nkA_U prc-Button-IconButton-fyge7' href='/' />
+[2] (129,39)<a class='styles-module__contextCrumb__IzGIq prc-Breadcrumbs-Item-jcraJ' href='/eleunameotarepmi-create' />
+	[3] (129,39)<span >eleunameotarepmi-create />
+[4] (234,39)<a class='styles-module__contextCrumb__IzGIq prc-Breadcrumbs-Item-jcraJ' href='/eleunameotarepmi-create/emaremote' />
+	[5] (229,39)<span >emaremote />
+[6] (689,39)<button aria-label='Search or jump to…' class='prc-Button-ButtonBase-9n-Xk styles-module__appHeaderButton__axedQ Search-module__searchButton__aiE0a' />
+	[7] (689,39)<span  />
+		[8] (697,39)<span >Type
+to search />
+			Type
+			/
+			to search
+[9] (770,39)<a class='prc-Button-ButtonBase-9n-Xk styles-module__appHeaderButton__axedQ prc-Button-IconButton-fyge7' href='/copilot' />
+[10] (790,39)<button aria-label='Open Copilot…' class='prc-Button-ButtonBase-9n-Xk styles-module__appHeaderButton__axedQ CopilotItems-module__CopilotMenu__DVdfE' id='_R_54jpb_' />
+[11] (833,39)<button class='prc-Button-ButtonBase-9n-Xk GlobalCreateMenu-module__actionMenuButton__Hj_iB' id='_R_5jpb_' />
+	[12] (827,39)<span  />
+[13] (867,39)<a class='prc-Button-ButtonBase-9n-Xk styles-module__appHeaderButton__axedQ prc-Button-IconButton-fyge7' href='/issues' />
+[14] (894,39)<a class='prc-Button-ButtonBase-9n-Xk styles-module__appHeaderButton__axedQ prc-Button-IconButton-fyge7' href='/pulls' />
+[15] (922,39)<a class='prc-Button-ButtonBase-9n-Xk styles-module__appHeaderButton__axedQ prc-Button-IconButton-fyge7' href='/repos' />
+[16] (950,39)<a class='prc-Button-ButtonBase-9n-Xk styles-module__appHeaderButton__axedQ prc-Button-IconButton-fyge7' href='/notifications' />
+[17] (978,39)<button class='prc-Button-ButtonBase-9n-Xk GlobalNavUserMenu-module__anchor__Dcej6 prc-Button-IconButton-fyge7' />
+	[18] (978,39)<img  />
+Repository navigation
+[19] (36,92)<a class='prc-components-UnderlineItem-7fP-n' href='/eleunameotarepmi-create/emaremote' />
+	[20] (22,92)<span  />
+	[21] (45,92)<span >Code />
+[22] (109,92)<a class='prc-components-UnderlineItem-7fP-n' href='/eleunameotarepmi-create/emaremote/pulls' />
+	[23] (78,92)<span  />
+	[24] (118,92)<span >Pull requests />
+[25] (187,92)<a class='prc-components-UnderlineItem-7fP-n' href='/eleunameotarepmi-create/emaremote/actions' />
+	[26] (168,92)<span  />
+	[27] (196,92)<span >Actions />
+[28] (255,92)<a class='prc-components-UnderlineItem-7fP-n' href='/eleunameotarepmi-create/emaremote/projects' />
+	[29] (234,92)<span  />
+	[30] (263,92)<span >Projects />
+[31] (315,92)<a class='prc-components-UnderlineItem-7fP-n' href='/eleunameotarepmi-create/emaremote/wiki' />
+	[32] (303,92)<span  />
+	[33] (324,92)<span >Wiki />
+[34] (376,92)<a class='prc-components-UnderlineItem-7fP-n' href='/eleunameotarepmi-create/emaremote/security' />
+	[35] (356,92)<span  />
+	[36] (384,92)<span >Security />
+[37] (444,92)<a class='prc-components-UnderlineItem-7fP-n' href='/eleunameotarepmi-create/emaremote/pulse' />
+	[38] (424,92)<span  />
+	[39] (452,92)<span >Insights />
+[40] (513,92)<a class='prc-components-UnderlineItem-7fP-n' href='/eleunameotarepmi-create/emaremote/settings' />
+	[41] (492,92)<span  />
+	[42] (521,92)<span >Settings />
+[43] (22,160)<button class='prc-Button-ButtonBase-9n-Xk position-relative ExpandFileTreeButton-module__expandButton__hDOcv fgColor-muted prc-Button-IconButton-fyge7' />
+Files
+[44] (86,218)<button aria-label='master branch' class='prc-Button-ButtonBase-9n-Xk react-repos-tree-pane-ref-selector width-full ref-selector-class RefSelectorAnchoredOverlay-module__RefSelectorOverlayBtn__a3WK3' id='ref-picker-repos-header-ref-selector' />
+	[45] (86,218)<span  />
+		[46] (78,218)<span  />
+			[47] (78,218)<div  />
+				[48] (26,218)<div  />
+				[49] (50,218)<div  />
+					[50] (50,218)<span >master />
+[51] (178,218)<a class='prc-Button-ButtonBase-9n-Xk ReposFileTreePane-module__IconButton__rGggU prc-Button-IconButton-fyge7' href='/eleunameotarepmi-create/emaremote/new/master/.github' />
+[52] (200,218)<button class='prc-Button-ButtonBase-9n-Xk SearchButton-module__IconButton__SBlqu ReposFileTreePane-module__SearchButtonWithLeftBorder__TBrDc prc-Button-IconButton-fyge7' />
+[53] (111,267)<span  />
+	[54] (23,267)<span  />
+	[55] (111,267)<input aria-label='Go to file' class='prc-components-Input-IwWrt' placeholder='Go to file' role='combobox' />
+	[56] (199,267)<span  />
+		[57] (199,268)<kbd >t />
+[58] (111,711)<div class='ReposFileTreePane-module__Box_5__Zy_o6' scrollable='true' />
+	[59] (106,320)<li class='PRIVATE_TreeView-item prc-TreeView-TreeViewItem-Ter5f' id='.cargo-item' role='treeitem' />
+		[60] (106,320)<div  />
+			[61] (17,320)<div  />
+			[62] (111,320)<div  />
+				[63] (33,320)<div  />
+					[64] (33,320)<div  />
+				[65] (120,320)<span  />
+					[66] (58,320)<span >.cargo />
+	[67] (106,671)<li class='PRIVATE_TreeView-item prc-TreeView-TreeViewItem-Ter5f' id='.github-item' role='treeitem' />
+		[68] (106,359)<div  />
+			[69] (17,359)<div  />
+			[70] (111,359)<div  />
+				[71] (33,359)<div  />
+					[72] (33,359)<div  />
+				[73] (120,359)<span  />
+					[74] (60,359)<span >.github />
+		[75] (106,398)<li class='PRIVATE_TreeView-item prc-TreeView-TreeViewItem-Ter5f' id='.github/ISSUE_TEMPLATE-item' role='treeitem' />
+			[76] (106,398)<div  />
+				[77] (14,398)<div  />
+					[78] (14,398)<div  />
+						[79] (14,398)<div  />
+				[80] (22,398)<div  />
+				[81] (114,398)<div  />
+					[82] (39,398)<div  />
+						[83] (39,398)<div  />
+					[84] (123,398)<span  />
+						[85] (87,398)<span >ISSUE_TEMPLATE />
+		[86] (106,437)<li class='PRIVATE_TreeView-item prc-TreeView-TreeViewItem-Ter5f' id='.github/patches-item' role='treeitem' />
+			[87] (106,437)<div  />
+				[88] (14,437)<div  />
+					[89] (14,437)<div  />
+						[90] (14,437)<div  />
+				[91] (22,437)<div  />
+				[92] (114,437)<div  />
+					[93] (39,437)<div  />
+						[94] (39,437)<div  />
+					[95] (123,437)<span  />
+						[96] (67,437)<span >patches />
+		[97] (106,691)<li class='PRIVATE_TreeView-item prc-TreeView-TreeViewItem-Ter5f' id='.github/workflows-item' role='treeitem' />
+			[98] (106,476)<div  />
+				[99] (14,476)<div  />
+					[100] (14,476)<div  />
+						[101] (14,476)<div  />
+				[102] (22,476)<div  />
+				[103] (114,476)<div  />
+					[104] (39,476)<div  />
+						[105] (39,476)<div  />
+					[106] (123,476)<span  />
+						[107] (72,476)<span >workflows />
+			[108] (106,515)<li class='PRIVATE_TreeView-item prc-TreeView-TreeViewItem-Ter5f' id='.github/workflows/bridge.yml-item' role='treeitem' />
+				[109] (106,515)<div  />
+					[110] (17,515)<div  />
+						[111] (17,515)<div  />
+							[112] (14,515)<div  />
+							[113] (19,515)<div  />
+					[114] (117,515)<div  />
+						[115] (44,515)<div  />
+						[116] (125,515)<span  />
+							[117] (78,515)<span >bridge.yml />
+			[118] (106,554)<li class='PRIVATE_TreeView-item prc-TreeView-TreeViewItem-Ter5f' id='.github/workflows/ci.yml-item' role='treeitem' />
+				[119] (106,554)<div  />
+					[120] (17,554)<div  />
+						[121] (17,554)<div  />
+							[122] (14,554)<div  />
+							[123] (19,554)<div  />
+					[124] (117,554)<div  />
+						[125] (44,554)<div  />
+						[126] (125,554)<span  />
+							[127] (68,554)<span >ci.yml />
+			[128] (106,593)<li class='PRIVATE_TreeView-item prc-TreeView-TreeViewItem-Ter5f' id='.github/workflows/clear-cache.yml-item' role='treeitem' />
+				[129] (106,593)<div  />
+					[130] (17,593)<div  />
+						[131] (17,593)<div  />
+							[132] (14,593)<div  />
+							[133] (19,593)<div  />
+					[134] (117,593)<div  />
+						[135] (44,593)<div  />
+						[136] (125,593)<span  />
+							[137] (89,593)<span >clear-cache.yml />
+			[138] (106,632)<li class='PRIVATE_TreeView-item prc-TreeView-TreeViewItem-Ter5f' id='.github/workflows/fdroid.yml-item' role='treeitem' />
+				[139] (106,632)<div  />
+					[140] (17,632)<div  />
+						[141] (17,632)<div  />
+							[142] (14,632)<div  />
+							[143] (19,632)<div  />
+					[144] (117,632)<div  />
+						[145] (44,632)<div  />
+						[146] (125,632)<span  />
+							[147] (77,632)<span >fdroid.yml />
+			[148] (106,671)<li class='PRIVATE_TreeView-item prc-TreeView-TreeViewItem-Ter5f' id='.github/workflows/flutter-build.yml-item' role='treeitem' />
+				[149] (106,671)<div  />
+					[150] (17,671)<div  />
+						[151] (17,671)<div  />
+							[152] (14,671)<div  />
+							[153] (19,671)<div  />
+					[154] (117,671)<div  />
+						[155] (44,671)<div  />
+						[156] (125,671)<span  />
+							[157] (90,671)<span >flutter-build.yml />
+			[158] (106,710)<li class='PRIVATE_TreeView-item prc-TreeView-TreeViewItem-Ter5f' id='.github/workflows/flutter-ci.yml-item' role='treeitem' />
+				[159] (106,710)<div  />
+					[160] (17,710)<div  />
+						[161] (17,710)<div  />
+							[162] (14,710)<div  />
+							[163] (19,710)<div  />
+					[164] (117,710)<div  />
+						[165] (44,710)<div  />
+						[166] (125,710)<span  />
+							[167] (83,710)<span >flutter-ci.yml />
+			[168] (106,749)<li class='PRIVATE_TreeView-item prc-TreeView-TreeViewItem-Ter5f' id='.github/workflows/flutter-nightly.yml-item' role='treeitem' />
+				[169] (106,749)<div  />
+					[170] (17,749)<div  />
+						[171] (17,749)<div  />
+							[172] (14,749)<div  />
+							[173] (19,749)<div  />
+					[174] (117,749)<div  />
+						[175] (44,749)<div  />
+						[176] (125,749)<span  />
+							[177] (94,749)<span >flutter-nightly.yml />
+			[178] (106,788)<li class='PRIVATE_TreeView-item prc-TreeView-TreeViewItem-Ter5f' id='.github/workflows/flutter-tag.yml-item' role='treeitem' />
+				[179] (106,788)<div  />
+					[180] (17,788)<div  />
+						[181] (17,788)<div  />
+							[182] (14,788)<div  />
+							[183] (19,788)<div  />
+					[184] (117,788)<div  />
+						[185] (44,788)<div  />
+						[186] (125,788)<span  />
+							[187] (86,788)<span >flutter-tag.yml />
+			[188] (106,827)<li class='PRIVATE_TreeView-item prc-TreeView-TreeViewItem-Ter5f' id='.github/workflows/playground.yml-item' role='treeitem' />
+				[189] (106,827)<div  />
+					[190] (17,827)<div  />
+						[191] (17,827)<div  />
+							[192] (14,827)<div  />
+							[193] (19,827)<div  />
+					[194] (117,827)<div  />
+						[195] (44,827)<div  />
+						[196] (125,827)<span  />
+							[197] (89,827)<span >playground.yml />
+			[198] (106,866)<li class='PRIVATE_TreeView-item prc-TreeView-TreeViewItem-Ter5f' id='.github/workflows/third-party-RustDeskTempTopMostWindow.yml-item' role='treeitem' />
+				[199] (106,866)<div  />
+					[200] (17,866)<div  />
+						[201] (17,866)<div  />
+							[202] (14,866)<div  />
+							[203] (19,866)<div  />
+					[204] (117,866)<div  />
+						[205] (44,866)<div  />
+						[206] (125,866)<span  />
+							[207] (157,866)<span >third-party-RustDeskTempTopMostWindow.yml />
+			[208] (106,905)<li class='PRIVATE_TreeView-item prc-TreeView-TreeViewItem-Ter5f' id='.github/workflows/winget.yml-item' role='treeitem' />
+				[209] (106,905)<div  />
+					[210] (17,905)<div  />
+						[211] (17,905)<div  />
+							[212] (14,905)<div  />
+							[213] (19,905)<div  />
+					[214] (117,905)<div  />
+						[215] (44,905)<div  />
+						[216] (125,905)<span  />
+							[217] (79,905)<span >winget.yml />
+		[218] (106,944)<li class='PRIVATE_TreeView-item prc-TreeView-TreeViewItem-Ter5f' id='.github/FUNDING.yml-item' role='treeitem' />
+			[219] (106,944)<div  />
+				[220] (14,944)<div  />
+					[221] (14,944)<div  />
+						[222] (14,944)<div  />
+				[223] (114,944)<div  />
+					[224] (39,944)<div  />
+					[225] (123,944)<span  />
+						[226] (80,944)<span >FUNDING.yml />
+		[227] (106,983)<li class='PRIVATE_TreeView-item prc-TreeView-TreeViewItem-Ter5f' id='.github/dependabot.yml-item' role='treeitem' />
+			[228] (106,983)<div  />
+				[229] (14,983)<div  />
+					[230] (14,983)<div  />
+						[231] (14,983)<div  />
+				[232] (114,983)<div  />
+					[233] (39,983)<div  />
+					[234] (123,983)<span  />
+						[235] (85,983)<span >dependabot.yml />
+[236] (223,621)<div aria-label='Draggable pane splitter' class='prc-PageLayout-DraggableHandle-9s6B4' role='slider' />
+Creating a new workflow file  in emaremote
+Breadcrumbs
+[237] (263,160)<a class='Breadcrumb-module__repoLink__O2Nbs prc-Link-Link-9ZwDx' href='/eleunameotarepmi-create/emaremote/tree/master'>emaremote />
+/
+[238] (325,160)<a class='Breadcrumb-module__directoryLink__kQy_t prc-Link-Link-9ZwDx' href='/eleunameotarepmi-create/emaremote/tree/master/.github'>.github />
+/
+[239] (382,160)<a class='Breadcrumb-module__directoryLink__kQy_t prc-Link-Link-9ZwDx' href='/eleunameotarepmi-create/emaremote/tree/master/.github/workflows'>workflows />
+/
+[240] (486,160)<span  />
+	[241] (486,160)<input aria-label='File name' class='prc-components-Input-IwWrt' placeholder='Name your file...' />
+in
+[242] (582,160)<a class='prc-BranchName-BranchName-CMTaU' href='/eleunameotarepmi-create/emaremote/tree/master'>master />
+[243] (841,160)<a class='prc-Button-ButtonBase-9n-Xk BlobEditor-module__Button_1__KzEo4' href='/eleunameotarepmi-create/emaremote/tree/master/.github/workflows' />
+	[244] (841,160)<span  />
+		[245] (841,160)<span >Cancel changes />
+[246] (939,160)<button class='prc-Button-ButtonBase-9n-Xk BlobEditor-module__Button__RZ5_U' />
+	[247] (939,160)<span  />
+		[248] (939,160)<span >Commit changes... />
+[249] (258,229)<button class='prc-SegmentedControl-Button-E48xz' />
+	[250] (258,229)<span  />
+		[251] (258,229)<div >Edit />
+[252] (302,229)<button class='prc-SegmentedControl-Button-E48xz' />
+	[253] (302,229)<span  />
+		[254] (302,229)<div >Preview />
+[255] (346,229)<button aria-label='Code 55% faster with GitHub Copilot' class='prc-Button-ButtonBase-9n-Xk CopilotPopover-module__copilotButton__Ruc0t' id='_r_6n_' />
+	[256] (346,229)<span  />
+Indent mode
+[257] (547,229)<span  />
+	[258] (545,229)<select aria-label='Indent mode' class='prc-Select-Select-dJWwD' id='_r_6p_' />
+Indent size
+[259] (601,229)<span  />
+	[260] (599,229)<select aria-label='Indent size' class='prc-Select-Select-dJWwD' id='_r_6q_' />
+Line wrap mode
+[261] (660,229)<span  />
+	[262] (658,229)<select aria-label='Line wrap mode' class='prc-Select-Select-dJWwD' id='_r_6r_' />
+[263] (711,229)<button class='prc-Button-ButtonBase-9n-Xk fgColor-muted prc-Button-IconButton-fyge7' />
+Editing emaremote-build.yml file contents
+[264] (481,684)<div  />
+	[265] (481,632)<div class='cm-scroller' role='region' />
+		[266] (253,632)<div  />
+			[267] (253,632)<div  />
+				[268] (253,281)<div >1 />
+				[269] (253,305)<div >2 />
+				[270] (253,330)<div >3 />
+				[271] (253,354)<div >4 />
+				[272] (253,378)<div >5 />
+				[273] (253,402)<div >6 />
+				[274] (253,427)<div >7 />
+				[275] (253,451)<div >8 />
+				[276] (253,475)<div >9 />
+				[277] (253,499)<div >10 />
+				[278] (253,524)<div >11 />
+				[279] (253,548)<div >12 />
+				[280] (253,572)<div >13 />
+				[281] (253,596)<div >14 />
+				[282] (253,621)<div >15 />
+				[283] (253,645)<div >16 />
+				[284] (253,669)<div >17 />
+				[285] (253,693)<div >18 />
+				[286] (253,718)<div >19 />
+				[287] (253,742)<div >20 />
+				[288] (253,766)<div >21 />
+				[289] (253,790)<div >22 />
+		[290] (499,632)<div class='cm-content focus-visible' role='textbox' />
+			[291] (499,281)<div >EmaRemote Android Build />
+				[292] (291,281)<span >name />
+				[293] (305,281)<span >: />
+			[294] (499,305)<div  />
+			[295] (499,330)<div  />
+				[296] (286,330)<span >on />
+				[297] (293,330)<span >: />
+			[298] (499,354)<div  />
+				[299] (325,354)<span >workflow_dispatch />
+				[300] (371,354)<span >: />
+			[301] (499,378)<div  />
+				[302] (309,378)<span >inputs />
+				[303] (339,378)<span >: />
+			[304] (499,402)<div  />
+				[305] (344,402)<span >upload-artifact />
+				[306] (408,402)<span >: />
+			[307] (499,427)<div  />
+				[308] (353,427)<span >description />
+				[309] (428,427)<span >: />
+				[310] (488,427)<span >"Upload APK as artifact" />
+			[311] (499,451)<div  />
+				[312] (364,451)<span >required />
+				[313] (451,451)<span >: />
+				[314] (467,451)<span >false />
+			[315] (499,475)<div  />
+				[316] (380,475)<span >default />
+				[317] (483,475)<span >: />
+				[318] (502,475)<span >"true" />
+			[319] (499,499)<div  />
+				[320] (378,499)<span >push />
+				[321] (477,499)<span >: />
+			[322] (499,524)<div  />
+				[323] (387,524)<span >tags />
+				[324] (495,524)<span >: />
+			[325] (499,548)<div  />
+				[326] (396,548)<span >- />
+				[327] (543,548)<span >"emaremote-v*" />
+			[328] (499,572)<div  />
+			[329] (499,596)<div  />
+				[330] (399,596)<span >env />
+				[331] (518,596)<span >: />
+			[332] (499,621)<div  />
+				[333] (431,621)<span >FLUTTER_VERSION />
+				[334] (584,621)<span >: />
+				[335] (607,621)<span >"3.24.5" />
+			[336] (499,645)<div  />
+				[337] (426,645)<span >NDK_VERSION />
+				[338] (575,645)<span >: />
+				[339] (593,645)<span >"r26d" />
+			[340] (499,669)<div  />
+			[341] (499,693)<div  />
+				[342] (410,693)<span >jobs />
+				[343] (541,693)<span >: />
+			[344] (499,718)<div  />
+				[345] (435,718)<span >build-android />
+				[346] (591,718)<span >: />
+			[347] (499,742)<div >Build Android APK />
+				[348] (424,742)<span >name />
+				[349] (570,742)<span >: />
+			[350] (499,766)<div >ubuntu-22.04 />
+				[351] (440,766)<span >runs-on />
+				[352] (603,766)<span >: />
+			[353] (499,790)<div  />
+	[354] (481,948)<div >Use
+to toggle the
+key moving focus. Alternatively, use
+then
+to move to the next interactive element on the page. />
+		Use
+		Control + Shift + m
+		to toggle the
+		tab
+		key moving focus. Alternatively, use
+		esc
+		then
+		tab
+		to move to the next interactive element on the page.
+		Use
+		Control + Space
+		to trigger autocomplete in most situations.
+[355] (864,584)<div class='Panel-module__Box__AdYCI BlobEditSidePanel-module__Panel__wr43k BlobEditSidePanel-module__PanelWide__EXwd3 BlobEditSidePanel-module__StickyHeader__FhRTI' id='blob-edit-side-panel-id' scrollable='true'>Help Panel navigation />
+	Help Panel navigation
+	[356] (784,229)<a class='prc-components-UnderlineItem-7fP-n' href='#' />
+		[357] (784,229)<span >Marketplace />
+	[358] (863,229)<a class='prc-components-UnderlineItem-7fP-n' href='#' />
+		[359] (863,229)<span >Documentation />
+	[360] (859,297)<input aria-label='Search Marketplace for Actions' class='form-control input-block input-contrast' placeholder='Search Marketplace for Actions' />
+	Featured Actions
+	[361] (765,405)<button aria-label='Upload a Build Artifact' class='text-left btn-link no-underline' />
+		[362] (765,405)<div  />
+	[363] (841,400)<button class='ws-normal lh-condensed mb-1 h5 text-left btn-link no-underline Link--primary'>Upload a Build Artifact />
+		[364] (841,411)<p >By />
+			[365] (815,411)<span >actions />
+	Upload a build artifact that can be used by subsequent workflow steps
+	4k
+	[366] (765,542)<button aria-label='Setup Java JDK' class='text-left btn-link no-underline' />
+		[367] (765,542)<div  />
+	[368] (824,537)<button class='ws-normal lh-condensed mb-1 h5 text-left btn-link no-underline Link--primary'>Setup Java JDK />
+		[369] (824,548)<p >By />
+			[370] (815,548)<span >actions />
+	Set up a specific version of the Java JDK and add the command-line tools to the PATH
+	1.9k
+	[371] (765,700)<button aria-label='Download a Build Artifact' class='text-left btn-link no-underline' />
+		[372] (765,700)<div  />
+	[373] (847,695)<button class='ws-normal lh-condensed mb-1 h5 text-left btn-link no-underline Link--primary'>Download a Build Artifact />
+		[374] (847,706)<p >By />
+			[375] (815,706)<span >actions />
+	Download a build artifact that was previously uploaded in the workflow by the upload-artifact action
+	1.8k
+	[376] (765,858)<button aria-label='Setup Go environment' class='text-left btn-link no-underline' />
+		[377] (765,858)<div  />
+	[378] (840,854)<button class='ws-normal lh-condensed mb-1 h5 text-left btn-link no-underline Link--primary'>Setup Go environment />
+		[379] (840,864)<p >By />
+			[380] (815,864)<span >actions />
+	Setup a Go environment and add it to the PATH
+	1.7k
+	First interaction
+	By
+	actions
+	Greet new contributors when they create their first issue or open their first pull request
+	854
+
+</current_dom>

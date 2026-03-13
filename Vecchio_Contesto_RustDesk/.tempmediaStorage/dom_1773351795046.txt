@@ -1,0 +1,484 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+[0] (22,39)<button class='prc-Button-ButtonBase-9n-Xk position-relative ExpandFileTreeButton-module__expandButton__hDOcv fgColor-muted prc-Button-IconButton-fyge7' />
+Files
+[1] (86,97)<button aria-label='master branch' class='prc-Button-ButtonBase-9n-Xk react-repos-tree-pane-ref-selector width-full ref-selector-class RefSelectorAnchoredOverlay-module__RefSelectorOverlayBtn__a3WK3' id='ref-picker-repos-header-ref-selector' />
+	[2] (86,97)<span  />
+		[3] (78,97)<span  />
+			[4] (78,97)<div  />
+				[5] (26,97)<div  />
+				[6] (50,97)<div  />
+					[7] (50,97)<span >master />
+[8] (178,97)<a class='prc-Button-ButtonBase-9n-Xk ReposFileTreePane-module__IconButton__rGggU prc-Button-IconButton-fyge7' href='/eleunameotarepmi-create/emaremote/new/master/flutter/lib/common/widgets' />
+[9] (200,97)<button class='prc-Button-ButtonBase-9n-Xk SearchButton-module__IconButton__SBlqu ReposFileTreePane-module__SearchButtonWithLeftBorder__TBrDc prc-Button-IconButton-fyge7' />
+[10] (111,145)<span  />
+	[11] (23,145)<span  />
+	[12] (111,145)<input aria-label='Go to file' class='prc-components-Input-IwWrt' placeholder='Go to file' role='combobox' />
+	[13] (199,145)<span  />
+		[14] (199,147)<kbd >t />
+[15] (111,590)<div class='ReposFileTreePane-module__Box_5__Zy_o6' scrollable='true' />
+	[16] (106,199)<li class='PRIVATE_TreeView-item prc-TreeView-TreeViewItem-Ter5f' id='.cargo-item' role='treeitem' />
+		[17] (106,199)<div  />
+			[18] (17,199)<div  />
+			[19] (111,199)<div  />
+				[20] (33,199)<div  />
+					[21] (33,199)<div  />
+				[22] (120,199)<span  />
+					[23] (58,199)<span >.cargo />
+	[24] (106,238)<li class='PRIVATE_TreeView-item prc-TreeView-TreeViewItem-Ter5f' id='.github-item' role='treeitem' />
+		[25] (106,238)<div  />
+			[26] (17,238)<div  />
+			[27] (111,238)<div  />
+				[28] (33,238)<div  />
+					[29] (33,238)<div  />
+				[30] (120,238)<span  />
+					[31] (60,238)<span >.github />
+	[32] (106,277)<li class='PRIVATE_TreeView-item prc-TreeView-TreeViewItem-Ter5f' id='appimage-item' role='treeitem' />
+		[33] (106,277)<div  />
+			[34] (17,277)<div  />
+			[35] (111,277)<div  />
+				[36] (33,277)<div  />
+					[37] (33,277)<div  />
+				[38] (120,277)<span  />
+					[39] (66,277)<span >appimage />
+	[40] (106,316)<li class='PRIVATE_TreeView-item prc-TreeView-TreeViewItem-Ter5f' id='docs-item' role='treeitem' />
+		[41] (106,316)<div  />
+			[42] (17,316)<div  />
+			[43] (111,316)<div  />
+				[44] (33,316)<div  />
+					[45] (33,316)<div  />
+				[46] (120,316)<span  />
+					[47] (54,316)<span >docs />
+	[48] (106,355)<li class='PRIVATE_TreeView-item prc-TreeView-TreeViewItem-Ter5f' id='examples-item' role='treeitem' />
+		[49] (106,355)<div  />
+			[50] (17,355)<div  />
+			[51] (111,355)<div  />
+				[52] (33,355)<div  />
+					[53] (33,355)<div  />
+				[54] (120,355)<span  />
+					[55] (65,355)<span >examples />
+	[56] (106,394)<li class='PRIVATE_TreeView-item prc-TreeView-TreeViewItem-Ter5f' id='fastlane-item' role='treeitem' />
+		[57] (106,394)<div  />
+			[58] (17,394)<div  />
+			[59] (111,394)<div  />
+				[60] (33,394)<div  />
+					[61] (33,394)<div  />
+				[62] (120,394)<span  />
+					[63] (61,394)<span >fastlane />
+	[64] (106,433)<li class='PRIVATE_TreeView-item prc-TreeView-TreeViewItem-Ter5f' id='flatpak-item' role='treeitem' />
+		[65] (106,433)<div  />
+			[66] (17,433)<div  />
+			[67] (111,433)<div  />
+				[68] (33,433)<div  />
+					[69] (33,433)<div  />
+				[70] (120,433)<span  />
+					[71] (59,433)<span >flatpak />
+	[72] (106,472)<div  />
+		[73] (17,472)<div  />
+		[74] (111,472)<div  />
+			[75] (33,472)<div  />
+				[76] (33,472)<div  />
+			[77] (120,472)<span  />
+				[78] (57,472)<span >flutter />
+	[79] (106,511)<li class='PRIVATE_TreeView-item prc-TreeView-TreeViewItem-Ter5f' id='flutter/android-item' role='treeitem' />
+		[80] (106,511)<div  />
+			[81] (14,511)<div  />
+				[82] (14,511)<div  />
+					[83] (14,511)<div  />
+			[84] (22,511)<div  />
+			[85] (114,511)<div  />
+				[86] (39,511)<div  />
+					[87] (39,511)<div  />
+				[88] (123,511)<span  />
+					[89] (67,511)<span >android />
+	[90] (106,550)<li class='PRIVATE_TreeView-item prc-TreeView-TreeViewItem-Ter5f' id='flutter/assets-item' role='treeitem' />
+		[91] (106,550)<div  />
+			[92] (14,550)<div  />
+				[93] (14,550)<div  />
+					[94] (14,550)<div  />
+			[95] (22,550)<div  />
+			[96] (114,550)<div  />
+				[97] (39,550)<div  />
+					[98] (39,550)<div  />
+				[99] (123,550)<span  />
+					[100] (63,550)<span >assets />
+	[101] (106,589)<li class='PRIVATE_TreeView-item prc-TreeView-TreeViewItem-Ter5f' id='flutter/ios-item' role='treeitem' />
+		[102] (106,589)<div  />
+			[103] (14,589)<div  />
+				[104] (14,589)<div  />
+					[105] (14,589)<div  />
+			[106] (22,589)<div  />
+			[107] (114,589)<div  />
+				[108] (39,589)<div  />
+					[109] (39,589)<div  />
+				[110] (123,589)<span  />
+					[111] (56,589)<span >ios />
+	[112] (106,628)<div  />
+		[113] (14,628)<div  />
+			[114] (14,628)<div  />
+				[115] (14,628)<div  />
+		[116] (22,628)<div  />
+		[117] (114,628)<div  />
+			[118] (39,628)<div  />
+				[119] (39,628)<div  />
+			[120] (123,628)<span  />
+				[121] (55,628)<span >lib />
+	[122] (106,667)<div  />
+		[123] (17,667)<div  />
+			[124] (17,667)<div  />
+				[125] (14,667)<div  />
+				[126] (19,667)<div  />
+		[127] (28,667)<div  />
+		[128] (117,667)<div  />
+			[129] (44,667)<div  />
+				[130] (44,667)<div  />
+			[131] (125,667)<span  />
+				[132] (75,667)<span >common />
+	[133] (106,706)<li class='PRIVATE_TreeView-item prc-TreeView-TreeViewItem-Ter5f' id='flutter/lib/common/formatter-item' role='treeitem' />
+		[134] (106,706)<div  />
+			[135] (19,706)<div  />
+				[136] (19,706)<div  />
+					[137] (14,706)<div  />
+					[138] (19,706)<div  />
+					[139] (25,706)<div  />
+			[140] (33,706)<div  />
+			[141] (120,706)<div  />
+				[142] (50,706)<div  />
+					[143] (50,706)<div  />
+				[144] (128,706)<span  />
+					[145] (81,706)<span >formatter />
+	[146] (106,745)<li class='PRIVATE_TreeView-item prc-TreeView-TreeViewItem-Ter5f' id='flutter/lib/common/hbbs-item' role='treeitem' />
+		[147] (106,745)<div  />
+			[148] (19,745)<div  />
+				[149] (19,745)<div  />
+					[150] (14,745)<div  />
+					[151] (19,745)<div  />
+					[152] (25,745)<div  />
+			[153] (33,745)<div  />
+			[154] (120,745)<div  />
+				[155] (50,745)<div  />
+					[156] (50,745)<div  />
+				[157] (128,745)<span  />
+					[158] (72,745)<span >hbbs />
+	[159] (106,784)<div  />
+		[160] (19,784)<div  />
+			[161] (19,784)<div  />
+				[162] (14,784)<div  />
+				[163] (19,784)<div  />
+				[164] (25,784)<div  />
+		[165] (33,784)<div  />
+		[166] (120,784)<div  />
+			[167] (50,784)<div  />
+				[168] (50,784)<div  />
+			[169] (128,784)<span  />
+				[170] (78,784)<span >widgets />
+	[171] (106,823)<li class='PRIVATE_TreeView-item prc-TreeView-TreeViewItem-Ter5f' id='flutter/lib/common/widgets/address_book.dart-item' role='treeitem' />
+		[172] (106,823)<div  />
+			[173] (22,823)<div  />
+				[174] (22,823)<div  />
+					[175] (14,823)<div  />
+					[176] (19,823)<div  />
+					[177] (25,823)<div  />
+					[178] (31,823)<div  />
+			[179] (123,823)<div  />
+				[180] (56,823)<div  />
+				[181] (131,823)<span  />
+					[182] (106,823)<span >address_book.dart />
+	[183] (106,862)<li class='PRIVATE_TreeView-item prc-TreeView-TreeViewItem-Ter5f' id='flutter/lib/common/widgets/animated_rotation_widget.dart-item' role='treeitem' />
+		[184] (106,862)<div  />
+			[185] (22,862)<div  />
+				[186] (22,862)<div  />
+					[187] (14,862)<div  />
+					[188] (19,862)<div  />
+					[189] (25,862)<div  />
+					[190] (31,862)<div  />
+			[191] (123,862)<div  />
+				[192] (56,862)<div  />
+				[193] (131,862)<span  />
+					[194] (132,862)<span >animated_rotation_widget.dart />
+	[195] (106,901)<li class='PRIVATE_TreeView-item prc-TreeView-TreeViewItem-Ter5f' id='flutter/lib/common/widgets/audio_input.dart-item' role='treeitem' />
+		[196] (106,901)<div  />
+			[197] (22,901)<div  />
+				[198] (22,901)<div  />
+					[199] (14,901)<div  />
+					[200] (19,901)<div  />
+					[201] (25,901)<div  />
+					[202] (31,901)<div  />
+			[203] (123,901)<div  />
+				[204] (56,901)<div  />
+				[205] (131,901)<span  />
+					[206] (102,901)<span >audio_input.dart />
+	[207] (106,940)<li class='PRIVATE_TreeView-item prc-TreeView-TreeViewItem-Ter5f' id='flutter/lib/common/widgets/autocomplete.dart-item' role='treeitem' />
+		[208] (106,940)<div  />
+			[209] (22,940)<div  />
+				[210] (22,940)<div  />
+					[211] (14,940)<div  />
+					[212] (19,940)<div  />
+					[213] (25,940)<div  />
+					[214] (31,940)<div  />
+			[215] (123,940)<div  />
+				[216] (56,940)<div  />
+				[217] (131,940)<span  />
+					[218] (106,940)<span >autocomplete.dart />
+	[219] (106,979)<li class='PRIVATE_TreeView-item prc-TreeView-TreeViewItem-Ter5f' id='flutter/lib/common/widgets/chat_page.dart-item' role='treeitem' />
+		[220] (106,979)<div  />
+			[221] (22,979)<div  />
+				[222] (22,979)<div  />
+					[223] (14,979)<div  />
+					[224] (19,979)<div  />
+					[225] (25,979)<div  />
+					[226] (31,979)<div  />
+			[227] (123,979)<div  />
+				[228] (56,979)<div  />
+				[229] (131,979)<span  />
+					[230] (98,979)<span >chat_page.dart />
+[231] (223,500)<div aria-label='Draggable pane splitter' class='prc-PageLayout-DraggableHandle-9s6B4' role='slider' />
+Breadcrumbs
+[232] (271,26)<a class='Breadcrumb-module__repoLink__O2Nbs prc-Link-Link-9ZwDx' href='/eleunameotarepmi-create/emaremote/tree/master'>emaremote />
+/
+[233] (324,26)<a class='Breadcrumb-module__directoryLink__kQy_t prc-Link-Link-9ZwDx' href='/eleunameotarepmi-create/emaremote/tree/master/flutter'>flutter />
+/
+[234] (357,26)<a class='Breadcrumb-module__directoryLink__kQy_t prc-Link-Link-9ZwDx' href='/eleunameotarepmi-create/emaremote/tree/master/flutter/lib'>lib />
+/
+[235] (397,26)<a class='Breadcrumb-module__directoryLink__kQy_t prc-Link-Link-9ZwDx' href='/eleunameotarepmi-create/emaremote/tree/master/flutter/lib/common'>common />
+/
+[236] (447,26)<a class='Breadcrumb-module__directoryLink__kQy_t prc-Link-Link-9ZwDx' href='/eleunameotarepmi-create/emaremote/tree/master/flutter/lib/common/widgets'>widgets />
+/
+dialog.dart
+[237] (963,27)<button class='prc-Button-ButtonBase-9n-Xk FileNameStickyHeader-module__Button__LSEU_ FileNameStickyHeader-module__GoToTopButton__nxAFn' />
+	[238] (963,27)<span  />
+		[239] (969,27)<span >Top />
+File metadata and controls
+[240] (261,81)<button class='prc-SegmentedControl-Button-E48xz' />
+	[241] (261,81)<span  />
+		[242] (261,81)<div >Code />
+[243] (305,81)<button class='prc-SegmentedControl-Button-E48xz' />
+	[244] (305,81)<span  />
+		[245] (305,81)<div >Blame />
+2854 lines (2676 loc) · 83.1 KB
+[246] (503,81)<button aria-label='Code 55% faster with GitHub Copilot' class='prc-Button-ButtonBase-9n-Xk CopilotPopover-module__copilotButton__Ruc0t' id='_r_ce_' />
+	[247] (503,81)<span  />
+[248] (864,81)<a class='prc-Button-ButtonBase-9n-Xk LinkButton-module__linkButton__nFnov BlobViewHeader-module__LinkButton__X9kx2' href='https://github.com/eleunameotarepmi-create/emaremote/raw/refs/heads/master/flutter/lib/common/widgets/dialog.dart' />
+	[249] (864,81)<span  />
+		[250] (864,81)<span >Raw />
+[251] (887,81)<button class='prc-Button-ButtonBase-9n-Xk prc-Button-IconButton-fyge7' />
+[252] (906,81)<button class='prc-Button-ButtonBase-9n-Xk BlobViewHeader-module__downloadButton__ef459 prc-Button-IconButton-fyge7' />
+[253] (930,81)<a class='prc-Button-ButtonBase-9n-Xk LinkButton-module__linkButton__nFnov prc-Button-IconButton-fyge7' href='/eleunameotarepmi-create/emaremote/edit/master/flutter/lib/common/widgets/dialog.dart' />
+[254] (949,81)<button class='prc-Button-ButtonBase-9n-Xk prc-Button-IconButton-fyge7' id='_r_cn_' />
+[255] (973,81)<button class='prc-Button-ButtonBase-9n-Xk BlobViewHeader-module__IconButton_2__RyjZg prc-Button-IconButton-fyge7' id='symbols-button' />
+[256] (611,33125)<textarea aria-label='file content' class='react-blob-textarea react-blob-print-hide' id='read-only-cursor-text-area' scrollable='true' />
+[257] (611,33430)<div class='CodeLines-module__scrollContainerHidden__g7TeZ' scrollable='true' />
+	62
+	63
+	64
+	65
+	[258] (267,109)<div >66 />
+	[259] (267,133)<div >67 />
+	[260] (267,158)<div >68 />
+	[261] (267,182)<div >69 />
+	[262] (267,206)<div >70 />
+	[263] (267,230)<div >71 />
+	[264] (267,255)<div >72 />
+	[265] (267,279)<div >73 />
+	[266] (267,303)<div >74 />
+	[267] (267,327)<div >75 />
+	[268] (267,352)<div >76 />
+	[269] (267,376)<div >77 />
+	[270] (267,400)<div >78 />
+	[271] (267,424)<div >79 />
+	[272] (267,448)<div >80 />
+	[273] (267,473)<div >81 />
+	[274] (267,497)<div >82 />
+	[275] (267,521)<div >83 />
+	[276] (267,545)<div >84 />
+	[277] (267,570)<div >85 />
+	[278] (267,594)<div >86 />
+	[279] (267,618)<div >87 />
+	[280] (267,642)<div >88 />
+	[281] (267,667)<div >89 />
+	[282] (267,691)<div >90 />
+	[283] (267,715)<div >91 />
+	[284] (267,739)<div >92 />
+	[285] (267,764)<div >93 />
+	[286] (267,788)<div >94 />
+	[287] (267,812)<div >95 />
+	[288] (267,836)<div >96 />
+	[289] (267,861)<div >97 />
+	[290] (267,885)<div >98 />
+	[291] (267,909)<div >99 />
+	[292] (267,933)<div >100 />
+	[293] (267,958)<div >101 />
+	102
+	103
+	@override
+	String
+	get
+	name
+	=>
+	translate
+	(_name);
+	@override
+	bool
+	validate
+	(
+	String
+	value) {
+	return
+	value.isNotEmpty
+	?
+	value.
+	contains
+	(_regex)
+	:
+	false
+	;
+	}
+	}
+	void
+	changeIdDialog
+	() {
+	var
+	newId
+	=
+	""
+	;
+	var
+	msg
+	=
+	""
+	;
+	var
+	isInProgress
+	=
+	false
+	;
+	TextEditingController
+	controller
+	=
+	TextEditingController
+	();
+	final
+	RxString
+	rxId
+	=
+	controller.text.
+	trim
+	().obs;
+	final
+	rules
+	=
+	[
+	RegexValidationRule
+	(
+	'starts with a letter'
+	,
+	RegExp
+	(
+	r'^[a-zA-Z]'
+	)),
+	LengthRangeValidationRule
+	(
+	6
+	,
+	16
+	),
+	RegexValidationRule
+	(
+	'allowed characters'
+	,
+	RegExp
+	(
+	r'^[\w-]*$'
+	))
+	];
+	gFFI.dialogManager.
+	show
+	((setState, close, context) {
+	submit
+	()
+	async
+	{
+	debugPrint
+	(
+	"onSubmit"
+	);
+	newId
+	=
+	controller.text.
+	trim
+	();
+	final
+	Iterable
+	violations
+	=
+	rules.
+	where
+	((r)
+	=>
+	!
+	r.
+	validate
+	(newId));
+	if
+	(violations.isNotEmpty) {
+	setState
+	(() {
+	msg
+	=
+	(isDesktop
+	||
+	isWebDesktop)
+	?
+	'${
+	translate
+	(
+	'Prompt'
+	)}:  ${
+	violations
+	.
+	map
+	((
+	r
+	) =>
+	r
+	.
+	name
+	).
+	join
+	(
+	', '
+	)}'
+	:
+	violations.
+	map
+	((r)
+	=>
+	r.name).
+	join
+	(
+	', '
+	);
+	});
+	return
+	;
+	}
+	setState
+	(() {
+	msg
+	=
+	""
+	;
+	isInProgress
+	=
+	true
+	;
+	bind.
+	mainChangeId
+	(newId
+	:
+	newId);
+[294] (611,990)<div class='CodeLines-module__scrollBarContainer__fsxaw' scrollable='true' />
+
+</current_dom>

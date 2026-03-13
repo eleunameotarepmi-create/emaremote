@@ -1,0 +1,412 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+Skip to content
+[0] (22,39)<button class='prc-Button-ButtonBase-9n-Xk styles-module__appHeaderButton__axedQ prc-Button-IconButton-fyge7' />
+[1] (53,39)<a class='prc-Button-ButtonBase-9n-Xk styles-module__appHeaderHome__nkA_U prc-Button-IconButton-fyge7' href='/' />
+[2] (129,39)<a class='styles-module__contextCrumb__IzGIq prc-Breadcrumbs-Item-jcraJ' href='/eleunameotarepmi-create' />
+	[3] (129,39)<span >eleunameotarepmi-create />
+[4] (234,39)<a class='styles-module__contextCrumb__IzGIq prc-Breadcrumbs-Item-jcraJ' href='/eleunameotarepmi-create/emaremote' />
+	[5] (229,39)<span >emaremote />
+[6] (689,39)<button aria-label='Search or jump to…' class='prc-Button-ButtonBase-9n-Xk styles-module__appHeaderButton__axedQ Search-module__searchButton__aiE0a' />
+	[7] (689,39)<span  />
+		[8] (697,39)<span >Type
+to search />
+			Type
+			/
+			to search
+[9] (770,39)<a class='prc-Button-ButtonBase-9n-Xk styles-module__appHeaderButton__axedQ prc-Button-IconButton-fyge7' href='/copilot' />
+[10] (790,39)<button aria-label='Open Copilot…' class='prc-Button-ButtonBase-9n-Xk styles-module__appHeaderButton__axedQ CopilotItems-module__CopilotMenu__DVdfE' id='_R_54jpb_' />
+[11] (833,39)<button class='prc-Button-ButtonBase-9n-Xk GlobalCreateMenu-module__actionMenuButton__Hj_iB' id='_R_5jpb_' />
+	[12] (827,39)<span  />
+[13] (867,39)<a class='prc-Button-ButtonBase-9n-Xk styles-module__appHeaderButton__axedQ prc-Button-IconButton-fyge7' href='/issues' />
+[14] (894,39)<a class='prc-Button-ButtonBase-9n-Xk styles-module__appHeaderButton__axedQ prc-Button-IconButton-fyge7' href='/pulls' />
+[15] (922,39)<a class='prc-Button-ButtonBase-9n-Xk styles-module__appHeaderButton__axedQ prc-Button-IconButton-fyge7' href='/repos' />
+[16] (950,39)<a class='prc-Button-ButtonBase-9n-Xk styles-module__appHeaderButton__axedQ prc-Button-IconButton-fyge7' href='/notifications' />
+[17] (978,39)<button class='prc-Button-ButtonBase-9n-Xk GlobalNavUserMenu-module__anchor__Dcej6 prc-Button-IconButton-fyge7' />
+	[18] (978,39)<img  />
+Repository navigation
+[19] (36,92)<a class='prc-components-UnderlineItem-7fP-n' href='/eleunameotarepmi-create/emaremote' />
+	[20] (22,92)<span  />
+	[21] (45,92)<span >Code />
+[22] (109,92)<a class='prc-components-UnderlineItem-7fP-n' href='/eleunameotarepmi-create/emaremote/pulls' />
+	[23] (78,92)<span  />
+	[24] (118,92)<span >Pull requests />
+[25] (187,92)<a class='prc-components-UnderlineItem-7fP-n' href='/eleunameotarepmi-create/emaremote/actions' />
+	[26] (168,92)<span  />
+	[27] (196,92)<span >Actions />
+[28] (255,92)<a class='prc-components-UnderlineItem-7fP-n' href='/eleunameotarepmi-create/emaremote/projects' />
+	[29] (234,92)<span  />
+	[30] (263,92)<span >Projects />
+[31] (315,92)<a class='prc-components-UnderlineItem-7fP-n' href='/eleunameotarepmi-create/emaremote/wiki' />
+	[32] (303,92)<span  />
+	[33] (324,92)<span >Wiki />
+[34] (376,92)<a class='prc-components-UnderlineItem-7fP-n' href='/eleunameotarepmi-create/emaremote/security' />
+	[35] (356,92)<span  />
+	[36] (384,92)<span >Security />
+[37] (444,92)<a class='prc-components-UnderlineItem-7fP-n' href='/eleunameotarepmi-create/emaremote/pulse' />
+	[38] (424,92)<span  />
+	[39] (452,92)<span >Insights />
+[40] (513,92)<a class='prc-components-UnderlineItem-7fP-n' href='/eleunameotarepmi-create/emaremote/settings' />
+	[41] (492,92)<span  />
+	[42] (521,92)<span >Settings />
+[43] (22,160)<button class='prc-Button-ButtonBase-9n-Xk position-relative ExpandFileTreeButton-module__expandButton__hDOcv fgColor-muted prc-Button-IconButton-fyge7' />
+Files
+[44] (86,218)<button aria-label='master branch' class='prc-Button-ButtonBase-9n-Xk react-repos-tree-pane-ref-selector width-full ref-selector-class RefSelectorAnchoredOverlay-module__RefSelectorOverlayBtn__a3WK3' id='ref-picker-repos-header-ref-selector' />
+	[45] (86,218)<span  />
+		[46] (78,218)<span  />
+			[47] (78,218)<div  />
+				[48] (26,218)<div  />
+				[49] (50,218)<div  />
+					[50] (50,218)<span >master />
+[51] (178,218)<a class='prc-Button-ButtonBase-9n-Xk ReposFileTreePane-module__IconButton__rGggU prc-Button-IconButton-fyge7' href='/eleunameotarepmi-create/emaremote/new/master/flutter/lib/common/widgets' />
+[52] (200,218)<button class='prc-Button-ButtonBase-9n-Xk SearchButton-module__IconButton__SBlqu ReposFileTreePane-module__SearchButtonWithLeftBorder__TBrDc prc-Button-IconButton-fyge7' />
+[53] (111,267)<span  />
+	[54] (23,267)<span  />
+	[55] (111,267)<input aria-label='Go to file' class='prc-components-Input-IwWrt' placeholder='Go to file' role='combobox' />
+	[56] (199,267)<span  />
+		[57] (199,268)<kbd >t />
+[58] (111,711)<div class='ReposFileTreePane-module__Box_5__Zy_o6' scrollable='true' />
+	[59] (106,320)<li class='PRIVATE_TreeView-item prc-TreeView-TreeViewItem-Ter5f' id='.cargo-item' role='treeitem' />
+		[60] (106,320)<div  />
+			[61] (17,320)<div  />
+			[62] (111,320)<div  />
+				[63] (33,320)<div  />
+					[64] (33,320)<div  />
+				[65] (120,320)<span  />
+					[66] (58,320)<span >.cargo />
+	[67] (106,359)<li class='PRIVATE_TreeView-item prc-TreeView-TreeViewItem-Ter5f' id='.github-item' role='treeitem' />
+		[68] (106,359)<div  />
+			[69] (17,359)<div  />
+			[70] (111,359)<div  />
+				[71] (33,359)<div  />
+					[72] (33,359)<div  />
+				[73] (120,359)<span  />
+					[74] (60,359)<span >.github />
+	[75] (106,398)<li class='PRIVATE_TreeView-item prc-TreeView-TreeViewItem-Ter5f' id='appimage-item' role='treeitem' />
+		[76] (106,398)<div  />
+			[77] (17,398)<div  />
+			[78] (111,398)<div  />
+				[79] (33,398)<div  />
+					[80] (33,398)<div  />
+				[81] (120,398)<span  />
+					[82] (66,398)<span >appimage />
+	[83] (106,437)<li class='PRIVATE_TreeView-item prc-TreeView-TreeViewItem-Ter5f' id='docs-item' role='treeitem' />
+		[84] (106,437)<div  />
+			[85] (17,437)<div  />
+			[86] (111,437)<div  />
+				[87] (33,437)<div  />
+					[88] (33,437)<div  />
+				[89] (120,437)<span  />
+					[90] (54,437)<span >docs />
+	[91] (106,476)<li class='PRIVATE_TreeView-item prc-TreeView-TreeViewItem-Ter5f' id='examples-item' role='treeitem' />
+		[92] (106,476)<div  />
+			[93] (17,476)<div  />
+			[94] (111,476)<div  />
+				[95] (33,476)<div  />
+					[96] (33,476)<div  />
+				[97] (120,476)<span  />
+					[98] (65,476)<span >examples />
+	[99] (106,515)<li class='PRIVATE_TreeView-item prc-TreeView-TreeViewItem-Ter5f' id='fastlane-item' role='treeitem' />
+		[100] (106,515)<div  />
+			[101] (17,515)<div  />
+			[102] (111,515)<div  />
+				[103] (33,515)<div  />
+					[104] (33,515)<div  />
+				[105] (120,515)<span  />
+					[106] (61,515)<span >fastlane />
+	[107] (106,554)<li class='PRIVATE_TreeView-item prc-TreeView-TreeViewItem-Ter5f' id='flatpak-item' role='treeitem' />
+		[108] (106,554)<div  />
+			[109] (17,554)<div  />
+			[110] (111,554)<div  />
+				[111] (33,554)<div  />
+					[112] (33,554)<div  />
+				[113] (120,554)<span  />
+					[114] (59,554)<span >flatpak />
+	[115] (106,593)<div  />
+		[116] (17,593)<div  />
+		[117] (111,593)<div  />
+			[118] (33,593)<div  />
+				[119] (33,593)<div  />
+			[120] (120,593)<span  />
+				[121] (57,593)<span >flutter />
+	[122] (106,632)<li class='PRIVATE_TreeView-item prc-TreeView-TreeViewItem-Ter5f' id='flutter/android-item' role='treeitem' />
+		[123] (106,632)<div  />
+			[124] (14,632)<div  />
+				[125] (14,632)<div  />
+					[126] (14,632)<div  />
+			[127] (22,632)<div  />
+			[128] (114,632)<div  />
+				[129] (39,632)<div  />
+					[130] (39,632)<div  />
+				[131] (123,632)<span  />
+					[132] (67,632)<span >android />
+	[133] (106,671)<li class='PRIVATE_TreeView-item prc-TreeView-TreeViewItem-Ter5f' id='flutter/assets-item' role='treeitem' />
+		[134] (106,671)<div  />
+			[135] (14,671)<div  />
+				[136] (14,671)<div  />
+					[137] (14,671)<div  />
+			[138] (22,671)<div  />
+			[139] (114,671)<div  />
+				[140] (39,671)<div  />
+					[141] (39,671)<div  />
+				[142] (123,671)<span  />
+					[143] (63,671)<span >assets />
+	[144] (106,710)<li class='PRIVATE_TreeView-item prc-TreeView-TreeViewItem-Ter5f' id='flutter/ios-item' role='treeitem' />
+		[145] (106,710)<div  />
+			[146] (14,710)<div  />
+				[147] (14,710)<div  />
+					[148] (14,710)<div  />
+			[149] (22,710)<div  />
+			[150] (114,710)<div  />
+				[151] (39,710)<div  />
+					[152] (39,710)<div  />
+				[153] (123,710)<span  />
+					[154] (56,710)<span >ios />
+	[155] (106,749)<div  />
+		[156] (14,749)<div  />
+			[157] (14,749)<div  />
+				[158] (14,749)<div  />
+		[159] (22,749)<div  />
+		[160] (114,749)<div  />
+			[161] (39,749)<div  />
+				[162] (39,749)<div  />
+			[163] (123,749)<span  />
+				[164] (55,749)<span >lib />
+	[165] (106,788)<div  />
+		[166] (17,788)<div  />
+			[167] (17,788)<div  />
+				[168] (14,788)<div  />
+				[169] (19,788)<div  />
+		[170] (28,788)<div  />
+		[171] (117,788)<div  />
+			[172] (44,788)<div  />
+				[173] (44,788)<div  />
+			[174] (125,788)<span  />
+				[175] (75,788)<span >common />
+	[176] (106,827)<li class='PRIVATE_TreeView-item prc-TreeView-TreeViewItem-Ter5f' id='flutter/lib/common/formatter-item' role='treeitem' />
+		[177] (106,827)<div  />
+			[178] (19,827)<div  />
+				[179] (19,827)<div  />
+					[180] (14,827)<div  />
+					[181] (19,827)<div  />
+					[182] (25,827)<div  />
+			[183] (33,827)<div  />
+			[184] (120,827)<div  />
+				[185] (50,827)<div  />
+					[186] (50,827)<div  />
+				[187] (128,827)<span  />
+					[188] (81,827)<span >formatter />
+	[189] (106,866)<li class='PRIVATE_TreeView-item prc-TreeView-TreeViewItem-Ter5f' id='flutter/lib/common/hbbs-item' role='treeitem' />
+		[190] (106,866)<div  />
+			[191] (19,866)<div  />
+				[192] (19,866)<div  />
+					[193] (14,866)<div  />
+					[194] (19,866)<div  />
+					[195] (25,866)<div  />
+			[196] (33,866)<div  />
+			[197] (120,866)<div  />
+				[198] (50,866)<div  />
+					[199] (50,866)<div  />
+				[200] (128,866)<span  />
+					[201] (72,866)<span >hbbs />
+	[202] (106,905)<div  />
+		[203] (19,905)<div  />
+			[204] (19,905)<div  />
+				[205] (14,905)<div  />
+				[206] (19,905)<div  />
+				[207] (25,905)<div  />
+		[208] (33,905)<div  />
+		[209] (120,905)<div  />
+			[210] (50,905)<div  />
+				[211] (50,905)<div  />
+			[212] (128,905)<span  />
+				[213] (78,905)<span >widgets />
+	[214] (106,944)<li class='PRIVATE_TreeView-item prc-TreeView-TreeViewItem-Ter5f' id='flutter/lib/common/widgets/address_book.dart-item' role='treeitem' />
+		[215] (106,944)<div  />
+			[216] (22,944)<div  />
+				[217] (22,944)<div  />
+					[218] (14,944)<div  />
+					[219] (19,944)<div  />
+					[220] (25,944)<div  />
+					[221] (31,944)<div  />
+			[222] (123,944)<div  />
+				[223] (56,944)<div  />
+				[224] (131,944)<span  />
+					[225] (106,944)<span >address_book.dart />
+	[226] (106,983)<li class='PRIVATE_TreeView-item prc-TreeView-TreeViewItem-Ter5f' id='flutter/lib/common/widgets/animated_rotation_widget.dart-item' role='treeitem' />
+		[227] (106,983)<div  />
+			[228] (22,983)<div  />
+				[229] (22,983)<div  />
+					[230] (14,983)<div  />
+					[231] (19,983)<div  />
+					[232] (25,983)<div  />
+					[233] (31,983)<div  />
+			[234] (123,983)<div  />
+				[235] (56,983)<div  />
+				[236] (131,983)<span  />
+					[237] (132,983)<span >animated_rotation_widget.dart />
+[238] (223,621)<div aria-label='Draggable pane splitter' class='prc-PageLayout-DraggableHandle-9s6B4' role='slider' />
+Breadcrumbs
+[239] (263,160)<a class='Breadcrumb-module__repoLink__O2Nbs prc-Link-Link-9ZwDx' href='/eleunameotarepmi-create/emaremote/tree/master'>emaremote />
+/
+[240] (322,160)<a class='Breadcrumb-module__directoryLink__kQy_t prc-Link-Link-9ZwDx' href='/eleunameotarepmi-create/emaremote/tree/master/flutter'>flutter />
+/
+[241] (358,160)<a class='Breadcrumb-module__directoryLink__kQy_t prc-Link-Link-9ZwDx' href='/eleunameotarepmi-create/emaremote/tree/master/flutter/lib'>lib />
+/
+[242] (402,160)<a class='Breadcrumb-module__directoryLink__kQy_t prc-Link-Link-9ZwDx' href='/eleunameotarepmi-create/emaremote/tree/master/flutter/lib/common'>common />
+/
+[243] (458,160)<a class='Breadcrumb-module__directoryLink__kQy_t prc-Link-Link-9ZwDx' href='/eleunameotarepmi-create/emaremote/tree/master/flutter/lib/common/widgets'>widgets />
+/
+dialog.dart
+[244] (563,160)<button class='prc-Button-ButtonBase-9n-Xk ml-2 prc-Button-IconButton-fyge7' />
+[245] (978,160)<button class='prc-Button-ButtonBase-9n-Xk js-blob-dropdown-click NavigationMenu-module__IconButton__HpX3G prc-Button-IconButton-fyge7' id='_r_bt_' />
+Latest commit
+[246] (253,227)<a class='Link__StyledLink-sc-1syctfj-0 prc-Link-Link-9ZwDx' href='/eleunameotarepmi-create' />
+	[247] (251,228)<img  />
+[248] (320,227)<a aria-label='commits by eleunameotarepmi-create' class='Link__StyledLink-sc-1syctfj-0 iIGVMW AuthorAvatar-module__authorHoverableLink__MHTT8 prc-Link-Link-9ZwDx' href='/eleunameotarepmi-create/emaremote/commits?author=eleunameotarepmi-create'>eleunameotarepmi-create />
+[249] (512,226)<a class='Link--secondary' href='/eleunameotarepmi-create/emaremote/commit/68205e6a499affb7ef6b4d0a910f3f4b0b07714b'>EmaRemote: unlock ID change - bypass server API validation />
+[250] (886,227)<a aria-label='Commit 68205e6' class='Link--secondary prc-Link-Link-9ZwDx' href='/eleunameotarepmi-create/emaremote/commit/68205e6a499affb7ef6b4d0a910f3f4b0b07714b'>68205e6 />
+·
+History
+[251] (956,227)<a class='prc-Button-ButtonBase-9n-Xk d-none d-lg-flex LinkButton-module__linkButton__nFnov flex-items-center fgColor-default' href='/eleunameotarepmi-create/emaremote/commits/master/flutter/lib/common/widgets/dialog.dart' />
+	[252] (956,227)<span  />
+		[253] (963,227)<span  />
+			[254] (963,226)<span >History />
+File metadata and controls
+[255] (261,302)<button class='prc-SegmentedControl-Button-E48xz' />
+	[256] (261,302)<span  />
+		[257] (261,302)<div >Code />
+[258] (305,302)<button class='prc-SegmentedControl-Button-E48xz' />
+	[259] (305,302)<span  />
+		[260] (305,302)<div >Blame />
+2854 lines (2676 loc) · 83.1 KB
+[261] (503,302)<button aria-label='Code 55% faster with GitHub Copilot' class='prc-Button-ButtonBase-9n-Xk CopilotPopover-module__copilotButton__Ruc0t' id='_r_ce_' />
+	[262] (503,302)<span  />
+[263] (864,302)<a class='prc-Button-ButtonBase-9n-Xk LinkButton-module__linkButton__nFnov BlobViewHeader-module__LinkButton__X9kx2' href='https://github.com/eleunameotarepmi-create/emaremote/raw/refs/heads/master/flutter/lib/common/widgets/dialog.dart' />
+	[264] (864,302)<span  />
+		[265] (864,302)<span >Raw />
+[266] (887,302)<button class='prc-Button-ButtonBase-9n-Xk prc-Button-IconButton-fyge7' />
+[267] (906,302)<button class='prc-Button-ButtonBase-9n-Xk BlobViewHeader-module__downloadButton__ef459 prc-Button-IconButton-fyge7' />
+[268] (930,302)<a class='prc-Button-ButtonBase-9n-Xk LinkButton-module__linkButton__nFnov prc-Button-IconButton-fyge7' href='/eleunameotarepmi-create/emaremote/edit/master/flutter/lib/common/widgets/dialog.dart' />
+[269] (949,302)<button class='prc-Button-ButtonBase-9n-Xk prc-Button-IconButton-fyge7' id='_r_cn_' />
+[270] (973,302)<button class='prc-Button-ButtonBase-9n-Xk BlobViewHeader-module__IconButton_2__RyjZg prc-Button-IconButton-fyge7' id='symbols-button' />
+[271] (611,34943)<textarea aria-label='file content' class='react-blob-textarea react-blob-print-hide' id='read-only-cursor-text-area' scrollable='true' />
+[272] (611,35248)<div class='CodeLines-module__scrollContainerHidden__g7TeZ' scrollable='true' />
+	[273] (269,352)<div >1 />
+	[274] (269,376)<div >2 />
+	[275] (269,400)<div >3 />
+	[276] (269,424)<div >4 />
+	[277] (269,448)<div >5 />
+	[278] (269,473)<div >6 />
+	[279] (269,497)<div >7 />
+	[280] (269,521)<div >8 />
+	[281] (269,545)<div >9 />
+	[282] (269,570)<div >10 />
+	[283] (269,594)<div >11 />
+	[284] (269,618)<div >12 />
+	[285] (269,642)<div >13 />
+	[286] (269,667)<div >14 />
+	[287] (269,691)<div >15 />
+	[288] (269,715)<div >16 />
+	[289] (269,739)<div >17 />
+	[290] (269,764)<div >18 />
+	[291] (269,788)<div >19 />
+	[292] (269,812)<div >20 />
+	[293] (269,836)<div >21 />
+	[294] (269,861)<div >22 />
+	[295] (269,885)<div >23 />
+	[296] (269,909)<div >24 />
+	[297] (269,933)<div >25 />
+	[298] (269,958)<div >26 />
+	27
+	28
+	import
+	'dart:async'
+	;
+	import
+	'dart:convert'
+	;
+	import
+	'package:bot_toast/bot_toast.dart'
+	;
+	import
+	'package:flutter/material.dart'
+	;
+	import
+	'package:flutter/services.dart'
+	;
+	import
+	'package:flutter_hbb/common/shared_state.dart'
+	;
+	import
+	'package:flutter_hbb/common/widgets/setting_widgets.dart'
+	;
+	import
+	'package:flutter_hbb/consts.dart'
+	;
+	import
+	'package:flutter_hbb/desktop/widgets/tabbar_widget.dart'
+	;
+	import
+	'package:flutter_hbb/models/peer_model.dart'
+	;
+	import
+	'package:flutter_hbb/models/peer_tab_model.dart'
+	;
+	import
+	'package:flutter_hbb/models/state_model.dart'
+	;
+	import
+	'package:get/get.dart'
+	;
+	import
+	'package:qr_flutter/qr_flutter.dart'
+	;
+	import
+	'package:flutter_hbb/utils/http_service.dart'
+	as
+	http;
+	import
+	'../../common.dart'
+	;
+	import
+	'../../models/model.dart'
+	;
+	import
+	'../../models/platform_model.dart'
+	;
+	import
+	'address_book.dart'
+	;
+	void
+	clientClose
+	(
+	SessionID
+	sessionId,
+	FFI
+	ffi)
+	async
+	{
+	if
+	(
+	allowAskForNoteAtEndOfConnection
+	(ffi,
+	true
+	)) {
+	if
+	(
+	await
+	showConnEndAuditDialogCloseCanceled
+	(ffi
+	:
+	ffi)) {
+	return
+	;
+	}
+	closeConnection
+	();
+[299] (611,990)<div class='CodeLines-module__scrollBarContainer__fsxaw' scrollable='true' />
+
+</current_dom>

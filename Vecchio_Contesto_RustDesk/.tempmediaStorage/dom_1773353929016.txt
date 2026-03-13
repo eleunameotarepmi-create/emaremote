@@ -1,0 +1,106 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+Skip to content
+[0] (22,39)<button class='prc-Button-ButtonBase-9n-Xk styles-module__appHeaderButton__axedQ prc-Button-IconButton-fyge7' />
+[1] (53,39)<a class='prc-Button-ButtonBase-9n-Xk styles-module__appHeaderHome__nkA_U prc-Button-IconButton-fyge7' href='/' />
+[2] (129,39)<a class='styles-module__contextCrumb__IzGIq prc-Breadcrumbs-Item-jcraJ' href='/eleunameotarepmi-create' />
+	[3] (129,39)<span >eleunameotarepmi-create />
+[4] (234,39)<a class='styles-module__contextCrumb__IzGIq prc-Breadcrumbs-Item-jcraJ' href='/eleunameotarepmi-create/emaremote' />
+	[5] (229,39)<span >emaremote />
+[6] (689,39)<button aria-label='Search or jump to…' class='prc-Button-ButtonBase-9n-Xk styles-module__appHeaderButton__axedQ Search-module__searchButton__aiE0a' />
+	[7] (689,39)<span  />
+		[8] (697,39)<span >Type
+to search />
+			Type
+			/
+			to search
+[9] (770,39)<a class='prc-Button-ButtonBase-9n-Xk styles-module__appHeaderButton__axedQ prc-Button-IconButton-fyge7' href='/copilot' />
+[10] (790,39)<button aria-label='Open Copilot…' class='prc-Button-ButtonBase-9n-Xk styles-module__appHeaderButton__axedQ CopilotItems-module__CopilotMenu__DVdfE' id='_R_54jpb_' />
+[11] (833,39)<button class='prc-Button-ButtonBase-9n-Xk GlobalCreateMenu-module__actionMenuButton__Hj_iB' id='_R_5jpb_' />
+	[12] (827,39)<span  />
+[13] (867,39)<a class='prc-Button-ButtonBase-9n-Xk styles-module__appHeaderButton__axedQ prc-Button-IconButton-fyge7' href='/issues' />
+[14] (894,39)<a class='prc-Button-ButtonBase-9n-Xk styles-module__appHeaderButton__axedQ prc-Button-IconButton-fyge7' href='/pulls' />
+[15] (922,39)<a class='prc-Button-ButtonBase-9n-Xk styles-module__appHeaderButton__axedQ prc-Button-IconButton-fyge7' href='/repos' />
+[16] (950,39)<a class='prc-Button-ButtonBase-9n-Xk styles-module__appHeaderButton__axedQ prc-Button-IconButton-fyge7' href='/notifications' />
+[17] (978,39)<button class='prc-Button-ButtonBase-9n-Xk GlobalNavUserMenu-module__anchor__Dcej6 prc-Button-IconButton-fyge7' />
+	[18] (978,39)<img  />
+Repository navigation
+[19] (36,92)<a class='prc-components-UnderlineItem-7fP-n' href='/eleunameotarepmi-create/emaremote' />
+	[20] (22,92)<span  />
+	[21] (45,92)<span >Code />
+[22] (109,92)<a class='prc-components-UnderlineItem-7fP-n' href='/eleunameotarepmi-create/emaremote/pulls' />
+	[23] (78,92)<span  />
+	[24] (118,92)<span >Pull requests />
+[25] (187,92)<a class='prc-components-UnderlineItem-7fP-n' href='/eleunameotarepmi-create/emaremote/actions' />
+	[26] (168,92)<span  />
+	[27] (196,92)<span >Actions />
+[28] (255,92)<a class='prc-components-UnderlineItem-7fP-n' href='/eleunameotarepmi-create/emaremote/projects' />
+	[29] (234,92)<span  />
+	[30] (263,92)<span >Projects />
+[31] (315,92)<a class='prc-components-UnderlineItem-7fP-n' href='/eleunameotarepmi-create/emaremote/wiki' />
+	[32] (303,92)<span  />
+	[33] (324,92)<span >Wiki />
+[34] (376,92)<a class='prc-components-UnderlineItem-7fP-n' href='/eleunameotarepmi-create/emaremote/security' />
+	[35] (356,92)<span  />
+	[36] (384,92)<span >Security />
+[37] (444,92)<a class='prc-components-UnderlineItem-7fP-n' href='/eleunameotarepmi-create/emaremote/pulse' />
+	[38] (424,92)<span  />
+	[39] (452,92)<span >Insights />
+[40] (513,92)<a class='prc-components-UnderlineItem-7fP-n' href='/eleunameotarepmi-create/emaremote/settings' />
+	[41] (492,92)<span  />
+	[42] (521,92)<span >Settings />
+[43] (86,156)<a class='Link' href='/eleunameotarepmi-create/emaremote/actions/workflows/emaremote-build.yml' />
+	[44] (93,156)<span >EmaRemote Android Build />
+EmaRemote Android Build
+#1
+[45] (907,191)<button class='btn-danger btn mr-2'>Cancel workflow />
+[46] (972,191)<button class='Button Button--iconOnly Button--secondary Button--medium' id='action-menu-7725de3d-f7e5-4d92-b2d8-8ec2592bc66b-button' />
+[47] (117,398)<div  />
+	[48] (117,278)<a class='prc-ActionList-ActionListContent-KBb8- prc-Link-Link-9ZwDx' href='/eleunameotarepmi-create/emaremote/actions/runs/23026601902' id='_r_4_' />
+		[49] (125,278)<span  />
+			[50] (125,278)<span >Summary />
+	All jobs
+	[51] (201,322)<button class='prc-Button-ButtonBase-9n-Xk prc-Button-IconButton-fyge7' id='_r_5_' />
+	[52] (117,385)<a class='prc-ActionList-ActionListContent-KBb8- prc-Link-Link-9ZwDx' href='/eleunameotarepmi-create/emaremote/actions/runs/23026601902/job/66875771384' id='_r_i_' />
+		[53] (125,385)<span  />
+			[54] (125,385)<span >Build Android APK />
+	Run details
+	[55] (117,480)<a class='prc-ActionList-ActionListContent-KBb8- prc-Link-Link-9ZwDx' href='/eleunameotarepmi-create/emaremote/actions/runs/23026601902/usage' id='_r_b_' />
+		[56] (125,480)<span  />
+			[57] (125,480)<span >Usage />
+	[58] (117,518)<a class='prc-ActionList-ActionListContent-KBb8- prc-Link-Link-9ZwDx' href='/eleunameotarepmi-create/emaremote/actions/runs/23026601902/workflow' id='_r_c_' />
+		[59] (125,518)<span  />
+			[60] (125,518)<span >Workflow file />
+Manually triggered
+[61] (329,317)<a class='Link--primary text-semibold mr-1 no-underline' href='/eleunameotarepmi-create'>eleunameotarepmi-create />
+	[62] (270,318)<img  />
+[63] (420,318)<a class='Link--primary text-small Link--inTextBlock ml-1' href='/eleunameotarepmi-create/emaremote/commit/a77c95a658c93cde06685adb0af34d61d1919773'>a77c95a />
+[64] (462,317)<a class='d-inline-block branch-name css-truncate css-truncate-target my-0 my-md-1' href='/eleunameotarepmi-create/emaremote/tree/refs/heads/master' title='master'>master />
+Status
+In progress
+Total duration
+[65] (617,316)<a class='h4 Link--inTextBlock Link--primary color-fg-default' href='/eleunameotarepmi-create/emaremote/actions/runs/23026601902/usage'>– />
+Artifacts
+–
+[66] (617,522)<div class='actions-fullwidth-module WorkflowGraph color-shadow-small tmp-mb-3 border rounded color-bg-inset overflow-hidden position-relative p-2 border-top-0 border-md-top' />
+	[67] (617,431)<div  />
+		[68] (319,429)<div  />
+			[69] (319,418)<h2  />
+				[70] (319,418)<a class='Link--primary no-underline' href='/eleunameotarepmi-create/emaremote/actions/runs/23026601902/workflow'>emaremote-build.yml />
+			[71] (319,443)<div >on: workflow_dispatch />
+	[72] (619,565)<div class='width-full height-full position-relative px-2 mx-md-1' />
+		[73] (619,565)<div  />
+			[74] (374,565)<div  />
+				[75] (355,565)<div  />
+					[76] (355,550)<div class='WorkflowCard  position-relative rounded-2 border tmp-mb-6 tmp-my-3' id='group-_' />
+						[77] (355,550)<streaming-graph-job class='js-socket-channel WorkflowJob position-relative rounded-2 width-full' />
+							[78] (355,550)<a class='WorkflowJob-title d-flex flex-items-center no-underline f5 ' href='/eleunameotarepmi-create/emaremote/actions/runs/23026601902/job/66875771384' id='workflow-job-name-build-android' />
+								Build Android APK
+	[79] (939,626)<div  />
+		[80] (950,624)<div  />
+			[81] (941,624)<div  />
+			[82] (959,624)<div  />
+
+</current_dom>

@@ -1,0 +1,377 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+Skip to content
+[0] (22,39)<button class='prc-Button-ButtonBase-9n-Xk styles-module__appHeaderButton__axedQ prc-Button-IconButton-fyge7' />
+[1] (53,39)<a class='prc-Button-ButtonBase-9n-Xk styles-module__appHeaderHome__nkA_U prc-Button-IconButton-fyge7' href='/' />
+[2] (92,39)<a class='styles-module__contextCrumb__IzGIq prc-Breadcrumbs-Item-jcraJ' href='/rustdesk' />
+	[3] (92,39)<span >rustdesk />
+[4] (147,39)<a class='styles-module__contextCrumb__IzGIq prc-Breadcrumbs-Item-jcraJ' href='/rustdesk/rustdesk' />
+	[5] (147,39)<span >rustdesk />
+[6] (689,39)<button aria-label='Search or jump to…' class='prc-Button-ButtonBase-9n-Xk styles-module__appHeaderButton__axedQ Search-module__searchButton__aiE0a' />
+	[7] (689,39)<span  />
+		[8] (697,39)<span >Type
+to search />
+			Type
+			/
+			to search
+[9] (770,39)<a class='prc-Button-ButtonBase-9n-Xk styles-module__appHeaderButton__axedQ prc-Button-IconButton-fyge7' href='/copilot' />
+[10] (790,39)<button aria-label='Open Copilot…' class='prc-Button-ButtonBase-9n-Xk styles-module__appHeaderButton__axedQ CopilotItems-module__CopilotMenu__DVdfE' id='_R_54jpb_' />
+[11] (833,39)<button class='prc-Button-ButtonBase-9n-Xk GlobalCreateMenu-module__actionMenuButton__Hj_iB' id='_R_5jpb_' />
+	[12] (827,39)<span  />
+[13] (867,39)<a class='prc-Button-ButtonBase-9n-Xk styles-module__appHeaderButton__axedQ prc-Button-IconButton-fyge7' href='/issues' />
+[14] (894,39)<a class='prc-Button-ButtonBase-9n-Xk styles-module__appHeaderButton__axedQ prc-Button-IconButton-fyge7' href='/pulls' />
+[15] (922,39)<a class='prc-Button-ButtonBase-9n-Xk styles-module__appHeaderButton__axedQ prc-Button-IconButton-fyge7' href='/repos' />
+[16] (950,39)<a class='prc-Button-ButtonBase-9n-Xk styles-module__appHeaderButton__axedQ prc-Button-IconButton-fyge7' href='/notifications' />
+[17] (978,39)<button class='prc-Button-ButtonBase-9n-Xk GlobalNavUserMenu-module__anchor__Dcej6 prc-Button-IconButton-fyge7' />
+	[18] (978,39)<img  />
+Repository navigation
+[19] (36,92)<a class='prc-components-UnderlineItem-7fP-n' href='/rustdesk/rustdesk' />
+	[20] (22,92)<span  />
+	[21] (45,92)<span >Code />
+[22] (107,92)<a class='prc-components-UnderlineItem-7fP-n' href='/rustdesk/rustdesk/issues' />
+	[23] (78,92)<span  />
+	[24] (103,92)<span >Issues />
+	[25] (131,92)<span >(
+63
+) />
+		[26] (131,92)<span >63 />
+		(
+		63
+		)
+[27] (206,92)<a class='prc-components-UnderlineItem-7fP-n' href='/rustdesk/rustdesk/pulls' />
+	[28] (163,92)<span  />
+	[29] (202,92)<span >Pull requests />
+	[30] (245,92)<span >(
+39
+) />
+		[31] (245,92)<span >39 />
+		(
+		39
+		)
+[32] (305,92)<a class='prc-components-UnderlineItem-7fP-n' href='/rustdesk/rustdesk/discussions' />
+	[33] (277,92)<span  />
+	[34] (313,92)<span >Discussions />
+[35] (380,92)<a class='prc-components-UnderlineItem-7fP-n' href='/rustdesk/rustdesk/actions' />
+	[36] (361,92)<span  />
+	[37] (388,92)<span >Actions />
+[38] (447,92)<a class='prc-components-UnderlineItem-7fP-n' href='/rustdesk/rustdesk/projects' />
+	[39] (427,92)<span  />
+	[40] (455,92)<span >Projects />
+[41] (508,92)<a class='prc-components-UnderlineItem-7fP-n' href='/rustdesk/rustdesk/wiki' />
+	[42] (495,92)<span  />
+	[43] (516,92)<span >Wiki />
+[44] (569,92)<a class='prc-components-UnderlineItem-7fP-n' href='/rustdesk/rustdesk/security' />
+	[45] (548,92)<span  />
+	[46] (577,92)<span >Security />
+[47] (637,92)<a class='prc-components-UnderlineItem-7fP-n' href='/rustdesk/rustdesk/pulse' />
+	[48] (617,92)<span  />
+	[49] (645,92)<span >Insights />
+[50] (127,159)<a class='d-block overflow-x-hidden color-fg-default' href='/rustdesk/rustdesk'>rustdesk />
+Public
+[51] (573,158)<button aria-label='Sponsor rustdesk/rustdesk' class='Button--secondary Button--small Button' id='dialog-show-funding-links-modal-rustdesk-rustdesk' />
+	[52] (573,158)<span  />
+		[53] (573,158)<span  />
+			[54] (582,157)<span >Sponsor />
+[55] (654,158)<div  />
+	[56] (654,158)<button aria-label='Watch: Participating in rustdesk/rustdesk' class='prc-Button-ButtonBase-9n-Xk NotificationsSubscriptionsMenu-module__ActionMenuButton__FVE3w' id='_r_7_' />
+		[57] (649,158)<span  />
+			[58] (656,158)<span >Watch />
+				[59] (670,158)<span >562 />
+[60] (746,158)<a class='btn-sm btn BtnGroup-item' href='/rustdesk/rustdesk/fork' id='fork-button'>Fork />
+	[61] (765,158)<span >16.3k />
+[62] (800,158)<details class='details-reset details-overlay BtnGroup-parent d-inline-block position-relative' id='my-forks-menu-299354207' />
+	[63] (800,158)<summary aria-label='See your forks of this repository' class='btn-sm btn BtnGroup-item px-2 float-none' role='button' />
+[64] (858,158)<button aria-label='Star this repository (109167)' class='js-toggler-target rounded-left-2 btn-with-aria-count btn-sm btn BtnGroup-item' />
+	[65] (852,158)<span >Star />
+	[66] (877,158)<span >109k />
+[67] (910,158)<details class='details-reset details-overlay BtnGroup-parent js-user-list-menu d-flex position-relative' id='details-user-list-299354207-unstarred' />
+	[68] (910,158)<summary aria-label='Add this repository to a list' class='btn-sm btn BtnGroup-item px-2 float-none' role='button' />
+rustdesk/rustdesk
+[69] (118,246)<button aria-label='master branch' class='prc-Button-ButtonBase-9n-Xk overview-ref-selector width-full RefSelectorAnchoredOverlay-module__RefSelectorOverlayBtn__a3WK3' id='ref-picker-repos-header-ref-selector' />
+	[70] (118,246)<span  />
+		[71] (110,246)<span  />
+			[72] (110,246)<div  />
+				[73] (92,246)<div  />
+				[74] (117,246)<div  />
+					[75] (117,246)<span >master />
+[76] (200,246)<a class='prc-Button-ButtonBase-9n-Xk OverviewContent-module__Button___Uotu' href='/rustdesk/rustdesk/branches' />
+	[77] (200,246)<span  />
+		[78] (209,246)<span  />
+			[79] (209,246)<span >Branches />
+				[80] (189,246)<strong >9 />
+[81] (265,246)<a class='prc-Button-ButtonBase-9n-Xk OverviewContent-module__Button___Uotu' href='/rustdesk/rustdesk/tags' />
+	[82] (265,246)<span  />
+		[83] (273,246)<span  />
+			[84] (273,246)<span >Tags />
+				[85] (263,246)<strong >36 />
+[86] (475,246)<span  />
+	[87] (409,246)<span  />
+	[88] (475,246)<input aria-label='Go to file' class='prc-components-Input-IwWrt' placeholder='Go to file' role='combobox' />
+	[89] (542,246)<span  />
+		[90] (542,247)<kbd >t />
+Add file
+[91] (593,246)<button aria-label='Add file' class='prc-Button-ButtonBase-9n-Xk' id='_R_51idajal1d_' />
+	[92] (593,246)<span  />
+		[93] (593,246)<span  />
+			[94] (593,246)<span >Add file />
+[95] (668,246)<button class='prc-Button-ButtonBase-9n-Xk' id='_R_3idajal1d_' />
+	[96] (668,246)<span  />
+		[97] (668,246)<span >Code />
+Folders and files
+Latest commit
+[98] (133,318)<a aria-label='commits by basilgello' class='Link__StyledLink-sc-1syctfj-0 iIGVMW AuthorLink-module__authorNameLink__ClG6W prc-Link-Link-9ZwDx' href='/rustdesk/rustdesk/commits?author=basilgello'>basilgello />
+and
+[99] (194,318)<a aria-label='commits by rustdesk' class='Link__StyledLink-sc-1syctfj-0 iIGVMW AuthorLink-module__authorNameLink__ClG6W prc-Link-Link-9ZwDx' href='/rustdesk/rustdesk/commits?author=rustdesk'>rustdesk />
+[100] (280,317)<a class='Link--secondary' href='/rustdesk/rustdesk/commit/682e347be0990f5e19052020337ab9b67ae1d6e7'>Bump Android NDK to r28c ( />
+[101] (357,317)<a class='issue-link js-issue-link' href='https://github.com/rustdesk/rustdesk/pull/13685'>#13685 />
+[102] (375,317)<a class='Link--secondary' href='/rustdesk/rustdesk/commit/682e347be0990f5e19052020337ab9b67ae1d6e7'>) />
+[103] (392,318)<button class='prc-Button-ButtonBase-9n-Xk LatestCommit-module__IconButton__mkJr_ prc-Button-IconButton-fyge7' />
+[104] (535,318)<a aria-label='Commit 682e347' class='Link--secondary prc-Link-Link-9ZwDx' href='/rustdesk/rustdesk/commit/682e347be0990f5e19052020337ab9b67ae1d6e7'>682e347 />
+·
+History
+[105] (654,318)<a class='prc-Button-ButtonBase-9n-Xk d-none d-lg-flex LinkButton-module__linkButton__nFnov flex-items-center fgColor-default' href='/rustdesk/rustdesk/commits/master/' />
+	[106] (654,318)<span  />
+		[107] (661,318)<span  />
+			[108] (661,317)<span >11,024 Commits />
+[109] (392,374)<tr  />
+	[110] (121,374)<a aria-label='.cargo, (Directory)' class='Link--primary' href='/rustdesk/rustdesk/tree/master/.cargo' title='.cargo'>.cargo />
+	[111] (350,374)<a class='Link--secondary' href='/rustdesk/rustdesk/commit/b64f6271e2b8989759c4d09f6720a6efca52dc81' title='typo'>typo />
+[112] (392,424)<tr  />
+	[113] (123,424)<a aria-label='.github, (Directory)' class='Link--primary' href='/rustdesk/rustdesk/tree/master/.github' title='.github'>.github />
+	[114] (402,424)<a class='Link--secondary' href='/rustdesk/rustdesk/commit/682e347be0990f5e19052020337ab9b67ae1d6e7' title='Bump Android NDK to r28c (#13685)
+
+Signed-off-by: Vasyl Gello <vasek.gello@gmail.com>
+Co-authored-by: RustDesk <71636191+rustdesk@users.noreply.github.com>'>Bump Android NDK to r28c ( />
+	[115] (479,424)<a class='issue-link js-issue-link' href='https://github.com/rustdesk/rustdesk/pull/13685'>#13685 />
+	[116] (497,424)<a class='Link--secondary' href='/rustdesk/rustdesk/commit/682e347be0990f5e19052020337ab9b67ae1d6e7' title='Bump Android NDK to r28c (#13685)
+
+Signed-off-by: Vasyl Gello <vasek.gello@gmail.com>
+Co-authored-by: RustDesk <71636191+rustdesk@users.noreply.github.com>'>) />
+[117] (392,473)<tr  />
+	[118] (129,474)<a aria-label='appimage, (Directory)' class='Link--primary' href='/rustdesk/rustdesk/tree/master/appimage' title='appimage'>appimage />
+	[119] (370,474)<a class='Link--secondary' href='/rustdesk/rustdesk/commit/d49ae493b262cd876ac7be8a6fd4e65a518c9e17' title='bump to 1.4.6'>bump to 1.4.6 />
+[120] (392,523)<tr  />
+	[121] (118,523)<a aria-label='docs, (Directory)' class='Link--primary' href='/rustdesk/rustdesk/tree/master/docs' title='docs'>docs />
+	[122] (451,523)<a class='Link--secondary' href='/rustdesk/rustdesk/commit/db3f5fe816896e61a40400a78da9e9418e83b703' title='Fix typo: Rustdesk to RustDesk in Russian README (#14468)'>Fix typo: Rustdesk to RustDesk in Russian README ( />
+	[123] (578,523)<a class='issue-link js-issue-link' href='https://github.com/rustdesk/rustdesk/pull/14468'>#14468 />
+	[124] (596,523)<a class='Link--secondary' href='/rustdesk/rustdesk/commit/db3f5fe816896e61a40400a78da9e9418e83b703' title='Fix typo: Rustdesk to RustDesk in Russian README (#14468)'>) />
+[125] (392,573)<tr  />
+	[126] (128,573)<a aria-label='examples, (Directory)' class='Link--primary' href='/rustdesk/rustdesk/tree/master/examples' title='examples'>examples />
+	[127] (385,573)<a class='Link--secondary' href='/rustdesk/rustdesk/commit/971d4e6976380ed7d3ec20903ca29a48bd530887' title='ipc example for test (#11127)
+
+Signed-off-by: 21pages <sunboeasy@gmail.com>'>ipc example for test ( />
+	[128] (446,573)<a class='issue-link js-issue-link' href='https://github.com/rustdesk/rustdesk/pull/11127'>#11127 />
+	[129] (464,573)<a class='Link--secondary' href='/rustdesk/rustdesk/commit/971d4e6976380ed7d3ec20903ca29a48bd530887' title='ipc example for test (#11127)
+
+Signed-off-by: 21pages <sunboeasy@gmail.com>'>) />
+[130] (392,622)<tr  />
+	[131] (165,623)<a aria-label='fastlane/metadata/android, (Directory)' class='Link--primary' href='/rustdesk/rustdesk/tree/master/fastlane/metadata/android' title='This path skips through empty directories' />
+		[132] (126,623)<span >fastlane/ />
+		[133] (167,623)<span >metadata/ />
+		[134] (206,623)<span >android />
+	[135] (430,623)<a class='Link--secondary' href='/rustdesk/rustdesk/commit/57ee0318277c92ff040d92067dd0b5e6749bbdc9' title='Revert "Translations update from Toolate (#11510)" (#11535)
+
+This reverts commit 86d9e6278024f32cd85f24420e33a1163cfb1fab.'>Revert "Translations update from Toolate ( />
+	[136] (536,623)<a class='issue-link js-issue-link' href='https://github.com/rustdesk/rustdesk/pull/11510'>#11510 />
+	[137] (558,623)<a class='Link--secondary' href='/rustdesk/rustdesk/commit/57ee0318277c92ff040d92067dd0b5e6749bbdc9' title='Revert "Translations update from Toolate (#11510)" (#11535)
+
+This reverts commit 86d9e6278024f32cd85f24420e33a1163cfb1fab.'>)" ( />
+	[138] (580,623)<a class='issue-link js-issue-link' href='https://github.com/rustdesk/rustdesk/pull/11535'>#11535 />
+	[139] (597,623)<a class='Link--secondary' href='/rustdesk/rustdesk/commit/57ee0318277c92ff040d92067dd0b5e6749bbdc9' title='Revert "Translations update from Toolate (#11510)" (#11535)
+
+This reverts commit 86d9e6278024f32cd85f24420e33a1163cfb1fab.'>) />
+[140] (392,672)<tr  />
+	[141] (122,672)<a aria-label='flatpak, (Directory)' class='Link--primary' href='/rustdesk/rustdesk/tree/master/flatpak' title='flatpak'>flatpak />
+	[142] (397,672)<a class='Link--secondary' href='/rustdesk/rustdesk/commit/2842315b1d189ec0b9e5ee34954e6095947afb14' title='Fix/linux shortcuts inhibit (#14302)
+
+* feat: Inhibit system shortcuts on Linux
+
+Fixes #13013.
+
+Signed-off-by: Max von Forell <max@vonforell.de>
+
+* fix(linux): shortcuts inhibit
+
+Signed-off-by: fufesou <linlong1266@gmail.com>
+
+---------
+
+Signed-off-by: Max von Forell <max@vonforell.de>
+Signed-off-by: fufesou <linlong1266@gmail.com>
+Co-authored-by: Max von Forell <max@vonforell.de>'>Fix/linux shortcuts inhibit ( />
+	[143] (469,672)<a class='issue-link js-issue-link' href='https://github.com/rustdesk/rustdesk/pull/14302'>#14302 />
+	[144] (486,672)<a class='Link--secondary' href='/rustdesk/rustdesk/commit/2842315b1d189ec0b9e5ee34954e6095947afb14' title='Fix/linux shortcuts inhibit (#14302)
+
+* feat: Inhibit system shortcuts on Linux
+
+Fixes #13013.
+
+Signed-off-by: Max von Forell <max@vonforell.de>
+
+* fix(linux): shortcuts inhibit
+
+Signed-off-by: fufesou <linlong1266@gmail.com>
+
+---------
+
+Signed-off-by: Max von Forell <max@vonforell.de>
+Signed-off-by: fufesou <linlong1266@gmail.com>
+Co-authored-by: Max von Forell <max@vonforell.de>'>) />
+[145] (392,722)<tr  />
+	[146] (121,722)<a aria-label='flutter, (Directory)' class='Link--primary' href='/rustdesk/rustdesk/tree/master/flutter' title='flutter'>flutter />
+	[147] (480,722)<a class='Link--secondary' href='/rustdesk/rustdesk/commit/b3f43f55c1c00f287b8baf22152f3d1b88b51fb6' title='fix(mobile): restore canvas offset after hidding the soft keyboard (#14506)
+
+* fix(mobile): restore canvas offset after hidding the soft keyboard
+
+Signed-off-by: fufesou <linlong1266@gmail.com>
+
+* fix(mobile): ingore mobileFocusCanvasCursor in didChangeMetrics
+
+Signed-off-by: fufesou <linlong1266@gmail.com>
+
+* fix(mobile): remove unused code
+
+Signed-off-by: fufesou <linlong1266@gmail.com>
+
+* refact(mobile): simple refactor
+
+Signed-off-by: fufesou <linlong1266@gmail.com>
+
+* fix(mobile): restore canvas, cancel focus timer
+
+Signed-off-by: fufesou <linlong1266@gmail.com>
+
+---------
+
+Signed-off-by: fufesou <linlong1266@gmail.com>'>fix(mobile): restore canvas offset after hidding the soft keyboard ( />
+	#…
+[148] (392,772)<tr  />
+	[149] (115,772)<a aria-label='libs, (Directory)' class='Link--primary' href='/rustdesk/rustdesk/tree/master/libs' title='libs'>libs />
+	[150] (401,772)<a class='Link--secondary' href='/rustdesk/rustdesk/commit/732b2508159d66c21aa1250ef92aef4095f170e6' title='fix(keyboard): legacy mode (#14435)
+
+* fix(keyboard): legacy mode
+
+Signed-off-by: fufesou <linlong1266@gmail.com>
+
+* Simple refactor
+
+Signed-off-by: fufesou <linlong1266@gmail.com>
+
+* fix(keyboard): legacy mode, chr to seq
+
+Signed-off-by: fufesou <linlong1266@gmail.com>
+
+* fix(keyboard): legacy mode, early return if (!hotkey)&down
+
+Signed-off-by: fufesou <linlong1266@gmail.com>
+
+* fix(keyboard): legacy mode, pair down/up
+
+Signed-off-by: fufesou <linlong1266@gmail.com>
+
+---------
+
+Signed-off-by: fufesou <linlong1266@gmail.com>'>fix(keyboard): legacy mode ( />
+	[151] (477,772)<a class='issue-link js-issue-link' href='https://github.com/rustdesk/rustdesk/pull/14435'>#14435 />
+	[152] (495,772)<a class='Link--secondary' href='/rustdesk/rustdesk/commit/732b2508159d66c21aa1250ef92aef4095f170e6' title='fix(keyboard): legacy mode (#14435)
+
+* fix(keyboard): legacy mode
+
+Signed-off-by: fufesou <linlong1266@gmail.com>
+
+* Simple refactor
+
+Signed-off-by: fufesou <linlong1266@gmail.com>
+
+* fix(keyboard): legacy mode, chr to seq
+
+Signed-off-by: fufesou <linlong1266@gmail.com>
+
+* fix(keyboard): legacy mode, early return if (!hotkey)&down
+
+Signed-off-by: fufesou <linlong1266@gmail.com>
+
+* fix(keyboard): legacy mode, pair down/up
+
+Signed-off-by: fufesou <linlong1266@gmail.com>
+
+---------
+
+Signed-off-by: fufesou <linlong1266@gmail.com>'>) />
+[153] (392,821)<tr  />
+	[154] (114,822)<a aria-label='res, (Directory)' class='Link--primary' href='/rustdesk/rustdesk/tree/master/res' title='res'>res />
+	[155] (461,822)<a class='Link--secondary' href='/rustdesk/rustdesk/commit/9cb6f38aea4695dcb5b6d5a903f5d959b31d5df2' title='packaging: deb: remove obsolete Python version check (#14429)
+
+It was used to conditionally install a Python module in the past. But that is not the case anymore since https://github.com/rustdesk/rustdesk/commit/37dbfcc. Now the check is obsolete.
+
+Due to `set -e`, the check leads to a package configuration failure if Python is not installed, which however otherwise is not needed for RustDesk.
+
+The commit includes an indentation fix and trailing space removal.
+
+Signed-off-by: MichaIng <micha@dietpi.com>'>packaging: deb: remove obsolete Python version check ( />
+	[156] (597,822)<a class='issue-link js-issue-link' href='https://github.com/rustdesk/rustdesk/pull/14429'>#14429 />
+	)
+[157] (392,871)<tr  />
+	[158] (114,871)<a aria-label='src, (Directory)' class='Link--primary' href='/rustdesk/rustdesk/tree/master/src' title='src'>src />
+	[159] (462,871)<a class='Link--secondary' href='/rustdesk/rustdesk/commit/016a0b11416fb70dc13e621e690819ea5828d2df' title='fix strategy cannot apply over default advanced options (#14502)
+
+Signed-off-by: 21pages <sunboeasy@gmail.com>'>fix strategy cannot apply over default advanced options ( />
+	[160] (600,871)<a class='issue-link js-issue-link' href='https://github.com/rustdesk/rustdesk/pull/14502'>#14502 />
+	)
+[161] (392,921)<tr  />
+	[162] (135,921)<a aria-label='.gitattributes, (File)' class='Link--primary' href='/rustdesk/rustdesk/blob/master/.gitattributes' title='.gitattributes'>.gitattributes />
+	[163] (367,921)<a class='Link--secondary' href='/rustdesk/rustdesk/commit/9d7dced7e770e303478b80514c718b8c3dc82030' title='.gitattributes'>.gitattributes />
+[164] (392,970)<tr  />
+	[165] (128,971)<a aria-label='.gitignore, (File)' class='Link--primary' href='/rustdesk/rustdesk/blob/master/.gitignore' title='.gitignore'>.gitignore />
+	feat: windows, custom client, update (
+	#13687
+	)
+About
+An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.
+[166] (779,394)<a class='text-bold' href='https://rustdesk.com' role='link' title='https://rustdesk.com'>rustdesk.com />
+Topics
+[167] (756,441)<a class='topic-tag topic-tag-link' href='/topics/android' title='Topic: android'>android />
+[168] (806,441)<a class='topic-tag topic-tag-link' href='/topics/windows' title='Topic: windows'>windows />
+[169] (853,441)<a class='topic-tag topic-tag-link' href='/topics/macos' title='Topic: macos'>macos />
+[170] (893,441)<a class='topic-tag topic-tag-link' href='/topics/linux' title='Topic: linux'>linux />
+[171] (749,475)<a class='topic-tag topic-tag-link' href='/topics/dart' title='Topic: dart'>dart />
+[172] (783,475)<a class='topic-tag topic-tag-link' href='/topics/rust' title='Topic: rust'>rust />
+[173] (814,475)<a class='topic-tag topic-tag-link' href='/topics/ios' title='Topic: ios'>ios />
+[174] (867,475)<a class='topic-tag topic-tag-link' href='/topics/remote-control' title='Topic: remote-control'>remote-control />
+[175] (748,509)<a class='topic-tag topic-tag-link' href='/topics/p2p' title='Topic: p2p'>p2p />
+[176] (796,509)<a class='topic-tag topic-tag-link' href='/topics/teamviewer' title='Topic: teamviewer'>teamviewer />
+[177] (854,509)<a class='topic-tag topic-tag-link' href='/topics/rust-lang' title='Topic: rust-lang'>rust-lang />
+[178] (896,509)<a class='topic-tag topic-tag-link' href='/topics/rdp' title='Topic: rdp'>rdp />
+[179] (771,543)<a class='topic-tag topic-tag-link' href='/topics/remote-desktop' title='Topic: remote-desktop'>remote-desktop />
+[180] (827,543)<a class='topic-tag topic-tag-link' href='/topics/vnc' title='Topic: vnc'>vnc />
+[181] (864,543)<a class='topic-tag topic-tag-link' href='/topics/flutter' title='Topic: flutter'>flutter />
+[182] (754,577)<a class='topic-tag topic-tag-link' href='/topics/flatpak' title='Topic: flatpak'>flatpak />
+[183] (801,577)<a class='topic-tag topic-tag-link' href='/topics/wayland' title='Topic: wayland'>wayland />
+[184] (858,577)<a class='topic-tag topic-tag-link' href='/topics/flutter-apps' title='Topic: flutter-apps'>flutter-apps />
+[185] (756,611)<a class='topic-tag topic-tag-link' href='/topics/anydesk' title='Topic: anydesk'>anydesk />
+Resources
+[186] (760,662)<a class='Link--muted' href='#readme-ov-file'>Readme />
+License
+[187] (778,697)<a class='Link--muted' href='#AGPL-3.0-1-ov-file'>AGPL-3.0 license />
+Code of conduct
+[188] (779,732)<a class='Link--muted' href='#coc-ov-file'>Code of conduct />
+Contributing
+[189] (770,768)<a class='Link--muted' href='#contributing-ov-file'>Contributing />
+Security policy
+[190] (774,803)<a class='Link--muted' href='#security-ov-file'>Security policy />
+[191] (759,838)<a class='Link Link--muted' href='/rustdesk/rustdesk/activity' />
+	[192] (768,838)<span >Activity />
+Stars
+[193] (764,873)<a class='Link Link--muted' href='/rustdesk/rustdesk/stargazers'>stars />
+	[194] (763,873)<strong >109k />
+Watchers
+[195] (772,908)<a class='Link Link--muted' href='/rustdesk/rustdesk/watchers'>watching />
+	[196] (761,908)<strong >562 />
+Forks
+[197] (766,943)<a class='Link Link--muted' href='/rustdesk/rustdesk/forks'>forks />
+	[198] (764,943)<strong >16.3k />
+[199] (771,978)<a class='Link--muted' href='/contact/report-content?content_url=https%3A%2F%2Fgithub.com%2Frustdesk%2Frustdesk&report=rustdesk+%28user%29'>Report repository />
+
+</current_dom>

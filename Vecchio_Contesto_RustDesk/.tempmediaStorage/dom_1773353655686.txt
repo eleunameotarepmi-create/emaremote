@@ -1,0 +1,136 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+Skip to content
+[0] (22,39)<button class='prc-Button-ButtonBase-9n-Xk styles-module__appHeaderButton__axedQ prc-Button-IconButton-fyge7' />
+[1] (53,39)<a class='prc-Button-ButtonBase-9n-Xk styles-module__appHeaderHome__nkA_U prc-Button-IconButton-fyge7' href='/' />
+[2] (129,39)<a class='styles-module__contextCrumb__IzGIq prc-Breadcrumbs-Item-jcraJ' href='/eleunameotarepmi-create' />
+	[3] (129,39)<span >eleunameotarepmi-create />
+[4] (234,39)<a class='styles-module__contextCrumb__IzGIq prc-Breadcrumbs-Item-jcraJ' href='/eleunameotarepmi-create/emaremote' />
+	[5] (229,39)<span >emaremote />
+[6] (689,39)<button aria-label='Search or jump to…' class='prc-Button-ButtonBase-9n-Xk styles-module__appHeaderButton__axedQ Search-module__searchButton__aiE0a' />
+	[7] (689,39)<span  />
+		[8] (697,39)<span >Type
+to search />
+			Type
+			/
+			to search
+[9] (770,39)<a class='prc-Button-ButtonBase-9n-Xk styles-module__appHeaderButton__axedQ prc-Button-IconButton-fyge7' href='/copilot' />
+[10] (790,39)<button aria-label='Open Copilot…' class='prc-Button-ButtonBase-9n-Xk styles-module__appHeaderButton__axedQ CopilotItems-module__CopilotMenu__DVdfE' id='_R_54jpb_' />
+[11] (833,39)<button class='prc-Button-ButtonBase-9n-Xk GlobalCreateMenu-module__actionMenuButton__Hj_iB' id='_R_5jpb_' />
+	[12] (827,39)<span  />
+[13] (867,39)<a class='prc-Button-ButtonBase-9n-Xk styles-module__appHeaderButton__axedQ prc-Button-IconButton-fyge7' href='/issues' />
+[14] (894,39)<a class='prc-Button-ButtonBase-9n-Xk styles-module__appHeaderButton__axedQ prc-Button-IconButton-fyge7' href='/pulls' />
+[15] (922,39)<a class='prc-Button-ButtonBase-9n-Xk styles-module__appHeaderButton__axedQ prc-Button-IconButton-fyge7' href='/repos' />
+[16] (950,39)<a class='prc-Button-ButtonBase-9n-Xk styles-module__appHeaderButton__axedQ prc-Button-IconButton-fyge7' href='/notifications' />
+[17] (978,39)<button class='prc-Button-ButtonBase-9n-Xk GlobalNavUserMenu-module__anchor__Dcej6 prc-Button-IconButton-fyge7' />
+	[18] (978,39)<img  />
+Repository navigation
+[19] (36,92)<a class='prc-components-UnderlineItem-7fP-n' href='/eleunameotarepmi-create/emaremote' />
+	[20] (22,92)<span  />
+	[21] (45,92)<span >Code />
+[22] (109,92)<a class='prc-components-UnderlineItem-7fP-n' href='/eleunameotarepmi-create/emaremote/pulls' />
+	[23] (78,92)<span  />
+	[24] (118,92)<span >Pull requests />
+[25] (187,92)<a class='prc-components-UnderlineItem-7fP-n' href='/eleunameotarepmi-create/emaremote/actions' />
+	[26] (168,92)<span  />
+	[27] (196,92)<span >Actions />
+[28] (255,92)<a class='prc-components-UnderlineItem-7fP-n' href='/eleunameotarepmi-create/emaremote/projects' />
+	[29] (234,92)<span  />
+	[30] (263,92)<span >Projects />
+[31] (315,92)<a class='prc-components-UnderlineItem-7fP-n' href='/eleunameotarepmi-create/emaremote/wiki' />
+	[32] (303,92)<span  />
+	[33] (324,92)<span >Wiki />
+[34] (376,92)<a class='prc-components-UnderlineItem-7fP-n' href='/eleunameotarepmi-create/emaremote/security' />
+	[35] (356,92)<span  />
+	[36] (384,92)<span >Security />
+[37] (444,92)<a class='prc-components-UnderlineItem-7fP-n' href='/eleunameotarepmi-create/emaremote/pulse' />
+	[38] (424,92)<span  />
+	[39] (452,92)<span >Insights />
+[40] (513,92)<a class='prc-components-UnderlineItem-7fP-n' href='/eleunameotarepmi-create/emaremote/settings' />
+	[41] (492,92)<span  />
+	[42] (521,92)<span >Settings />
+Actions: eleunameotarepmi-create/emaremote
+Actions
+[43] (188,164)<a class='Button--primary Button--small Button' href='/eleunameotarepmi-create/emaremote/actions/new' />
+	[44] (188,164)<span  />
+		[45] (188,164)<span >New workflow />
+[46] (116,212)<a class='ActionListContent' href='/eleunameotarepmi-create/emaremote/actions' id='item-54653876-3264-43aa-8c8b-716a4298f89f' />
+	[47] (116,212)<span >All workflows />
+[48] (106,271)<a class='ActionListContent' href='/eleunameotarepmi-create/emaremote/actions/workflows/bridge.yml' id='item-efbb142b-f087-4c7d-828d-e7f049d04371' />
+	[49] (106,271)<span >Build flutter-rust-bridge />
+[50] (211,271)<button aria-label='Pin Build flutter-rust-bridge' class='Button Button--iconOnly Button--invisible Button--medium actions-pin-button' id='icon-button-f88d0310-f448-4e98-90ea-87101d74c98e' />
+[51] (106,311)<a class='ActionListContent' href='/eleunameotarepmi-create/emaremote/actions/workflows/third-party-RustDeskTempTopMostWindow.yml' id='item-e9ccabc0-3c17-4658-8d6a-251e35af4a6c' />
+	[52] (106,311)<span >build RustDeskTempTopMostWindow />
+[53] (211,311)<button aria-label='Pin build RustDeskTempTopMostWindow' class='Button Button--iconOnly Button--invisible Button--medium actions-pin-button' id='icon-button-5e72afea-0ec0-423d-b72a-c6d42c4f88a6' />
+[54] (106,351)<a class='ActionListContent' href='/eleunameotarepmi-create/emaremote/actions/workflows/flutter-build.yml' id='item-28bbe278-3988-4a8c-bf11-a322300769a8' />
+	[55] (106,351)<span >Build the flutter version of the RustDesk />
+[56] (211,351)<button aria-label='Pin Build the flutter version of the RustDesk' class='Button Button--iconOnly Button--invisible Button--medium actions-pin-button' id='icon-button-eff7c843-3335-4fff-b37d-09ea3d0cc3f3' />
+[57] (106,391)<a class='ActionListContent' href='/eleunameotarepmi-create/emaremote/actions/workflows/ci.yml' id='item-595b6c8b-7042-4b44-8899-1dca920c0a57' />
+	[58] (106,391)<span >CI />
+[59] (211,391)<button aria-label='Pin CI' class='Button Button--iconOnly Button--invisible Button--medium actions-pin-button' id='icon-button-dbdfd2bd-72f2-4b15-b983-597ea7af4bac' />
+[60] (106,431)<a class='ActionListContent' href='/eleunameotarepmi-create/emaremote/actions/workflows/clear-cache.yml' id='item-95967e72-ac43-4327-a306-6f5b3551152c' />
+	[61] (106,431)<span >Clear cache />
+[62] (211,431)<button aria-label='Pin Clear cache' class='Button Button--iconOnly Button--invisible Button--medium actions-pin-button' id='icon-button-275d3287-6ce7-4d26-96a5-f451db0e7042' />
+[63] (106,471)<a class='ActionListContent' href='/eleunameotarepmi-create/emaremote/actions/workflows/emaremote-build.yml' id='item-5dd27104-434f-4ae3-858a-ef1b447093c2' />
+	[64] (106,471)<span >EmaRemote Android Build />
+[65] (211,471)<button aria-label='Pin EmaRemote Android Build' class='Button Button--iconOnly Button--invisible Button--medium actions-pin-button' id='icon-button-02c7b695-8340-44b0-96fa-1d4d7c8a8ded' />
+[66] (106,511)<a class='ActionListContent' href='/eleunameotarepmi-create/emaremote/actions/workflows/fdroid.yml' id='item-94028083-5f22-46d7-89da-996767e9a9e4' />
+	[67] (106,511)<span >Fdroid version file generation />
+[68] (211,511)<button aria-label='Pin Fdroid version file generation' class='Button Button--iconOnly Button--invisible Button--medium actions-pin-button' id='icon-button-cd4e8fd9-c25d-4f61-a55c-cd4ab78de46f' />
+[69] (106,551)<a class='ActionListContent' href='/eleunameotarepmi-create/emaremote/actions/workflows/flutter-nightly.yml' id='item-b6c33210-8b23-4114-a199-08ec7ac0aa8e' />
+	[70] (106,551)<span >Flutter Nightly Build />
+[71] (211,551)<button aria-label='Pin Flutter Nightly Build' class='Button Button--iconOnly Button--invisible Button--medium actions-pin-button' id='icon-button-6ad34c55-56de-4fe8-8a48-4be3b384f794' />
+[72] (106,591)<a class='ActionListContent' href='/eleunameotarepmi-create/emaremote/actions/workflows/flutter-tag.yml' id='item-661abc12-f05e-45d7-888a-4bb3f36dc48f' />
+	[73] (106,591)<span >Flutter Tag Build />
+[74] (211,591)<button aria-label='Pin Flutter Tag Build' class='Button Button--iconOnly Button--invisible Button--medium actions-pin-button' id='icon-button-93820b72-fd1a-4584-aef0-e9aa7447ddf3' />
+[75] (106,631)<a class='ActionListContent' href='/eleunameotarepmi-create/emaremote/actions/workflows/flutter-ci.yml' id='item-701f25f3-74ba-4673-a9da-3b8f5a2f1258' />
+	[76] (106,631)<span >Full Flutter CI />
+[77] (211,631)<button aria-label='Pin Full Flutter CI' class='Button Button--iconOnly Button--invisible Button--medium actions-pin-button' id='icon-button-75c00e64-14d5-4e0a-94eb-68534a443141' />
+[78] (116,671)<button class='ActionListContent' id='item-44abc5f3-d3d2-4bb7-b080-841550303867' />
+	[79] (116,671)<span  />
+		[80] (67,671)<span >Show more workflows... />
+Management
+[81] (116,768)<a class='ActionListContent ActionListContent--visual16' href='/eleunameotarepmi-create/emaremote/actions/caches' id='item-95142896-3ceb-458c-8686-aff152c7fb5e' />
+	[82] (125,768)<span >Caches />
+[83] (116,808)<a class='ActionListContent ActionListContent--visual16' href='/eleunameotarepmi-create/emaremote/attestations' id='item-443532ea-b3c2-4a7d-bb6b-da11ff67ade3' />
+	[84] (116,808)<span >Attestations />
+[85] (116,848)<a class='ActionListContent ActionListContent--visual16' href='/eleunameotarepmi-create/emaremote/actions/runners' id='item-afbef8cb-231a-41ca-98c8-1d515fdb6569' />
+	[86] (125,848)<span >Runners />
+[87] (116,888)<a class='ActionListContent ActionListContent--visual16' href='/eleunameotarepmi-create/emaremote/actions/metrics/usage' id='item-5f991bb2-01ae-4db8-ade0-4d32f23e70c1' />
+	[88] (116,888)<span >Usage metrics />
+[89] (116,928)<a class='ActionListContent ActionListContent--visual16' href='/eleunameotarepmi-create/emaremote/actions/metrics/performance' id='item-b3885f00-cedc-4e52-803a-19161196a7ea' />
+	[90] (116,928)<span >Performance metrics />
+EmaRemote Android Build
+[91] (851,160)<input aria-label='Filter workflow runs' class='form-control subnav-search-input width-full f5 tmp-pr-5 flex-auto js-navigation-enable actions-tab-filter-input' placeholder='Filter workflow runs' role='combobox' />
+[92] (972,160)<button class='Button Button--iconOnly Button--secondary Button--medium' id='action-menu-689f6d7f-dc69-415c-8214-755a08321502-button' />
+[93] (296,192)<a class='Link' href='/eleunameotarepmi-create/emaremote/blob/master/.github/workflows/emaremote-build.yml'>emaremote-build.yml />
+Help us improve GitHub Actions
+Tell us how to make GitHub Actions work better for you with three quick questions.
+[94] (904,279)<button class='prc-Button-ButtonBase-9n-Xk Button__StyledButtonComponent-sc-vqy3e4-0 idnrwQ' />
+	[95] (904,279)<span  />
+		[96] (904,279)<span >Give feedback />
+[97] (960,279)<button aria-label='Close GrowthBanner' class='prc-Button-ButtonBase-9n-Xk IconButton__StyledIconButton-sc-i53dt6-0 jWzaAj prc-Button-IconButton-fyge7' />
+0 workflow runs
+[98] (779,384)<button class='Button--invisible Button--medium Button color-fg-muted text-normal' id='actions_events_filter-button' />
+	[99] (774,384)<span  />
+		[100] (774,384)<span >Event />
+[101] (833,384)<button class='Button--invisible Button--medium Button color-fg-muted text-normal' id='actions_status_filter-button' />
+	[102] (828,384)<span  />
+		[103] (828,384)<span >Status />
+[104] (890,384)<button class='Button--invisible Button--medium Button color-fg-muted text-normal' id='actions_branch_filter-button' />
+	[105] (884,384)<span  />
+		[106] (884,384)<span >Branch />
+[107] (945,384)<button class='Button--invisible Button--medium Button color-fg-muted text-normal' id='actions_actors_filter-button' />
+	[108] (940,384)<span  />
+		[109] (940,384)<span >Actor />
+This workflow has a
+workflow_dispatch
+event trigger.
+[110] (931,462)<details class='js-dropdown-details details-overlay position-relative details-reset d-inline-block flash-action width-fit' />
+	[111] (931,462)<summary class='primary btn-sm btn'>Run workflow />
+		[112] (960,464)<div  />
+This workflow has no runs yet.
+
+</current_dom>

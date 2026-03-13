@@ -1,0 +1,13 @@
+# Task: Trigger GitHub Actions Workflow for EmaRemote
+
+## Plan
+1. [ ] Navigate to the GitHub Actions workflow page.
+2. [ ] Trigger the "EmaRemote Android Build" workflow.
+3. [ ] Verify that the workflow has started.
+4. [ ] Retrieve the run URL.
+
+## Progress
+- [ ] Navigated to workflow page
+- [ ] Clicked "Run workflow"
+- [ ] Confirmed trigger
+- [ ] Captured run URL

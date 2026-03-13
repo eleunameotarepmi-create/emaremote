@@ -1,0 +1,6 @@
+{
+  "artifactType": "ARTIFACT_TYPE_TASK",
+  "summary": "Task checklist tracking RustDesk server deploy, client downloads, landing page, Nginx, SSL, and DNS setup for the EmaRemote project.",
+  "updatedAt": "2026-03-12T19:24:28.597800800Z",
+  "version": "2"
+}

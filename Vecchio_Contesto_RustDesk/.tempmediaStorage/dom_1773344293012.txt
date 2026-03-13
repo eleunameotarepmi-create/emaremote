@@ -1,0 +1,8 @@
+dash.cloudflare.com
+Esecuzione della verifica di sicurezza
+Questo sito web utilizza un servizio di sicurezza per la protezione dai bot dannosi. Questa è la pagina che viene visualizzata durante la verifica del sito web.
+Ray ID:
+9db541a7faf24c52
+Prestazioni e sicurezza di
+Cloudflare
+Privacy

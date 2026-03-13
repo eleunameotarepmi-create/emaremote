@@ -1,0 +1,31 @@
+# EmaRemote — Task List
+
+## Fase 1 — RustDesk Server
+- [ ] Creare `/srv/apps/rustdesk/data`
+- [ ] Creare `docker-compose.yml`
+- [ ] Aprire porte UFW (21115-21119)
+- [ ] Avviare container hbbs + hbbr
+- [ ] Recuperare chiave pubblica
+
+## Fase 2 — Build APK EmaRemote
+- [ ] Installare build tools su Hetzner (Rust, Flutter, Android SDK/NDK)
+- [ ] Clonare RustDesk
+- [ ] Applicare branding (nome, icona, package, server preconfigurato)
+- [ ] Compilare APK
+- [ ] Copiare APK in downloads
+- [ ] Cleanup build tools
+
+## Fase 3 — Landing Page
+- [ ] Creare pagina HTML/CSS premium
+- [ ] Deploy su `/srv/apps/rustdesk-landing/dist/`
+
+## Fase 4 — Nginx + SSL + DNS
+- [ ] Creare config Nginx per `rustdesk.emaandema.com`
+- [ ] Certbot SSL
+- [ ] Configurare DNS Cloudflare (record A)
+
+## Verifiche finali
+- [ ] Container RustDesk running
+- [ ] Landing page accessibile
+- [ ] Download APK funzionante
+- [ ] Ianua Vini ancora funzionante

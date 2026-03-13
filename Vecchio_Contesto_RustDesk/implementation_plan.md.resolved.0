@@ -1,0 +1,118 @@
+# RustDesk Server + Landing Page su Hetzner
+
+Deploy del server RustDesk e creazione di una landing page con download client su `rustdesk.emaandema.com`.
+
+## User Review Required
+
+> [!IMPORTANT]
+> **DNS Cloudflare**: Serve un record A `rustdesk` → `91.98.66.127` con proxy **DNS only** (grigio). Questo va fatto manualmente su Cloudflare. Lo fai tu o vuoi che ti guido passo passo?
+
+> [!WARNING]
+> I file APK/EXE/DMG pesano ~200MB totali. Verranno scaricati direttamente sul server (139GB liberi, zero problemi).
+
+---
+
+## Proposed Changes
+
+### Fase 1 — RustDesk Server (Docker)
+
+Creazione directory e avvio container. **Zero impatto su Ianua Vini.**
+
+#### [NEW] `/srv/apps/rustdesk/docker-compose.yml`
+
+Docker compose con due servizi:
+- `hbbs` — ID/Rendezvous server (porte 21115-21116, 21118)
+- `hbbr` — Relay server (porte 21117, 21119)
+- `network_mode: host` (Linux, performance migliore)
+- Volume `./data:/root` per persistenza chiavi e DB
+
+#### Firewall UFW
+
+Apertura porte: 21115/tcp, 21116/tcp, 21116/udp, 21117/tcp, 21118/tcp, 21119/tcp
+
+---
+
+### Fase 2 — Download client sul server
+
+Scarico i file ufficiali RustDesk v1.4.6 dal GitHub nella cartella `/srv/apps/rustdesk-landing/downloads/`:
+
+| File | Piattaforma | Peso |
+|------|------------|------|
+| `rustdesk-1.4.6-x86_64.exe` | Windows (64-bit) | ~24 MB |
+| `rustdesk-1.4.6-x86_64.dmg` | Mac Intel | ~32 MB |
+| `rustdesk-1.4.6-aarch64.dmg` | Mac Apple Silicon | ~26 MB |
+| `rustdesk-1.4.6-universal-signed.apk` | Android (tutti) | ~71 MB |
+
+iOS → link diretto App Store (non serve hostare file).
+
+---
+
+### Fase 3 — Landing Page
+
+#### [NEW] `/srv/apps/rustdesk-landing/dist/index.html`
+
+Pagina HTML statica con:
+- **Hero section** con branding e nome (che nome/logo vuoi?)
+- **4 card download** — Windows, Mac, Android, iOS (App Store link)
+- **Sezione configurazione** con istruzioni + IP server e chiave pubblica pre-compilati
+- **Design premium** — dark theme, glassmorphism, animazioni micro
+
+#### [NEW] `/srv/apps/rustdesk-landing/dist/style.css`
+
+Stili della landing page.
+
+---
+
+### Fase 4 — Nginx + SSL
+
+#### [NEW] `/etc/nginx/sites-available/rustdesk-landing`
+
+Config Nginx per `rustdesk.emaandema.com`:
+- Root: `/srv/apps/rustdesk-landing/dist/`
+- Location `/downloads/` → servire i file APK/EXE/DMG
+- SSL via Certbot (Let's Encrypt)
+- Redirect HTTP→HTTPS
+
+---
+
+## Struttura finale server
+
+```
+/srv/apps/
+  ├── ianua-vini/              ← INTATTO
+  ├── rustdesk/                ← Server RustDesk
+  │     ├── docker-compose.yml
+  │     └── data/
+  │         ├── id_ed25519
+  │         ├── id_ed25519.pub
+  │         └── db_v2.sqlite3
+  └── rustdesk-landing/        ← Landing page
+        ├── dist/
+        │   ├── index.html
+        │   └── style.css
+        └── downloads/
+            ├── rustdesk-1.4.6-x86_64.exe
+            ├── rustdesk-1.4.6-x86_64.dmg
+            ├── rustdesk-1.4.6-aarch64.dmg
+            └── rustdesk-1.4.6-universal-signed.apk
+```
+
+---
+
+## Verification Plan
+
+### Test automatici (via SSH)
+
+1. **Container running**: `docker ps --filter name=hbb` → devono apparire `hbbs` e `hbbr` con status `Up`
+2. **Porte aperte**: `ss -tlnp | grep 2111` → porte 21115-21119 in ascolto
+3. **Chiave generata**: `cat /srv/apps/rustdesk/data/id_ed25519.pub` → deve restituire una stringa
+4. **Nginx config valida**: `nginx -t` → `syntax is ok`
+5. **Landing page risponde**: `curl -s -o /dev/null -w '%{http_code}' https://rustdesk.emaandema.com` → `200`
+6. **Download funziona**: `curl -sI https://rustdesk.emaandema.com/downloads/rustdesk-1.4.6-x86_64.exe | head -5` → `200 OK`
+7. **Ianua Vini intatto**: `curl -s -o /dev/null -w '%{http_code}' https://ianuavini.emaandema.com` → `200`
+
+### Test manuali
+
+1. Apri `https://rustdesk.emaandema.com` dal browser → vedi la landing page con i pulsanti download
+2. Clicca su un pulsante download → il file si scarica
+3. (Opzionale) Installa il client su un dispositivo, inserisci IP + key, verifica che si connette

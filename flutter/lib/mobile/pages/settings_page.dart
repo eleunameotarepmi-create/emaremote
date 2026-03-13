@@ -721,6 +721,34 @@ class _SettingsState extends State<SettingsPage> with WidgetsBindingObserver {
                     setState(callback);
                   });
                 }),
+          if (!disabledSettings && !_hideNetwork && !_hideServer)
+            SettingsTile(
+                title: Text('Server Admin Panel'),
+                leading: Icon(Icons.admin_panel_settings),
+                onPressed: (context) async {
+                  Map<String, dynamic> options = {};
+                  try {
+                    options = jsonDecode(await bind.mainGetOptions());
+                  } catch (e) {
+                    debugPrint("Failed to read options: $e");
+                  }
+                  final idServer = options['custom-rendezvous-server'] ?? '';
+                  if (idServer.isEmpty) {
+                    showToast('Nessun server configurato');
+                    return;
+                  }
+                  // Strip any existing port from the server address
+                  final host = idServer.contains(':')
+                      ? idServer.split(':').first
+                      : idServer;
+                  final adminUrl = 'http://$host:21114';
+                  try {
+                    await launchUrl(Uri.parse(adminUrl),
+                        mode: LaunchMode.externalApplication);
+                  } catch (e) {
+                    showToast('Impossibile aprire $adminUrl');
+                  }
+                }),
           if (!_hideNetwork && !_hideProxy)
             SettingsTile(
                 title: Text(translate('Socks5/Http(s) Proxy')),

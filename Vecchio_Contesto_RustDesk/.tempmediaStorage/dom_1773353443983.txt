@@ -1,0 +1,503 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+Skip to content
+[0] (22,39)<button class='prc-Button-ButtonBase-9n-Xk styles-module__appHeaderButton__axedQ prc-Button-IconButton-fyge7' />
+[1] (53,39)<a class='prc-Button-ButtonBase-9n-Xk styles-module__appHeaderHome__nkA_U prc-Button-IconButton-fyge7' href='/' />
+[2] (129,39)<a class='styles-module__contextCrumb__IzGIq prc-Breadcrumbs-Item-jcraJ' href='/eleunameotarepmi-create' />
+	[3] (129,39)<span >eleunameotarepmi-create />
+[4] (234,39)<a class='styles-module__contextCrumb__IzGIq prc-Breadcrumbs-Item-jcraJ' href='/eleunameotarepmi-create/emaremote' />
+	[5] (229,39)<span >emaremote />
+[6] (689,39)<button aria-label='Search or jump to…' class='prc-Button-ButtonBase-9n-Xk styles-module__appHeaderButton__axedQ Search-module__searchButton__aiE0a' />
+	[7] (689,39)<span  />
+		[8] (697,39)<span >Type
+to search />
+			Type
+			/
+			to search
+[9] (770,39)<a class='prc-Button-ButtonBase-9n-Xk styles-module__appHeaderButton__axedQ prc-Button-IconButton-fyge7' href='/copilot' />
+[10] (790,39)<button aria-label='Open Copilot…' class='prc-Button-ButtonBase-9n-Xk styles-module__appHeaderButton__axedQ CopilotItems-module__CopilotMenu__DVdfE' id='_R_54jpb_' />
+[11] (833,39)<button class='prc-Button-ButtonBase-9n-Xk GlobalCreateMenu-module__actionMenuButton__Hj_iB' id='_R_5jpb_' />
+	[12] (827,39)<span  />
+[13] (867,39)<a class='prc-Button-ButtonBase-9n-Xk styles-module__appHeaderButton__axedQ prc-Button-IconButton-fyge7' href='/issues' />
+[14] (894,39)<a class='prc-Button-ButtonBase-9n-Xk styles-module__appHeaderButton__axedQ prc-Button-IconButton-fyge7' href='/pulls' />
+[15] (922,39)<a class='prc-Button-ButtonBase-9n-Xk styles-module__appHeaderButton__axedQ prc-Button-IconButton-fyge7' href='/repos' />
+[16] (950,39)<a class='prc-Button-ButtonBase-9n-Xk styles-module__appHeaderButton__axedQ prc-Button-IconButton-fyge7' href='/notifications' />
+[17] (978,39)<button class='prc-Button-ButtonBase-9n-Xk GlobalNavUserMenu-module__anchor__Dcej6 prc-Button-IconButton-fyge7' />
+	[18] (978,39)<img  />
+Repository navigation
+[19] (36,92)<a class='prc-components-UnderlineItem-7fP-n' href='/eleunameotarepmi-create/emaremote' />
+	[20] (22,92)<span  />
+	[21] (45,92)<span >Code />
+[22] (109,92)<a class='prc-components-UnderlineItem-7fP-n' href='/eleunameotarepmi-create/emaremote/pulls' />
+	[23] (78,92)<span  />
+	[24] (118,92)<span >Pull requests />
+[25] (187,92)<a class='prc-components-UnderlineItem-7fP-n' href='/eleunameotarepmi-create/emaremote/actions' />
+	[26] (168,92)<span  />
+	[27] (196,92)<span >Actions />
+[28] (255,92)<a class='prc-components-UnderlineItem-7fP-n' href='/eleunameotarepmi-create/emaremote/projects' />
+	[29] (234,92)<span  />
+	[30] (263,92)<span >Projects />
+[31] (315,92)<a class='prc-components-UnderlineItem-7fP-n' href='/eleunameotarepmi-create/emaremote/wiki' />
+	[32] (303,92)<span  />
+	[33] (324,92)<span >Wiki />
+[34] (376,92)<a class='prc-components-UnderlineItem-7fP-n' href='/eleunameotarepmi-create/emaremote/security' />
+	[35] (356,92)<span  />
+	[36] (384,92)<span >Security />
+[37] (444,92)<a class='prc-components-UnderlineItem-7fP-n' href='/eleunameotarepmi-create/emaremote/pulse' />
+	[38] (424,92)<span  />
+	[39] (452,92)<span >Insights />
+[40] (513,92)<a class='prc-components-UnderlineItem-7fP-n' href='/eleunameotarepmi-create/emaremote/settings' />
+	[41] (492,92)<span  />
+	[42] (521,92)<span >Settings />
+[43] (22,160)<button class='prc-Button-ButtonBase-9n-Xk position-relative ExpandFileTreeButton-module__expandButton__hDOcv fgColor-muted prc-Button-IconButton-fyge7' />
+Files
+[44] (86,218)<button aria-label='master branch' class='prc-Button-ButtonBase-9n-Xk react-repos-tree-pane-ref-selector width-full ref-selector-class RefSelectorAnchoredOverlay-module__RefSelectorOverlayBtn__a3WK3' id='ref-picker-repos-header-ref-selector' />
+	[45] (86,218)<span  />
+		[46] (78,218)<span  />
+			[47] (78,218)<div  />
+				[48] (26,218)<div  />
+				[49] (50,218)<div  />
+					[50] (50,218)<span >master />
+[51] (178,218)<a class='prc-Button-ButtonBase-9n-Xk ReposFileTreePane-module__IconButton__rGggU prc-Button-IconButton-fyge7' href='/eleunameotarepmi-create/emaremote/new/master/.github/workflows' />
+[52] (200,218)<button class='prc-Button-ButtonBase-9n-Xk SearchButton-module__IconButton__SBlqu ReposFileTreePane-module__SearchButtonWithLeftBorder__TBrDc prc-Button-IconButton-fyge7' />
+[53] (111,267)<span  />
+	[54] (23,267)<span  />
+	[55] (111,267)<input aria-label='Go to file' class='prc-components-Input-IwWrt' placeholder='Go to file' role='combobox' />
+	[56] (199,267)<span  />
+		[57] (199,268)<kbd >t />
+[58] (111,711)<div class='ReposFileTreePane-module__Box_5__Zy_o6' scrollable='true' />
+	[59] (106,320)<li class='PRIVATE_TreeView-item prc-TreeView-TreeViewItem-Ter5f' id='.cargo-item' role='treeitem' />
+		[60] (106,320)<div  />
+			[61] (17,320)<div  />
+			[62] (111,320)<div  />
+				[63] (33,320)<div  />
+					[64] (33,320)<div  />
+				[65] (120,320)<span  />
+					[66] (58,320)<span >.cargo />
+	[67] (106,691)<li class='PRIVATE_TreeView-item prc-TreeView-TreeViewItem-Ter5f' id='.github-item' role='treeitem' />
+		[68] (106,359)<div  />
+			[69] (17,359)<div  />
+			[70] (111,359)<div  />
+				[71] (33,359)<div  />
+					[72] (33,359)<div  />
+				[73] (120,359)<span  />
+					[74] (60,359)<span >.github />
+		[75] (106,398)<li class='PRIVATE_TreeView-item prc-TreeView-TreeViewItem-Ter5f' id='.github/ISSUE_TEMPLATE-item' role='treeitem' />
+			[76] (106,398)<div  />
+				[77] (14,398)<div  />
+					[78] (14,398)<div  />
+						[79] (14,398)<div  />
+				[80] (22,398)<div  />
+				[81] (114,398)<div  />
+					[82] (39,398)<div  />
+						[83] (39,398)<div  />
+					[84] (123,398)<span  />
+						[85] (87,398)<span >ISSUE_TEMPLATE />
+		[86] (106,437)<li class='PRIVATE_TreeView-item prc-TreeView-TreeViewItem-Ter5f' id='.github/patches-item' role='treeitem' />
+			[87] (106,437)<div  />
+				[88] (14,437)<div  />
+					[89] (14,437)<div  />
+						[90] (14,437)<div  />
+				[91] (22,437)<div  />
+				[92] (114,437)<div  />
+					[93] (39,437)<div  />
+						[94] (39,437)<div  />
+					[95] (123,437)<span  />
+						[96] (67,437)<span >patches />
+		[97] (106,710)<li class='PRIVATE_TreeView-item prc-TreeView-TreeViewItem-Ter5f' id='.github/workflows-item' role='treeitem' />
+			[98] (106,476)<div  />
+				[99] (14,476)<div  />
+					[100] (14,476)<div  />
+						[101] (14,476)<div  />
+				[102] (22,476)<div  />
+				[103] (114,476)<div  />
+					[104] (39,476)<div  />
+						[105] (39,476)<div  />
+					[106] (123,476)<span  />
+						[107] (72,476)<span >workflows />
+			[108] (106,515)<li class='PRIVATE_TreeView-item prc-TreeView-TreeViewItem-Ter5f' id='.github/workflows/bridge.yml-item' role='treeitem' />
+				[109] (106,515)<div  />
+					[110] (17,515)<div  />
+						[111] (17,515)<div  />
+							[112] (14,515)<div  />
+							[113] (19,515)<div  />
+					[114] (117,515)<div  />
+						[115] (44,515)<div  />
+						[116] (125,515)<span  />
+							[117] (78,515)<span >bridge.yml />
+			[118] (106,554)<li class='PRIVATE_TreeView-item prc-TreeView-TreeViewItem-Ter5f' id='.github/workflows/ci.yml-item' role='treeitem' />
+				[119] (106,554)<div  />
+					[120] (17,554)<div  />
+						[121] (17,554)<div  />
+							[122] (14,554)<div  />
+							[123] (19,554)<div  />
+					[124] (117,554)<div  />
+						[125] (44,554)<div  />
+						[126] (125,554)<span  />
+							[127] (68,554)<span >ci.yml />
+			[128] (106,593)<li class='PRIVATE_TreeView-item prc-TreeView-TreeViewItem-Ter5f' id='.github/workflows/clear-cache.yml-item' role='treeitem' />
+				[129] (106,593)<div  />
+					[130] (17,593)<div  />
+						[131] (17,593)<div  />
+							[132] (14,593)<div  />
+							[133] (19,593)<div  />
+					[134] (117,593)<div  />
+						[135] (44,593)<div  />
+						[136] (125,593)<span  />
+							[137] (89,593)<span >clear-cache.yml />
+			[138] (106,632)<li class='PRIVATE_TreeView-item prc-TreeView-TreeViewItem-Ter5f' id='.github/workflows/emaremote-build.yml-item' role='treeitem' />
+				[139] (106,632)<div  />
+					[140] (17,632)<div  />
+						[141] (17,632)<div  />
+							[142] (14,632)<div  />
+							[143] (19,632)<div  />
+					[144] (117,632)<div  />
+						[145] (44,632)<div  />
+						[146] (125,632)<span  />
+							[147] (102,632)<span >emaremote-build.yml />
+			[148] (106,671)<li class='PRIVATE_TreeView-item prc-TreeView-TreeViewItem-Ter5f' id='.github/workflows/fdroid.yml-item' role='treeitem' />
+				[149] (106,671)<div  />
+					[150] (17,671)<div  />
+						[151] (17,671)<div  />
+							[152] (14,671)<div  />
+							[153] (19,671)<div  />
+					[154] (117,671)<div  />
+						[155] (44,671)<div  />
+						[156] (125,671)<span  />
+							[157] (77,671)<span >fdroid.yml />
+			[158] (106,710)<li class='PRIVATE_TreeView-item prc-TreeView-TreeViewItem-Ter5f' id='.github/workflows/flutter-build.yml-item' role='treeitem' />
+				[159] (106,710)<div  />
+					[160] (17,710)<div  />
+						[161] (17,710)<div  />
+							[162] (14,710)<div  />
+							[163] (19,710)<div  />
+					[164] (117,710)<div  />
+						[165] (44,710)<div  />
+						[166] (125,710)<span  />
+							[167] (90,710)<span >flutter-build.yml />
+			[168] (106,749)<li class='PRIVATE_TreeView-item prc-TreeView-TreeViewItem-Ter5f' id='.github/workflows/flutter-ci.yml-item' role='treeitem' />
+				[169] (106,749)<div  />
+					[170] (17,749)<div  />
+						[171] (17,749)<div  />
+							[172] (14,749)<div  />
+							[173] (19,749)<div  />
+					[174] (117,749)<div  />
+						[175] (44,749)<div  />
+						[176] (125,749)<span  />
+							[177] (83,749)<span >flutter-ci.yml />
+			[178] (106,788)<li class='PRIVATE_TreeView-item prc-TreeView-TreeViewItem-Ter5f' id='.github/workflows/flutter-nightly.yml-item' role='treeitem' />
+				[179] (106,788)<div  />
+					[180] (17,788)<div  />
+						[181] (17,788)<div  />
+							[182] (14,788)<div  />
+							[183] (19,788)<div  />
+					[184] (117,788)<div  />
+						[185] (44,788)<div  />
+						[186] (125,788)<span  />
+							[187] (94,788)<span >flutter-nightly.yml />
+			[188] (106,827)<li class='PRIVATE_TreeView-item prc-TreeView-TreeViewItem-Ter5f' id='.github/workflows/flutter-tag.yml-item' role='treeitem' />
+				[189] (106,827)<div  />
+					[190] (17,827)<div  />
+						[191] (17,827)<div  />
+							[192] (14,827)<div  />
+							[193] (19,827)<div  />
+					[194] (117,827)<div  />
+						[195] (44,827)<div  />
+						[196] (125,827)<span  />
+							[197] (86,827)<span >flutter-tag.yml />
+			[198] (106,866)<li class='PRIVATE_TreeView-item prc-TreeView-TreeViewItem-Ter5f' id='.github/workflows/playground.yml-item' role='treeitem' />
+				[199] (106,866)<div  />
+					[200] (17,866)<div  />
+						[201] (17,866)<div  />
+							[202] (14,866)<div  />
+							[203] (19,866)<div  />
+					[204] (117,866)<div  />
+						[205] (44,866)<div  />
+						[206] (125,866)<span  />
+							[207] (89,866)<span >playground.yml />
+			[208] (106,905)<li class='PRIVATE_TreeView-item prc-TreeView-TreeViewItem-Ter5f' id='.github/workflows/third-party-RustDeskTempTopMostWindow.yml-item' role='treeitem' />
+				[209] (106,905)<div  />
+					[210] (17,905)<div  />
+						[211] (17,905)<div  />
+							[212] (14,905)<div  />
+							[213] (19,905)<div  />
+					[214] (117,905)<div  />
+						[215] (44,905)<div  />
+						[216] (125,905)<span  />
+							[217] (157,905)<span >third-party-RustDeskTempTopMostWindow.yml />
+			[218] (106,944)<li class='PRIVATE_TreeView-item prc-TreeView-TreeViewItem-Ter5f' id='.github/workflows/winget.yml-item' role='treeitem' />
+				[219] (106,944)<div  />
+					[220] (17,944)<div  />
+						[221] (17,944)<div  />
+							[222] (14,944)<div  />
+							[223] (19,944)<div  />
+					[224] (117,944)<div  />
+						[225] (44,944)<div  />
+						[226] (125,944)<span  />
+							[227] (79,944)<span >winget.yml />
+		[228] (106,983)<li class='PRIVATE_TreeView-item prc-TreeView-TreeViewItem-Ter5f' id='.github/FUNDING.yml-item' role='treeitem' />
+			[229] (106,983)<div  />
+				[230] (14,983)<div  />
+					[231] (14,983)<div  />
+						[232] (14,983)<div  />
+				[233] (114,983)<div  />
+					[234] (39,983)<div  />
+					[235] (123,983)<span  />
+						[236] (80,983)<span >FUNDING.yml />
+[237] (223,621)<div aria-label='Draggable pane splitter' class='prc-PageLayout-DraggableHandle-9s6B4' role='slider' />
+Breadcrumbs
+[238] (263,160)<a class='Breadcrumb-module__repoLink__O2Nbs prc-Link-Link-9ZwDx' href='/eleunameotarepmi-create/emaremote/tree/master'>emaremote />
+/
+[239] (325,160)<a class='Breadcrumb-module__directoryLink__kQy_t prc-Link-Link-9ZwDx' href='/eleunameotarepmi-create/emaremote/tree/master/.github'>.github />
+/
+workflows
+/
+[240] (439,160)<button class='prc-Button-ButtonBase-9n-Xk ml-2 prc-Button-IconButton-fyge7' />
+Directory actions
+Add file
+[241] (929,160)<button aria-label='Add file' class='prc-Button-ButtonBase-9n-Xk' id='_r_6s_' />
+	[242] (929,160)<span  />
+		[243] (929,160)<span  />
+			[244] (929,160)<span >Add file />
+More options
+[245] (978,160)<button class='prc-Button-ButtonBase-9n-Xk CodeViewHeader-module__IconButton__PYSHU prc-Button-IconButton-fyge7' id='_r_6v_' title='More options' />
+Latest commit
+[246] (253,227)<a class='Link__StyledLink-sc-1syctfj-0 prc-Link-Link-9ZwDx' href='/eleunameotarepmi-create' />
+	[247] (251,228)<img  />
+[248] (320,227)<a aria-label='commits by eleunameotarepmi-create' class='Link__StyledLink-sc-1syctfj-0 iIGVMW AuthorAvatar-module__authorHoverableLink__MHTT8 prc-Link-Link-9ZwDx' href='/eleunameotarepmi-create/emaremote/commits?author=eleunameotarepmi-create'>eleunameotarepmi-create />
+[249] (444,226)<a class='Link--secondary' href='/eleunameotarepmi-create/emaremote/commit/a77c95a658c93cde06685adb0af34d61d1919773'>Create emaremote-build.yml />
+[250] (886,227)<a aria-label='Commit a77c95a' class='Link--secondary prc-Link-Link-9ZwDx' href='/eleunameotarepmi-create/emaremote/commit/a77c95a658c93cde06685adb0af34d61d1919773'>a77c95a />
+·
+History
+[251] (956,227)<a class='prc-Button-ButtonBase-9n-Xk d-none d-lg-flex LinkButton-module__linkButton__nFnov flex-items-center fgColor-default' href='/eleunameotarepmi-create/emaremote/commits/master/.github/workflows' />
+	[252] (956,227)<span  />
+		[253] (963,227)<span  />
+			[254] (963,226)<span >History />
+This branch is
+[255] (349,303)<a class='Link__StyledLink-sc-1syctfj-0 prc-Link-Link-9ZwDx' href='/eleunameotarepmi-create/emaremote/compare/rustdesk%3Arustdesk%3Amaster...master'>2 commits
+ahead of />
+rustdesk/rustdesk:master
+.
+[256] (833,304)<button class='prc-Button-ButtonBase-9n-Xk' id='_r_7d_' />
+	[257] (833,304)<span  />
+		[258] (833,304)<span >Contribute />
+[259] (932,304)<button class='prc-Button-ButtonBase-9n-Xk' id='_r_7g_' />
+	[260] (925,304)<span  />
+		[261] (934,304)<span >Sync fork />
+Folders and files
+Name
+Last commit message
+Last commit date
+[262] (611,428)<tr  />
+	parent directory
+	[263] (611,428)<a aria-label='Parent directory' class='DirectoryRow-module__PrimerLink__COEaW prc-Link-Link-9ZwDx' href='/eleunameotarepmi-create/emaremote/tree/master/.github' />
+		[264] (611,428)<div >.. />
+[265] (611,477)<tr  />
+	[266] (287,477)<a aria-label='bridge.yml, (File)' class='Link--primary' href='/eleunameotarepmi-create/emaremote/blob/master/.github/workflows/bridge.yml' title='bridge.yml'>bridge.yml />
+	[267] (602,477)<a class='Link--secondary' href='/eleunameotarepmi-create/emaremote/commit/5faf0ad3cfef1b7237e6cbca53038d76ffdc281d' title='terminal works basically. (#12189)
+
+* terminal works basically.
+todo:
+- persistent
+- sessions restore
+- web
+- mobile
+
+* missed terminal persistent option change
+
+* android sdk 34 -> 35
+
+* +#![cfg_attr(lt_1_77, feature(c_str_literals))]
+
+* fixing ci
+
+* fix ci
+
+* fix ci for android
+
+* try "Fix Android SDK Platform 35"
+
+* fix android 34
+
+* revert flutter_plugin_android_lifecycle to 2.0.17 which used in rustdesk 1.4.0
+
+* refactor, but break something of desktop terminal (new tab showing loading)
+
+* fix connecting...'>terminal works basically. ( />
+	[268] (691,477)<a class='issue-link js-issue-link' href='https://github.com/rustdesk/rustdesk/pull/12189'>rustdesk#12189 />
+	[269] (726,477)<a class='Link--secondary' href='/eleunameotarepmi-create/emaremote/commit/5faf0ad3cfef1b7237e6cbca53038d76ffdc281d' title='terminal works basically. (#12189)
+
+* terminal works basically.
+todo:
+- persistent
+- sessions restore
+- web
+- mobile
+
+* missed terminal persistent option change
+
+* android sdk 34 -> 35
+
+* +#![cfg_attr(lt_1_77, feature(c_str_literals))]
+
+* fixing ci
+
+* fix ci
+
+* fix ci for android
+
+* try "Fix Android SDK Platform 35"
+
+* fix android 34
+
+* revert flutter_plugin_android_lifecycle to 2.0.17 which used in rustdesk 1.4.0
+
+* refactor, but break something of desktop terminal (new tab showing loading)
+
+* fix connecting...'>) />
+[270] (611,527)<tr  />
+	[271] (276,527)<a aria-label='ci.yml, (File)' class='Link--primary' href='/eleunameotarepmi-create/emaremote/blob/master/.github/workflows/ci.yml' title='ci.yml'>ci.yml />
+	[272] (621,527)<a class='Link--secondary' href='/eleunameotarepmi-create/emaremote/commit/656ce93d6e335bcbe3728612336dd505fe13a4b6' title='refact: ci, free disk space(Ubuntu) (#13900)
+
+Signed-off-by: fufesou <linlong1266@gmail.com>'>refact: ci, free disk space(Ubuntu) ( />
+	[273] (729,527)<a class='issue-link js-issue-link' href='https://github.com/rustdesk/rustdesk/pull/13900'>rustdesk#13900 />
+	[274] (764,527)<a class='Link--secondary' href='/eleunameotarepmi-create/emaremote/commit/656ce93d6e335bcbe3728612336dd505fe13a4b6' title='refact: ci, free disk space(Ubuntu) (#13900)
+
+Signed-off-by: fufesou <linlong1266@gmail.com>'>) />
+[275] (611,576)<tr  />
+	[276] (297,577)<a aria-label='clear-cache.yml, (File)' class='Link--primary' href='/eleunameotarepmi-create/emaremote/blob/master/.github/workflows/clear-cache.yml' title='clear-cache.yml'>clear-cache.yml />
+	[277] (597,577)<a class='Link--secondary' href='/eleunameotarepmi-create/emaremote/commit/1e6e91e4bd047e7f250d566cef97b504f168de07' title='Update clear-cache.yml'>Update clear-cache.yml />
+[278] (611,626)<tr  />
+	[279] (310,626)<a aria-label='emaremote-build.yml, (File)' class='Link--primary' href='/eleunameotarepmi-create/emaremote/blob/master/.github/workflows/emaremote-build.yml' title='emaremote-build.yml'>emaremote-build.yml />
+	[280] (609,626)<a class='Link--secondary' href='/eleunameotarepmi-create/emaremote/commit/a77c95a658c93cde06685adb0af34d61d1919773' title='Create emaremote-build.yml'>Create emaremote-build.yml />
+[281] (611,676)<tr  />
+	[282] (286,676)<a aria-label='fdroid.yml, (File)' class='Link--primary' href='/eleunameotarepmi-create/emaremote/blob/master/.github/workflows/fdroid.yml' title='fdroid.yml'>fdroid.yml />
+	[283] (574,676)<a class='Link--secondary' href='/eleunameotarepmi-create/emaremote/commit/a72a8906b060c691624da1fa187558d5885ec9e9' title='vcpkg deps (#8764)
+
+* Revert "Revert vcpkg ffmpeg (#8751)"
+
+This reverts commit 5c16a8302e6c9c1381873aff45dba1487ee51d4f.
+
+* vcpkg: Reland ffmpeg and try to fix sciter build
+
+Signed-off-by: Vasyl Gello <vasek.gello@gmail.com>
+
+* vcpkg: Detect AVX2 by requiring __m256i
+
+(ubuntu18.04 sciter)
+
+Signed-off-by: Vasyl Gello <vasek.gello@gmail.com>
+
+* Install nasm from debian buster and python3.7
+
+... from ubuntu universe
+
+[Skip CI]
+
+* vcpkg: Add libyuv port with fix for windows
+
+From
+https://github.com/dchapyshev/vcpkg4aspia/commit/abc59feabf5b3a70662631293eb67c941be4bb8a
+
+Found by @deep-soft
+
+Signed-off-by: Vasyl Gello <vasek.gello@gmail.com>
+
+* Bump vcpkg baseline to 2024.07.12
+
+Signed-off-by: Vasyl Gello <vasek.gello@gmail.com>
+
+* Fix F-Droid version action
+
+I thought the latest release will be updated by the time hook starts
+but it is not the case. Get tag from GITHUB_REF instead if GITHUB_REF_TYPE
+is "tag".
+
+Signed-off-by: Vasyl Gello <vasek.gello@gmail.com>
+
+---------
+
+Signed-off-by: Vasyl Gello <vasek.gello@gmail.com>'>vcpkg deps ( />
+	[284] (633,676)<a class='issue-link js-issue-link' href='https://github.com/rustdesk/rustdesk/pull/8764'>rustdesk#8764 />
+	[285] (666,676)<a class='Link--secondary' href='/eleunameotarepmi-create/emaremote/commit/a72a8906b060c691624da1fa187558d5885ec9e9' title='vcpkg deps (#8764)
+
+* Revert "Revert vcpkg ffmpeg (#8751)"
+
+This reverts commit 5c16a8302e6c9c1381873aff45dba1487ee51d4f.
+
+* vcpkg: Reland ffmpeg and try to fix sciter build
+
+Signed-off-by: Vasyl Gello <vasek.gello@gmail.com>
+
+* vcpkg: Detect AVX2 by requiring __m256i
+
+(ubuntu18.04 sciter)
+
+Signed-off-by: Vasyl Gello <vasek.gello@gmail.com>
+
+* Install nasm from debian buster and python3.7
+
+... from ubuntu universe
+
+[Skip CI]
+
+* vcpkg: Add libyuv port with fix for windows
+
+From
+https://github.com/dchapyshev/vcpkg4aspia/commit/abc59feabf5b3a70662631293eb67c941be4bb8a
+
+Found by @deep-soft
+
+Signed-off-by: Vasyl Gello <vasek.gello@gmail.com>
+
+* Bump vcpkg baseline to 2024.07.12
+
+Signed-off-by: Vasyl Gello <vasek.gello@gmail.com>
+
+* Fix F-Droid version action
+
+I thought the latest release will be updated by the time hook starts
+but it is not the case. Get tag from GITHUB_REF instead if GITHUB_REF_TYPE
+is "tag".
+
+Signed-off-by: Vasyl Gello <vasek.gello@gmail.com>
+
+---------
+
+Signed-off-by: Vasyl Gello <vasek.gello@gmail.com>'>) />
+[286] (611,725)<tr  />
+	[287] (298,726)<a aria-label='flutter-build.yml, (File)' class='Link--primary' href='/eleunameotarepmi-create/emaremote/blob/master/.github/workflows/flutter-build.yml' title='flutter-build.yml'>flutter-build.yml />
+	[288] (609,726)<a class='Link--secondary' href='/eleunameotarepmi-create/emaremote/commit/682e347be0990f5e19052020337ab9b67ae1d6e7' title='Bump Android NDK to r28c (#13685)
+
+Signed-off-by: Vasyl Gello <vasek.gello@gmail.com>
+Co-authored-by: RustDesk <71636191+rustdesk@users.noreply.github.com>'>Bump Android NDK to r28c ( />
+	[289] (704,726)<a class='issue-link js-issue-link' href='https://github.com/rustdesk/rustdesk/pull/13685'>rustdesk#13685 />
+	[290] (740,726)<a class='Link--secondary' href='/eleunameotarepmi-create/emaremote/commit/682e347be0990f5e19052020337ab9b67ae1d6e7' title='Bump Android NDK to r28c (#13685)
+
+Signed-off-by: Vasyl Gello <vasek.gello@gmail.com>
+Co-authored-by: RustDesk <71636191+rustdesk@users.noreply.github.com>'>) />
+[291] (611,775)<tr  />
+	[292] (291,775)<a aria-label='flutter-ci.yml, (File)' class='Link--primary' href='/eleunameotarepmi-create/emaremote/blob/master/.github/workflows/flutter-ci.yml' title='flutter-ci.yml'>flutter-ci.yml />
+	[293] (575,775)<a class='Link--secondary' href='/eleunameotarepmi-create/emaremote/commit/b0ff74c799aa2ec0592087d8c1a3bbe9f0d4651d' title='fix appimage'>fix appimage />
+[294] (611,825)<tr  />
+	[295] (302,825)<a aria-label='flutter-nightly.yml, (File)' class='Link--primary' href='/eleunameotarepmi-create/emaremote/blob/master/.github/workflows/flutter-nightly.yml' title='flutter-nightly.yml'>flutter-nightly.yml />
+	[296] (559,825)<a class='Link--secondary' href='/eleunameotarepmi-create/emaremote/commit/97aeee71724e39de35712d25aafc22dbfbc8cf09' title='Fix CI
+
+  * Drop third party lib repos
+  * Now all vcpkg dependencies are declared in vcpkg.json
+  * Implement vcpkg binary caching in Github Actions
+
+Signed-off-by: Vasyl Gello <vasek.gello@gmail.com>'>Fix CI />
+[297] (611,875)<tr  />
+	[298] (295,875)<a aria-label='flutter-tag.yml, (File)' class='Link--primary' href='/eleunameotarepmi-create/emaremote/blob/master/.github/workflows/flutter-tag.yml' title='flutter-tag.yml'>flutter-tag.yml />
+	[299] (584,875)<a class='Link--secondary' href='/eleunameotarepmi-create/emaremote/commit/a04dd6ad313a84fc72aa78354832636808c8a7ef' title='split fdroid ci out'>split fdroid ci out />
+[300] (611,924)<tr  />
+	[301] (297,925)<a aria-label='playground.yml, (File)' class='Link--primary' href='/eleunameotarepmi-create/emaremote/blob/master/.github/workflows/playground.yml' title='playground.yml'>playground.yml />
+	[302] (577,925)<a class='Link--secondary' href='/eleunameotarepmi-create/emaremote/commit/d49ae493b262cd876ac7be8a6fd4e65a518c9e17' title='bump to 1.4.6'>bump to 1.4.6 />
+[303] (611,974)<tr  />
+	[304] (366,974)<a aria-label='third-party-RustDeskTempTopMostWindow.yml, (File)' class='Link--primary' href='/eleunameotarepmi-create/emaremote/blob/master/.github/workflows/third-party-RustDeskTempTopMostWindow.yml' title='third-party-RustDeskTempTopMostWindow.yml'>third-party-RustDeskTempTopMostWindow.yml />
+	[305] (604,974)<a class='Link--secondary' href='/eleunameotarepmi-create/emaremote/commit/c81c4f9114dfcf6da07647706fb1f15e368d683c' title='visual studio 2019 -> 2022'>visual studio 2019 -> 2022 />
+
+</current_dom>

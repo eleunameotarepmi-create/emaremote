@@ -1,0 +1,121 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+Skip to content
+[0] (22,39)<button class='prc-Button-ButtonBase-9n-Xk styles-module__appHeaderButton__axedQ prc-Button-IconButton-fyge7' />
+[1] (53,39)<a class='prc-Button-ButtonBase-9n-Xk styles-module__appHeaderHome__nkA_U prc-Button-IconButton-fyge7' href='/' />
+[2] (92,39)<a class='styles-module__contextCrumb__IzGIq prc-Breadcrumbs-Item-jcraJ' href='/rustdesk' />
+	[3] (92,39)<span >rustdesk />
+[4] (147,39)<a class='styles-module__contextCrumb__IzGIq prc-Breadcrumbs-Item-jcraJ' href='/rustdesk/rustdesk' />
+	[5] (147,39)<span >rustdesk />
+[6] (689,39)<button aria-label='Search or jump to…' class='prc-Button-ButtonBase-9n-Xk styles-module__appHeaderButton__axedQ Search-module__searchButton__aiE0a' />
+	[7] (689,39)<span  />
+		[8] (697,39)<span >Type
+to search />
+			Type
+			/
+			to search
+[9] (770,39)<a class='prc-Button-ButtonBase-9n-Xk styles-module__appHeaderButton__axedQ prc-Button-IconButton-fyge7' href='/copilot' />
+[10] (790,39)<button aria-label='Open Copilot…' class='prc-Button-ButtonBase-9n-Xk styles-module__appHeaderButton__axedQ CopilotItems-module__CopilotMenu__DVdfE' id='_R_54jpb_' />
+[11] (833,39)<button class='prc-Button-ButtonBase-9n-Xk GlobalCreateMenu-module__actionMenuButton__Hj_iB' id='_R_5jpb_' />
+	[12] (827,39)<span  />
+[13] (867,39)<a class='prc-Button-ButtonBase-9n-Xk styles-module__appHeaderButton__axedQ prc-Button-IconButton-fyge7' href='/issues' />
+[14] (894,39)<a class='prc-Button-ButtonBase-9n-Xk styles-module__appHeaderButton__axedQ prc-Button-IconButton-fyge7' href='/pulls' />
+[15] (922,39)<a class='prc-Button-ButtonBase-9n-Xk styles-module__appHeaderButton__axedQ prc-Button-IconButton-fyge7' href='/repos' />
+[16] (950,39)<a class='prc-Button-ButtonBase-9n-Xk styles-module__appHeaderButton__axedQ prc-Button-IconButton-fyge7' href='/notifications' />
+[17] (978,39)<button class='prc-Button-ButtonBase-9n-Xk GlobalNavUserMenu-module__anchor__Dcej6 prc-Button-IconButton-fyge7' />
+	[18] (978,39)<img  />
+Repository navigation
+[19] (36,92)<a class='prc-components-UnderlineItem-7fP-n' href='/rustdesk/rustdesk' />
+	[20] (22,92)<span  />
+	[21] (45,92)<span >Code />
+[22] (107,92)<a class='prc-components-UnderlineItem-7fP-n' href='/rustdesk/rustdesk/issues' />
+	[23] (78,92)<span  />
+	[24] (103,92)<span >Issues />
+	[25] (131,92)<span >(
+63
+) />
+		[26] (131,92)<span >63 />
+		(
+		63
+		)
+[27] (206,92)<a class='prc-components-UnderlineItem-7fP-n' href='/rustdesk/rustdesk/pulls' />
+	[28] (163,92)<span  />
+	[29] (202,92)<span >Pull requests />
+	[30] (245,92)<span >(
+39
+) />
+		[31] (245,92)<span >39 />
+		(
+		39
+		)
+[32] (305,92)<a class='prc-components-UnderlineItem-7fP-n' href='/rustdesk/rustdesk/discussions' />
+	[33] (277,92)<span  />
+	[34] (313,92)<span >Discussions />
+[35] (380,92)<a class='prc-components-UnderlineItem-7fP-n' href='/rustdesk/rustdesk/actions' />
+	[36] (361,92)<span  />
+	[37] (388,92)<span >Actions />
+[38] (447,92)<a class='prc-components-UnderlineItem-7fP-n' href='/rustdesk/rustdesk/projects' />
+	[39] (427,92)<span  />
+	[40] (455,92)<span >Projects />
+[41] (508,92)<a class='prc-components-UnderlineItem-7fP-n' href='/rustdesk/rustdesk/wiki' />
+	[42] (495,92)<span  />
+	[43] (516,92)<span >Wiki />
+[44] (569,92)<a class='prc-components-UnderlineItem-7fP-n' href='/rustdesk/rustdesk/security' />
+	[45] (548,92)<span  />
+	[46] (577,92)<span >Security />
+[47] (637,92)<a class='prc-components-UnderlineItem-7fP-n' href='/rustdesk/rustdesk/pulse' />
+	[48] (617,92)<span  />
+	[49] (645,92)<span >Insights />
+[50] (500,501)<div  />
+	Create a new fork
+	A
+	fork
+	is a copy of a repository. Forking a repository allows you to freely experiment with changes without affecting the original project.
+	[51] (423,251)<a class='prc-Link-Link-9ZwDx' href='/rustdesk/rustdesk/forks'>View existing forks. />
+	Required fields are marked with an asterisk (*).
+	[52] (500,376)<fieldset >Repository owner and name />
+		Repository owner and name
+		[53] (274,342)<label class='prc-components-Label-2mrqP' id='_r_1_-label' />
+			[54] (274,342)<span  />
+				[55] (270,342)<span >Owner
+(required) />
+					(required)
+				[56] (290,342)<span >* />
+		[57] (338,379)<button aria-label='eleunameotarepmi-create, Owner (Required)' class='prc-Button-ButtonBase-9n-Xk' id='owner-dropdown-header-button' />
+			[58] (331,379)<span  />
+				[59] (341,379)<span >eleunameotarepmi-create />
+		/
+		[60] (479,342)<label class='prc-components-Label-2mrqP' id='repository-name-input-label' />
+			[61] (479,342)<span  />
+				[62] (476,342)<span >Repository name />
+				[63] (518,342)<span >* />
+		[64] (503,379)<span  />
+			[65] (503,379)<input class='prc-components-Input-IwWrt' id='repository-name-input' />
+		emaremote
+		is available.
+	By default, forks are named the same as their upstream repository. You can customize the name to distinguish it further.
+	[66] (281,516)<label class='prc-components-Label-2mrqP' id='_r_b_-label'>Description />
+	[67] (500,553)<span  />
+		[68] (500,553)<input class='prc-components-Input-IwWrt' id='_r_b_' />
+	101
+	/
+	350
+	characters
+	[69] (261,651)<input class='prc-Checkbox-Input-lWIkv prc-Checkbox-Checkbox-jjOgT' id='_r_h_' />
+	[70] (413,653)<label class='prc-components-Label-2mrqP' id='_r_h_-label'>Copy the
+branch only />
+		[71] (331,653)<span >master />
+	Contribute back to
+	rustdesk
+	/
+	rustdesk
+	by adding your own branch.
+	[72] (538,678)<a class='prc-Link-Link-9ZwDx' href='https://docs.github.com/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository'>Learn more. />
+	You are creating a fork in your personal account.
+	[73] (711,813)<button class='prc-Button-ButtonBase-9n-Xk' />
+		[74] (711,813)<span  />
+			[75] (711,813)<span >Create fork />
+
+</current_dom>

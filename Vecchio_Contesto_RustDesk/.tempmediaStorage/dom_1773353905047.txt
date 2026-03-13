@@ -1,0 +1,69 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+Skip to content
+eleunameotarepmi-create
+emaremote
+Type
+/
+to search
+Repository navigation
+Code
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+Actions: eleunameotarepmi-create/emaremote
+Actions
+New workflow
+All workflows
+Build flutter-rust-bridge
+build RustDeskTempTopMostWindow
+Build the flutter version of the RustDesk
+CI
+Clear cache
+EmaRemote Android Build
+Fdroid version file generation
+Flutter Nightly Build
+Flutter Tag Build
+Full Flutter CI
+Show more workflows...
+Management
+Caches
+Attestations
+Runners
+Usage metrics
+Performance metrics
+EmaRemote Android Build
+emaremote-build.yml
+Help us improve GitHub Actions
+Tell us how to make GitHub Actions work better for you with three quick questions.
+Give feedback
+0 workflow runs
+Event
+Status
+Branch
+Actor
+This workflow has a
+workflow_dispatch
+event trigger.
+[0] (931,462)<details class='js-dropdown-details details-overlay position-relative details-reset d-inline-block flash-action width-fit' />
+	[1] (931,462)<summary class='primary btn-sm btn'>Run workflow />
+	Use workflow from
+	[2] (802,558)<details class='details-reset details-overlay d-inline-block' />
+		[3] (802,558)<summary class='css-truncate btn-sm btn d-block' />
+			[4] (785,558)<span >Branch: />
+			[5] (812,558)<span >master />
+			[6] (831,558)<span  />
+	[7] (812,644)<label class='color-fg-default text-mono f6'>Upload APK as artifact />
+	[8] (860,679)<input class='form-control input-contrast input-sm' id='input_0' />
+	[9] (793,762)<button class='Button--primary Button--small Button' />
+		[10] (793,762)<span  />
+			[11] (793,762)<span >Run workflow />
+This workflow has no runs yet.
+
+</current_dom>

@@ -1,0 +1,12 @@
+# Task: Patch RustDesk ID change logic
+
+## Plan
+- [/] Navigate to the GitHub edit page for `flutter/lib/common/widgets/dialog.dart`
+- [ ] Locate the `changeIdDialog` function
+- [ ] Replace the server validation block with the bypass logic
+- [ ] Commit the changes directly to `master`
+- [ ] Verify the commit
+
+## Findings
+- Repo: `eleunameotarepmi-create/emaremote`
+- File: `flutter/lib/common/widgets/dialog.dart`
