@@ -115,7 +115,8 @@ impl RendezvousMediator {
                             if err.contains("10054") || err.contains("11001") {
                                 // No such host is known. (os error 11001)
                                 // An existing connection was forcibly closed by the remote host. (os error 10054): also happens for UDP
-                                *timeout.write().unwrap() = 3000;
+                                // Use aggressive 1s retry on boot to connect ASAP once network is ready
+                                *timeout.write().unwrap() = 1000;
                             }
                             log::error!("{err}");
                         }

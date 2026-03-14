@@ -605,6 +605,33 @@ async fn run_service(_arguments: Vec<OsString>) -> ResultType<()> {
     // Tell the system that the service is running now
     status_handle.set_service_status(next_status)?;
 
+    // Wait for network connectivity before launching the server.
+    // At boot, the service may start before the network is ready,
+    // causing the RendezvousMediator to fail on first connection attempt.
+    // This is the same problem TeamViewer solves with delayed start.
+    {
+        let max_wait = 30; // seconds
+        for i in 0..max_wait {
+            match std::net::TcpStream::connect_timeout(
+                &std::net::SocketAddr::from(([1, 1, 1, 1], 53)),
+                Duration::from_secs(2),
+            ) {
+                Ok(_) => {
+                    log::info!("Network is ready after {}s", i);
+                    break;
+                }
+                Err(_) => {
+                    if i == max_wait - 1 {
+                        log::warn!("Network not ready after {}s, proceeding anyway", max_wait);
+                    } else {
+                        log::info!("Waiting for network... ({}s)", i + 1);
+                        tokio::time::sleep(Duration::from_secs(1)).await;
+                    }
+                }
+            }
+        }
+    }
+
     let mut session_id = unsafe { get_current_session(share_rdp()) };
     log::info!("session id {}", session_id);
     let mut h_process = launch_server(session_id, true).await.unwrap_or(NULL);
@@ -3469,7 +3496,7 @@ if exist \"%PROGRAMDATA%\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\{ap
 ", app_name = crate::get_app_name())
     } else {
         format!("
-sc create {app_name} binpath= \"\\\"{exe}\\\" --service\" start= auto DisplayName= \"{app_name} Service\"
+sc create {app_name} binpath= \"\\\"{exe}\\\" --service\" start= auto depend= Dnscache DisplayName= \"{app_name} Service\"
 sc start {app_name}
 ",
     app_name = crate::get_app_name())
