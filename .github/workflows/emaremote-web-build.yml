@@ -68,6 +68,7 @@ jobs:
           popd
 
           pushd flutter
+          flutter create . --platforms=web
           flutter build web --release
           cd build
           
