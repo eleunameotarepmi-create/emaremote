@@ -41,7 +41,7 @@ class _OnlineStatusWidgetState extends State<OnlineStatusWidget> {
   double? get height => bind.isIncomingOnly() ? null : em * 3;
 
   void onUsePublicServerGuide() {
-    const url = "https://emaremote.emaandema.com/";
+    const url = "https://eremote.emaandema.com/";
     canLaunchUrlString(url).then((can) {
       if (can) {
         launchUrlString(url);

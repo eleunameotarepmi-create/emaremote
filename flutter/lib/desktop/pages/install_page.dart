@@ -187,9 +187,9 @@ class _InstallPageBodyState extends State<_InstallPageBody>
                           InkWell(
                             hoverColor: Colors.transparent,
                             onTap: () => launchUrlString(
-                                'https://emaremote.emaandema.com/'),
+                                'https://eremote.emaandema.com/'),
                             child: Tooltip(
-                              message: 'https://emaremote.emaandema.com/',
+                              message: 'https://eremote.emaandema.com/',
                               child: Row(children: [
                                 Icon(Icons.launch_outlined, size: 16)
                                     .marginOnly(right: 5),
