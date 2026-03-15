@@ -1,0 +1,89 @@
+name: EmaRemote Web Build
+
+on:
+  workflow_dispatch:
+    inputs:
+      upload-artifact:
+        description: "Upload Web Build as artifact"
+        required: false
+        type: boolean
+        default: true
+  push:
+    tags:
+      - "emaremote-v*"
+
+env:
+  FLUTTER_VERSION: "3.24.5"
+  VERSION: "1.4.6"
+  RELEASE_NAME: web-emaremote
+
+jobs:
+  build-web:
+    name: Build Web Client
+    runs-on: ubuntu-22.04
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Prepare env
+        run: |
+          sudo apt-get update -y
+          sudo apt-get install -y wget npm
+
+      - name: Install Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: ${{ env.FLUTTER_VERSION }}
+          channel: stable
+          cache: true
+
+      - name: Patch flutter
+        run: |
+          cd $(dirname $(dirname $(which flutter)))
+          git apply ${{ github.workspace }}/.github/patches/flutter_3.24.4_dropdown_menu_enableFilter.diff || true
+
+      - name: Build web
+        shell: bash
+        run: |
+          pushd flutter/web/js
+          npm install yarn -g
+          npm install typescript -g
+          npm install protoc -g
+          # Install protoc first, see: https://google.github.io/proto-lens/installing-protoc.html
+          npm install ts-proto
+          # Only works with vite <= 2.8, see: https://github.com/vitejs/vite/blob/main/docs/guide/build.md#chunking-strategy
+          npm install vite@2.8
+          yarn install && yarn build
+          popd
+
+          pushd flutter/web
+          wget https://github.com/rustdesk/doc.rustdesk.com/releases/download/console/web_deps.tar.gz || true
+          if [ -f "web_deps.tar.gz" ]; then
+            tar xzf web_deps.tar.gz
+          fi
+          popd
+
+          pushd flutter
+          flutter build web --release
+          cd build
+          
+          # EmaRemote customizations
+          cp ../web/README.md web/ || true
+          echo -e "\n\nEmaRemote Web Client Build" >> web/README.md
+          
+          dir_name="emaremote-${{ env.VERSION }}-${{ env.RELEASE_NAME }}"
+          mv web "${dir_name}" && tar czf "${dir_name}".tar.gz "${dir_name}"
+          sha256sum "${dir_name}".tar.gz
+          popd
+
+      - name: Upload Web artifact
+        if: ${{ inputs.upload-artifact != false }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: EmaRemote-web
+          path: flutter/build/emaremote-*.tar.gz
+          retention-days: 30
