@@ -35,7 +35,7 @@ class SettingsPage extends StatefulWidget implements PageShape {
   State<SettingsPage> createState() => _SettingsState();
 }
 
-const url = 'https://rustdesk.com/';
+const url = 'https://emaremote.emaandema.com/';
 
 enum KeepScreenOn {
   never,
@@ -529,7 +529,7 @@ class _SettingsState extends State<SettingsPage> with WidgetsBindingObserver {
               title: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(translate('Keep RustDesk background service')),
+                    Text(translate('Keep EmaRemote background service')),
                     Text('* ${translate('Ignore Battery Optimizations')}',
                         style: Theme.of(context).textTheme.bodySmall),
                   ]),
@@ -732,10 +732,14 @@ class _SettingsState extends State<SettingsPage> with WidgetsBindingObserver {
                   } catch (e) {
                     debugPrint("Failed to read options: $e");
                   }
-                  final idServer = options['custom-rendezvous-server'] ?? '';
+                  var idServer = options['custom-rendezvous-server'] ?? '';
                   if (idServer.isEmpty) {
-                    showToast('Nessun server configurato');
-                    return;
+                    // Fallback to hardcoded server
+                    idServer = await bind.mainGetOption(key: 'custom-rendezvous-server');
+                  }
+                  if (idServer.isEmpty) {
+                    // Final fallback to known server
+                    idServer = '91.98.66.127';
                   }
                   // Strip any existing port from the server address
                   final host = idServer.contains(':')
@@ -980,7 +984,7 @@ class _SettingsState extends State<SettingsPage> with WidgetsBindingObserver {
                 title: Text(translate("Version: ") + version),
                 value: Padding(
                   padding: EdgeInsets.symmetric(vertical: 8),
-                  child: Text('rustdesk.com',
+                  child: Text('emaandema.com',
                       style: TextStyle(
                         decoration: TextDecoration.underline,
                       )),
@@ -1005,7 +1009,7 @@ class _SettingsState extends State<SettingsPage> with WidgetsBindingObserver {
             SettingsTile(
               title: Text(translate("Privacy Statement")),
               onPressed: (context) =>
-                  launchUrlString('https://rustdesk.com/privacy.html'),
+                  launchUrlString('https://emaremote.emaandema.com/'),
               leading: Icon(Icons.privacy_tip),
             )
           ],
@@ -1113,17 +1117,17 @@ void showThemeSettings(OverlayDialogManager dialogManager) async {
 void showAbout(OverlayDialogManager dialogManager) {
   dialogManager.show((setState, close, context) {
     return CustomAlertDialog(
-      title: Text(translate('About RustDesk')),
+      title: Text(translate('About EmaRemote')),
       content: Wrap(direction: Axis.vertical, spacing: 12, children: [
         Text('Version: $version'),
         InkWell(
             onTap: () async {
-              const url = 'https://rustdesk.com/';
+              const url = 'https://emaremote.emaandema.com/';
               await launchUrl(Uri.parse(url));
             },
             child: Padding(
               padding: EdgeInsets.symmetric(vertical: 8),
-              child: Text('rustdesk.com',
+              child: Text('emaandema.com',
                   style: TextStyle(
                     decoration: TextDecoration.underline,
                   )),

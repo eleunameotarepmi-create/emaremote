@@ -41,7 +41,7 @@ class _OnlineStatusWidgetState extends State<OnlineStatusWidget> {
   double? get height => bind.isIncomingOnly() ? null : em * 3;
 
   void onUsePublicServerGuide() {
-    const url = "https://rustdesk.com/pricing";
+    const url = "https://emaremote.emaandema.com/";
     canLaunchUrlString(url).then((can) {
       if (can) {
         launchUrlString(url);
@@ -80,9 +80,7 @@ class _OnlineStatusWidgetState extends State<OnlineStatusWidget> {
 
     setupServerWidget() => Flexible(
           child: Offstage(
-            offstage: !(!_svcStopped.value &&
-                stateGlobal.svcStatus.value == SvcStatus.ready &&
-                _svcIsUsingPublicServer.value),
+            offstage: true, // Always hide - we use our own server
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
