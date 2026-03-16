@@ -1653,6 +1653,21 @@ class _NetworkState extends State<_Network> with AutomaticKeepAliveClientMixin {
                   title: 'ID/Relay Server',
                   onTap: () => showServerSettings(gFFI.dialogManager, setState),
                 ),
+              if (!hideServer) divider,
+              if (!hideServer)
+                listTile(
+                  icon: Icons.admin_panel_settings_outlined,
+                  title: 'Server Admin Panel',
+                  onTap: () async {
+                    const adminUrl = 'https://eremote.emaandema.com/_admin/';
+                    try {
+                      await launchUrlString(adminUrl,
+                          mode: LaunchMode.externalApplication);
+                    } catch (e) {
+                      debugPrint('Cannot open admin panel: $e');
+                    }
+                  },
+                ),
               if (!hideProxy && !hideServer) divider,
               if (!hideProxy)
                 listTile(
