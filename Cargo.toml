@@ -1,7 +1,7 @@
 [package]
 name = "rustdesk"
-version = "1.4.6"
-authors = ["rustdesk <info@rustdesk.com>"]
+version = "2.0.0"
+authors = ["EmaRemote"]
 edition = "2021"
 build= "build.rs"
 description = "EmaRemote — Premium Remote Access"
@@ -213,7 +213,7 @@ exclude = ["vdi/host", "examples/custom_plugin"]
 libxdo-sys = { path = "libs/libxdo-sys-stub" }
 
 [package.metadata.winres]
-LegalCopyright = "Copyright © 2025 Purslane Ltd. All rights reserved."
+LegalCopyright = "Copyright © 2025 EmaRemote. All rights reserved."
 ProductName = "EmaRemote"
 FileDescription = "EmaRemote — Premium Remote Access"
 OriginalFilename = "rustdesk.exe"
