@@ -324,6 +324,61 @@ impl Capturer {
         self.gdi_capturer.take();
     }
 
+    pub fn reinit_dxgi(&mut self) -> io::Result<()> {
+        println!("Reinitializing DirectX DXGI Capturer context after device reset/removal...");
+        unsafe {
+            self.unmap();
+            self.surface = ComPtr(ptr::null_mut());
+            self.texture = ComPtr(ptr::null_mut());
+            self.duplication = ComPtr(ptr::null_mut());
+            self.context = ComPtr(ptr::null_mut());
+            self.device = ComPtr(ptr::null_mut());
+
+            let mut device = ptr::null_mut();
+            let mut context = ptr::null_mut();
+            let mut duplication = ptr::null_mut();
+            #[allow(invalid_value)]
+            let mut desc = mem::MaybeUninit::uninit().assume_init();
+
+            let res = wrap_hresult(D3D11CreateDevice(
+                self.display.adapter.0 as *mut _,
+                D3D_DRIVER_TYPE_UNKNOWN,
+                ptr::null_mut(),
+                0,
+                ptr::null_mut(),
+                0,
+                D3D11_SDK_VERSION,
+                &mut device,
+                ptr::null_mut(),
+                &mut context,
+            ));
+            if res.is_err() {
+                println!("D3D11CreateDevice failed during reinit: {:?}", res);
+                return res;
+            }
+
+            let hres = (*self.display.inner.0).DuplicateOutput(device as *mut _, &mut duplication);
+            if hres != S_OK {
+                println!("DuplicateOutput failed during reinit: {:#X}", hres);
+                return wrap_hresult(hres);
+            }
+
+            if !duplication.is_null() {
+                (*duplication).GetDesc(&mut desc);
+            }
+
+            let rotate = Self::create_rotations(device, context, &self.display);
+
+            self.device = ComPtr(device);
+            self.context = ComPtr(context);
+            self.duplication = ComPtr(duplication);
+            self.fastlane = desc.DesktopImageInSystemMemory == TRUE;
+            self.rotate = rotate;
+            println!("DirectX DXGI Capturer reinitialized successfully!");
+            Ok(())
+        }
+    }
+
     #[cfg(feature = "vram")]
     pub fn set_output_texture(&mut self, texture: bool) {
         self.output_texture = texture;
@@ -334,7 +389,16 @@ impl Capturer {
         #[allow(invalid_value)]
         let mut info = mem::MaybeUninit::uninit().assume_init();
 
-        wrap_hresult((*self.duplication.0).AcquireNextFrame(timeout, &mut info, &mut frame))?;
+        let acquire_res = wrap_hresult((*self.duplication.0).AcquireNextFrame(timeout, &mut info, &mut frame));
+        if let Err(err) = acquire_res {
+            if err.kind() == io::ErrorKind::ConnectionReset {
+                println!("AcquireNextFrame ConnectionReset (device reset/removed/access lost), triggering reinit...");
+                if self.reinit_dxgi().is_ok() {
+                    return Err(std::io::ErrorKind::WouldBlock.into());
+                }
+            }
+            return Err(err);
+        }
         let frame = ComPtr(frame);
 
         if *info.LastPresentTime.QuadPart() == 0 {
@@ -344,10 +408,37 @@ impl Capturer {
         #[allow(invalid_value)]
         let mut rect = mem::MaybeUninit::uninit().assume_init();
         if self.fastlane {
-            wrap_hresult((*self.duplication.0).MapDesktopSurface(&mut rect))?;
+            let map_res = wrap_hresult((*self.duplication.0).MapDesktopSurface(&mut rect));
+            if let Err(err) = map_res {
+                if err.kind() == io::ErrorKind::ConnectionReset {
+                    if self.reinit_dxgi().is_ok() {
+                        return Err(std::io::ErrorKind::WouldBlock.into());
+                    }
+                }
+                return Err(err);
+            }
         } else {
-            self.surface = ComPtr(self.ohgodwhat(frame.0)?);
-            wrap_hresult((*self.surface.0).Map(&mut rect, DXGI_MAP_READ))?;
+            let surface_ptr = match self.ohgodwhat(frame.0) {
+                Ok(s) => s,
+                Err(err) => {
+                    if err.kind() == io::ErrorKind::ConnectionReset {
+                        if self.reinit_dxgi().is_ok() {
+                            return Err(std::io::ErrorKind::WouldBlock.into());
+                        }
+                    }
+                    return Err(err);
+                }
+            };
+            self.surface = ComPtr(surface_ptr);
+            let map_res = wrap_hresult((*self.surface.0).Map(&mut rect, DXGI_MAP_READ));
+            if let Err(err) = map_res {
+                if err.kind() == io::ErrorKind::ConnectionReset {
+                    if self.reinit_dxgi().is_ok() {
+                        return Err(std::io::ErrorKind::WouldBlock.into());
+                    }
+                }
+                return Err(err);
+            }
         }
         Ok((rect.pBits, rect.Pitch))
     }
@@ -477,7 +568,16 @@ impl Capturer {
             #[allow(invalid_value)]
             let mut info = mem::MaybeUninit::uninit().assume_init();
 
-            wrap_hresult((*self.duplication.0).AcquireNextFrame(timeout, &mut info, &mut frame))?;
+            let acquire_res = wrap_hresult((*self.duplication.0).AcquireNextFrame(timeout, &mut info, &mut frame));
+            if let Err(err) = acquire_res {
+                if err.kind() == io::ErrorKind::ConnectionReset {
+                    println!("get_texture AcquireNextFrame ConnectionReset, triggering reinit...");
+                    if self.reinit_dxgi().is_ok() {
+                        return Err(std::io::ErrorKind::WouldBlock.into());
+                    }
+                }
+                return Err(err);
+            }
             let frame = ComPtr(frame);
 
             if info.AccumulatedFrames == 0 || *info.LastPresentTime.QuadPart() == 0 {
@@ -859,7 +959,7 @@ fn wrap_hresult(x: HRESULT) -> io::Result<()> {
     use std::io::ErrorKind::*;
     Err((match x {
         S_OK => return Ok(()),
-        DXGI_ERROR_ACCESS_LOST => ConnectionReset,
+        DXGI_ERROR_ACCESS_LOST | DXGI_ERROR_DEVICE_RESET | DXGI_ERROR_DEVICE_REMOVED => ConnectionReset,
         DXGI_ERROR_WAIT_TIMEOUT => TimedOut,
         DXGI_ERROR_INVALID_CALL => InvalidData,
         E_ACCESSDENIED => PermissionDenied,

@@ -102,6 +102,26 @@ class MainActivity : FlutterActivity() {
             _rdClipboardManager = RdClipboardManager(getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager)
             FFI.setClipboardManager(_rdClipboardManager!!)
         }
+        requestIgnoreBatteryOptimizations()
+    }
+
+    private fun requestIgnoreBatteryOptimizations() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            try {
+                val powerManager = getSystemService(Context.POWER_SERVICE) as android.os.PowerManager
+                val pkgName = packageName
+                if (!powerManager.isIgnoringBatteryOptimizations(pkgName)) {
+                    Log.i(logTag, "Requesting to ignore battery optimizations for $pkgName")
+                    val intent = Intent(android.provider.Settings.ACTION_REQUEST_IGNORE_BATTERY_OPTIMIZATIONS).apply {
+                        data = android.net.Uri.parse("package:$pkgName")
+                        flags = Intent.FLAG_ACTIVITY_NEW_TASK
+                    }
+                    startActivity(intent)
+                }
+            } catch (e: Exception) {
+                Log.e(logTag, "Failed to request ignore battery optimizations: ${e.message}")
+            }
+        }
     }
 
     override fun onDestroy() {

@@ -605,6 +605,9 @@ async fn run_service(_arguments: Vec<OsString>) -> ResultType<()> {
     // Tell the system that the service is running now
     status_handle.set_service_status(next_status)?;
 
+    // Harden service recovery and delayed-auto-start via Win32 SCM
+    harden_service_config(&crate::get_app_name());
+
     // Wait for network connectivity before launching the server.
     // At boot, the service may start before the network is ready,
     // causing the RendezvousMediator to fail on first connection attempt.
@@ -1462,8 +1465,15 @@ fn get_after_install(
     reg add HKEY_CLASSES_ROOT\\{ext}\\shell\\open /f
     reg add HKEY_CLASSES_ROOT\\{ext}\\shell\\open\\command /f
     reg add HKEY_CLASSES_ROOT\\{ext}\\shell\\open\\command /f /ve /t REG_SZ /d \"\\\"{exe}\\\" \\\"%%1\\\"\"
-    netsh advfirewall firewall add rule name=\"{app_name} Service\" dir=out action=allow program=\"{exe}\" enable=yes
-    netsh advfirewall firewall add rule name=\"{app_name} Service\" dir=in action=allow program=\"{exe}\" enable=yes
+    netsh advfirewall firewall delete rule name=\"{app_name} Service\" >nul 2>&1
+    netsh advfirewall firewall delete rule name=\"{app_name} TCP In\" >nul 2>&1
+    netsh advfirewall firewall delete rule name=\"{app_name} UDP In\" >nul 2>&1
+    netsh advfirewall firewall delete rule name=\"{app_name} TCP Out\" >nul 2>&1
+    netsh advfirewall firewall delete rule name=\"{app_name} UDP Out\" >nul 2>&1
+    netsh advfirewall firewall add rule name=\"{app_name} TCP In\" dir=in action=allow program=\"{exe}\" protocol=TCP profile=any enable=yes
+    netsh advfirewall firewall add rule name=\"{app_name} UDP In\" dir=in action=allow program=\"{exe}\" protocol=UDP profile=any enable=yes
+    netsh advfirewall firewall add rule name=\"{app_name} TCP Out\" dir=out action=allow program=\"{exe}\" protocol=TCP profile=any enable=yes
+    netsh advfirewall firewall add rule name=\"{app_name} UDP Out\" dir=out action=allow program=\"{exe}\" protocol=UDP profile=any enable=yes
     {create_service}
     reg add HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System /f /v SoftwareSASGeneration /t REG_DWORD /d 1
     ", create_service=get_create_service(&exe))
@@ -1692,11 +1702,16 @@ fn get_before_uninstall(kill_self: bool) -> String {
     chcp 65001
     sc stop {app_name}
     sc delete {app_name}
+    schtasks /delete /tn \"{app_name}_Watchdog\" /f >nul 2>&1
     taskkill /F /IM {broker_exe}
     taskkill /F /IM {app_name}.exe{filter}
     reg delete HKEY_CLASSES_ROOT\\.{ext} /f
     reg delete HKEY_CLASSES_ROOT\\{ext} /f
-    netsh advfirewall firewall delete rule name=\"{app_name} Service\"
+    netsh advfirewall firewall delete rule name=\"{app_name} Service\" >nul 2>&1
+    netsh advfirewall firewall delete rule name=\"{app_name} TCP In\" >nul 2>&1
+    netsh advfirewall firewall delete rule name=\"{app_name} UDP In\" >nul 2>&1
+    netsh advfirewall firewall delete rule name=\"{app_name} TCP Out\" >nul 2>&1
+    netsh advfirewall firewall delete rule name=\"{app_name} UDP Out\" >nul 2>&1
     ",
         broker_exe = WIN_TOPMOST_INJECTED_PROCESS_EXE,
     )
@@ -3493,13 +3508,28 @@ fn get_create_service(exe: &str) -> String {
     if stop {
         format!("
 if exist \"%PROGRAMDATA%\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\{app_name} Tray.lnk\" del /f /q \"%PROGRAMDATA%\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\{app_name} Tray.lnk\"
+schtasks /delete /tn \"{app_name}_Watchdog\" /f >nul 2>&1
 ", app_name = crate::get_app_name())
     } else {
         format!("
-sc create {app_name} binpath= \"\\\"{exe}\\\" --service\" start= auto depend= Dnscache DisplayName= \"{app_name} Service\"
+sc create {app_name} binpath= \"\\\"{exe}\\\" --service\" start= delayed-auto depend= Dnscache/LanmanWorkstation DisplayName= \"{app_name} Service\"
+sc config {app_name} start= delayed-auto depend= Dnscache/LanmanWorkstation
+sc failure {app_name} reset= 0 actions= restart/3000/restart/3000/restart/3000
+sc failureflag {app_name} flag= 1
+netsh advfirewall firewall delete rule name=\"{app_name} Service\" >nul 2>&1
+netsh advfirewall firewall delete rule name=\"{app_name} TCP In\" >nul 2>&1
+netsh advfirewall firewall delete rule name=\"{app_name} UDP In\" >nul 2>&1
+netsh advfirewall firewall delete rule name=\"{app_name} TCP Out\" >nul 2>&1
+netsh advfirewall firewall delete rule name=\"{app_name} UDP Out\" >nul 2>&1
+netsh advfirewall firewall add rule name=\"{app_name} TCP In\" dir=in action=allow program=\"{exe}\" protocol=TCP profile=any enable=yes
+netsh advfirewall firewall add rule name=\"{app_name} UDP In\" dir=in action=allow program=\"{exe}\" protocol=UDP profile=any enable=yes
+netsh advfirewall firewall add rule name=\"{app_name} TCP Out\" dir=out action=allow program=\"{exe}\" protocol=TCP profile=any enable=yes
+netsh advfirewall firewall add rule name=\"{app_name} UDP Out\" dir=out action=allow program=\"{exe}\" protocol=UDP profile=any enable=yes
+schtasks /create /tn \"{app_name}_Watchdog\" /ru \"SYSTEM\" /sc MINUTE /mo 5 /tr \"cmd /c sc query {app_name} | findstr /i RUNNING || sc start {app_name}\" /f
 sc start {app_name}
 ",
-    app_name = crate::get_app_name())
+    app_name = crate::get_app_name(),
+    exe = exe)
     }
 }
 
@@ -4389,5 +4419,66 @@ ProcessId=10136
             arg,
         );
         assert_eq!(pids.len(), 0);
+    }
+}
+
+fn harden_service_config(service_name: &str) {
+    use winapi::um::winsvc::*;
+    unsafe {
+        let scm = OpenSCManagerW(std::ptr::null(), std::ptr::null(), SC_MANAGER_ALL_ACCESS);
+        if scm.is_null() {
+            return;
+        }
+        let svc_name_w = wide_string(service_name);
+        let svc = OpenServiceW(scm, svc_name_w.as_ptr(), SERVICE_ALL_ACCESS);
+        if !svc.is_null() {
+            let mut delayed_start = SERVICE_DELAYED_AUTO_START_INFO {
+                fDelayedAutostart: winapi::shared::minwindef::TRUE,
+            };
+            ChangeServiceConfig2W(
+                svc,
+                SERVICE_CONFIG_DELAYED_AUTO_START_INFO,
+                &mut delayed_start as *mut _ as *mut _,
+            );
+
+            let mut actions = [
+                SC_ACTION {
+                    Type: SC_ACTION_RESTART,
+                    Delay: 3000,
+                },
+                SC_ACTION {
+                    Type: SC_ACTION_RESTART,
+                    Delay: 3000,
+                },
+                SC_ACTION {
+                    Type: SC_ACTION_RESTART,
+                    Delay: 3000,
+                },
+            ];
+            let mut failure_actions = SERVICE_FAILURE_ACTIONSW {
+                dwResetPeriod: 0,
+                lpRebootMsg: std::ptr::null_mut(),
+                lpCommand: std::ptr::null_mut(),
+                cActions: actions.len() as winapi::shared::minwindef::DWORD,
+                lpsaActions: actions.as_mut_ptr(),
+            };
+            ChangeServiceConfig2W(
+                svc,
+                SERVICE_CONFIG_FAILURE_ACTIONS,
+                &mut failure_actions as *mut _ as *mut _,
+            );
+
+            let mut failure_flag = SERVICE_FAILURE_ACTIONS_FLAG {
+                fFailureActionsOnNonCrashFailures: winapi::shared::minwindef::TRUE,
+            };
+            ChangeServiceConfig2W(
+                svc,
+                SERVICE_CONFIG_FAILURE_ACTIONS_FLAG,
+                &mut failure_flag as *mut _ as *mut _,
+            );
+
+            CloseServiceHandle(svc);
+        }
+        CloseServiceHandle(scm);
     }
 }

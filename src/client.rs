@@ -844,11 +844,16 @@ impl Client {
         let mut uuid = "".to_owned();
         let mut ipv4 = true;
 
-        for i in 1..=3 {
+        const AGGRESSIVE_HANDSHAKE_TIMEOUT: u64 = 3_500;
+        for i in 1..=4 {
             // use different socket due to current hbbs implementation requiring different nat address for each attempt
-            let mut socket = connect_tcp(rendezvous_server, CONNECT_TIMEOUT)
-                .await
-                .with_context(|| "Failed to connect to rendezvous server")?;
+            let mut socket = match connect_tcp(rendezvous_server, AGGRESSIVE_HANDSHAKE_TIMEOUT).await {
+                Ok(s) => s,
+                Err(e) => {
+                    log::warn!("#{i} connect_tcp to rendezvous failed: {e:?}, resetting socket and retrying...");
+                    continue;
+                }
+            };
 
             if !key.is_empty() && !token.is_empty() {
                 // mainly for the security of token
@@ -874,10 +879,13 @@ impl Client {
                 secure,
                 ..Default::default()
             });
-            socket.send(&msg_out).await?;
+            if let Err(e) = socket.send(&msg_out).await {
+                log::warn!("#{i} socket.send to rendezvous failed: {e:?}, resetting socket and retrying...");
+                continue;
+            }
 
             if let Some(msg_in) =
-                crate::get_next_nonkeyexchange_msg(&mut socket, Some(CONNECT_TIMEOUT)).await
+                crate::get_next_nonkeyexchange_msg(&mut socket, Some(AGGRESSIVE_HANDSHAKE_TIMEOUT)).await
             {
                 if let Some(rendezvous_message::Union::RelayResponse(rs)) = msg_in.union {
                     if !rs.refuse_reason.is_empty() {
@@ -886,10 +894,12 @@ impl Client {
                     succeed = true;
                     break;
                 }
+            } else {
+                log::warn!("#{i} Relay handshake response timeout (3.5s), resetting socket and retrying...");
             }
         }
         if !succeed {
-            bail!("Timeout");
+            bail!("Relay handshake timeout after multiple attempts");
         }
         Self::create_relay(peer, uuid, relay_server, key, conn_type, ipv4).await
     }
@@ -903,12 +913,13 @@ impl Client {
         conn_type: ConnType,
         ipv4: bool,
     ) -> ResultType<Stream> {
+        const AGGRESSIVE_RELAY_TIMEOUT: u64 = 3_500;
         let mut conn = connect_tcp(
             ipv4_to_ipv6(check_port(relay_server, RELAY_PORT), ipv4),
-            CONNECT_TIMEOUT,
+            AGGRESSIVE_RELAY_TIMEOUT,
         )
         .await
-        .with_context(|| "Failed to connect to relay server")?;
+        .with_context(|| "Failed to connect to relay server within 3.5s")?;
         let mut msg_out = RendezvousMessage::new();
         msg_out.set_request_relay(RequestRelay {
             licence_key: key.to_owned(),

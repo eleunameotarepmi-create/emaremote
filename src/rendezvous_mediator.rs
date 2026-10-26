@@ -217,7 +217,18 @@ impl RendezvousMediator {
                                 log::debug!("Non-protobuf message bytes received: {:?}", bytes);
                             }
                         },
-                        Some(Err(e)) => bail!("Failed to receive next: {}", e),  // maybe socks5 tcp disconnected
+                        Some(Err(e)) => {
+                            log::warn!("Socket error (reset by peer or disconnected): {}, rebinding socket...", e);
+                            if let Ok(Some((s, new_addr))) = socket_client::rebind_udp_for(&rz.host).await {
+                                socket = s;
+                                rz.addr = new_addr.clone();
+                                addr = new_addr;
+                                rz.register_peer(Sink::Framed(&mut socket, &addr)).await.ok();
+                                last_register_sent = Some(Instant::now());
+                            } else {
+                                bail!("Failed to receive next and rebind failed: {}", e);
+                            }
+                        },
                         None => {
                             bail!("Socket receive none. Maybe socks5 server is down.");
                         },
@@ -240,19 +251,24 @@ impl RendezvousMediator {
                     if timeout || (last_register_sent.is_none() && expired) {
                         if timeout {
                             fails += 1;
+                            #[cfg(target_os = "android")]
+                            let should_rebind = fails >= 1;
+                            #[cfg(not(target_os = "android"))]
+                            let should_rebind = fails >= MAX_FAILS2 && last_dns_check.elapsed().as_millis() as i64 > DNS_INTERVAL;
+
+                            if should_rebind {
+                                log::info!("Handshake/registration timeout ({reg_timeout}ms), aggressively resetting local UDP socket...");
+                                if let Ok(Some((s, new_addr))) = socket_client::rebind_udp_for(&rz.host).await {
+                                    socket = s;
+                                    rz.addr = new_addr.clone();
+                                    addr = new_addr;
+                                    last_dns_check = Instant::now();
+                                }
+                            }
+
                             if fails >= MAX_FAILS2 {
                                 Config::update_latency(&host, -1);
                                 old_latency = 0;
-                                if last_dns_check.elapsed().as_millis() as i64 > DNS_INTERVAL {
-                                    // in some case of network reconnect (dial IP network),
-                                    // old UDP socket not work any more after network recover
-                                    if let Some((s, new_addr)) = socket_client::rebind_udp_for(&rz.host).await? {
-                                        socket = s;
-                                        rz.addr = new_addr.clone();
-                                        addr = new_addr;
-                                    }
-                                    last_dns_check = Instant::now();
-                                }
                             } else if fails >= MAX_FAILS1 {
                                 Config::update_latency(&host, 0);
                                 old_latency = 0;

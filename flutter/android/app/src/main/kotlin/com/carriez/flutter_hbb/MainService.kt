@@ -46,8 +46,8 @@ import java.nio.ByteBuffer
 import kotlin.math.max
 import kotlin.math.min
 
-const val DEFAULT_NOTIFY_TITLE = "RustDesk"
-const val DEFAULT_NOTIFY_TEXT = "Service is running"
+const val DEFAULT_NOTIFY_TITLE = "EmaRemote"
+const val DEFAULT_NOTIFY_TEXT = "Service is running in background"
 const val DEFAULT_NOTIFY_ID = 1
 const val NOTIFY_ID_OFFSET = 100
 
@@ -193,6 +193,11 @@ class MainService : Service() {
 
     private val powerManager: PowerManager by lazy { applicationContext.getSystemService(Context.POWER_SERVICE) as PowerManager }
     private val wakeLock: PowerManager.WakeLock by lazy { powerManager.newWakeLock(PowerManager.ACQUIRE_CAUSES_WAKEUP or PowerManager.SCREEN_BRIGHT_WAKE_LOCK, "rustdesk:wakelock")}
+    private val partialWakeLock: PowerManager.WakeLock by lazy {
+        powerManager.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK, "emaremote:partial_wakelock").apply {
+            setReferenceCounted(false)
+        }
+    }
 
     companion object {
         private var _isReady = false // media permission ready status
@@ -246,11 +251,27 @@ class MainService : Service() {
         FFI.startServer(configPath, "")
 
         createForegroundNotification()
+        try {
+            if (!partialWakeLock.isHeld) {
+                partialWakeLock.acquire()
+                Log.i(logTag, "Acquired PARTIAL_WAKE_LOCK to prevent Doze mode socket freeze")
+            }
+        } catch (e: Exception) {
+            Log.e(logTag, "Failed to acquire PARTIAL_WAKE_LOCK: ${e.message}")
+        }
     }
 
     override fun onDestroy() {
         checkMediaPermission()
         stopService(Intent(this, FloatingWindowService::class.java))
+        try {
+            if (partialWakeLock.isHeld) {
+                partialWakeLock.release()
+                Log.i(logTag, "Released PARTIAL_WAKE_LOCK")
+            }
+        } catch (e: Exception) {
+            Log.e(logTag, "Failed to release PARTIAL_WAKE_LOCK: ${e.message}")
+        }
         super.onDestroy()
     }
 
@@ -598,16 +619,17 @@ class MainService : Service() {
     private fun initNotification() {
         notificationManager = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
         notificationChannel = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            val channelId = "RustDesk"
-            val channelName = "RustDesk Service"
+            val channelId = "EmaRemote"
+            val channelName = "EmaRemote Service"
             val channel = NotificationChannel(
                 channelId,
-                channelName, NotificationManager.IMPORTANCE_HIGH
+                channelName, NotificationManager.IMPORTANCE_LOW
             ).apply {
-                description = "RustDesk Service Channel"
+                description = "EmaRemote Service Channel"
+                setShowBadge(false)
             }
             channel.lightColor = Color.BLUE
-            channel.lockscreenVisibility = Notification.VISIBILITY_PRIVATE
+            channel.lockscreenVisibility = Notification.VISIBILITY_PUBLIC
             notificationManager.createNotificationChannel(channel)
             channelId
         } else {
@@ -632,9 +654,8 @@ class MainService : Service() {
         val notification = notificationBuilder
             .setOngoing(true)
             .setSmallIcon(R.mipmap.ic_stat_logo)
-            .setDefaults(Notification.DEFAULT_ALL)
-            .setAutoCancel(true)
-            .setPriority(NotificationCompat.PRIORITY_DEFAULT)
+            .setCategory(NotificationCompat.CATEGORY_SERVICE)
+            .setPriority(NotificationCompat.PRIORITY_LOW)
             .setContentTitle(DEFAULT_NOTIFY_TITLE)
             .setContentText(translate(DEFAULT_NOTIFY_TEXT))
             .setOnlyAlertOnce(true)
