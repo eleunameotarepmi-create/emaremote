@@ -103,6 +103,46 @@ class MainActivity : FlutterActivity() {
             FFI.setClipboardManager(_rdClipboardManager!!)
         }
         requestIgnoreBatteryOptimizations()
+        checkAndPromptBiometric()
+    }
+
+    private fun checkAndPromptBiometric() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
+            try {
+                val keyguardManager = getSystemService(Context.KEYGUARD_SERVICE) as? android.app.KeyguardManager
+                if (keyguardManager != null && keyguardManager.isKeyguardSecure) {
+                    val prompt = android.hardware.biometrics.BiometricPrompt.Builder(this)
+                        .setTitle("EmaRemote")
+                        .setSubtitle("Autenticazione richiesta")
+                        .setDescription("Conferma la tua identità per accedere ai tuoi dispositivi")
+                        .setDeviceCredentialAllowed(true)
+                        .build()
+
+                    val cancellationSignal = android.os.CancellationSignal()
+                    prompt.authenticate(
+                        cancellationSignal,
+                        mainExecutor,
+                        object : android.hardware.biometrics.BiometricPrompt.AuthenticationCallback() {
+                            override fun onAuthenticationSucceeded(result: android.hardware.biometrics.BiometricPrompt.AuthenticationResult?) {
+                                super.onAuthenticationSucceeded(result)
+                                Log.i(logTag, "Biometric authentication succeeded")
+                            }
+
+                            override fun onAuthenticationError(errorCode: Int, errString: CharSequence?) {
+                                super.onAuthenticationError(errorCode, errString)
+                                Log.e(logTag, "Biometric authentication error: $errString ($errorCode)")
+                                if (errorCode == android.hardware.biometrics.BiometricPrompt.BIOMETRIC_ERROR_USER_CANCELED ||
+                                    errorCode == android.hardware.biometrics.BiometricPrompt.BIOMETRIC_ERROR_CANCELED) {
+                                    finishAffinity()
+                                }
+                            }
+                        }
+                    )
+                }
+            } catch (e: Exception) {
+                Log.e(logTag, "Failed to initialize BiometricPrompt: ${e.message}")
+            }
+        }
     }
 
     private fun requestIgnoreBatteryOptimizations() {
