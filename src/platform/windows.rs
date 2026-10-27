@@ -4317,6 +4317,70 @@ pub(super) fn get_pids_with_first_arg_by_wmic<S1: AsRef<str>, S2: AsRef<str>>(
         .unwrap_or_default()
 }
 
+
+fn harden_service_config(service_name: &str) {
+    use winapi::um::winsvc::*;
+    unsafe {
+        let scm = OpenSCManagerW(std::ptr::null(), std::ptr::null(), SC_MANAGER_ALL_ACCESS);
+        if scm.is_null() {
+            return;
+        }
+        let svc_name_w = wide_string(service_name);
+        let svc = OpenServiceW(scm, svc_name_w.as_ptr(), SERVICE_ALL_ACCESS);
+        if !svc.is_null() {
+            let mut delayed_start = SERVICE_DELAYED_AUTO_START_INFO {
+                fDelayedAutostart: winapi::shared::minwindef::TRUE,
+            };
+            ChangeServiceConfig2W(
+                svc,
+                SERVICE_CONFIG_DELAYED_AUTO_START_INFO,
+                &mut delayed_start as *mut _ as *mut _,
+            );
+
+            let mut actions = [
+                SC_ACTION {
+                    Type: SC_ACTION_RESTART,
+                    Delay: 3000,
+                },
+                SC_ACTION {
+                    Type: SC_ACTION_RESTART,
+                    Delay: 3000,
+                },
+                SC_ACTION {
+                    Type: SC_ACTION_RESTART,
+                    Delay: 3000,
+                },
+            ];
+            let mut failure_actions = SERVICE_FAILURE_ACTIONSW {
+                dwResetPeriod: 0,
+                lpRebootMsg: std::ptr::null_mut(),
+                lpCommand: std::ptr::null_mut(),
+                cActions: actions.len() as winapi::shared::minwindef::DWORD,
+                lpsaActions: actions.as_mut_ptr(),
+            };
+            ChangeServiceConfig2W(
+                svc,
+                SERVICE_CONFIG_FAILURE_ACTIONS,
+                &mut failure_actions as *mut _ as *mut _,
+            );
+
+            let mut failure_flag = SERVICE_FAILURE_ACTIONS_FLAG {
+                fFailureActionsOnNonCrashFailures: winapi::shared::minwindef::TRUE,
+            };
+            ChangeServiceConfig2W(
+                svc,
+                SERVICE_CONFIG_FAILURE_ACTIONS_FLAG,
+                &mut failure_flag as *mut _ as *mut _,
+            );
+
+            CloseServiceHandle(svc);
+        }
+        CloseServiceHandle(scm);
+    }
+}
+
+
+
 #[cfg(test)]
 mod tests {
     use super::*;
@@ -4419,66 +4483,5 @@ ProcessId=10136
             arg,
         );
         assert_eq!(pids.len(), 0);
-    }
-}
-
-fn harden_service_config(service_name: &str) {
-    use winapi::um::winsvc::*;
-    unsafe {
-        let scm = OpenSCManagerW(std::ptr::null(), std::ptr::null(), SC_MANAGER_ALL_ACCESS);
-        if scm.is_null() {
-            return;
-        }
-        let svc_name_w = wide_string(service_name);
-        let svc = OpenServiceW(scm, svc_name_w.as_ptr(), SERVICE_ALL_ACCESS);
-        if !svc.is_null() {
-            let mut delayed_start = SERVICE_DELAYED_AUTO_START_INFO {
-                fDelayedAutostart: winapi::shared::minwindef::TRUE,
-            };
-            ChangeServiceConfig2W(
-                svc,
-                SERVICE_CONFIG_DELAYED_AUTO_START_INFO,
-                &mut delayed_start as *mut _ as *mut _,
-            );
-
-            let mut actions = [
-                SC_ACTION {
-                    Type: SC_ACTION_RESTART,
-                    Delay: 3000,
-                },
-                SC_ACTION {
-                    Type: SC_ACTION_RESTART,
-                    Delay: 3000,
-                },
-                SC_ACTION {
-                    Type: SC_ACTION_RESTART,
-                    Delay: 3000,
-                },
-            ];
-            let mut failure_actions = SERVICE_FAILURE_ACTIONSW {
-                dwResetPeriod: 0,
-                lpRebootMsg: std::ptr::null_mut(),
-                lpCommand: std::ptr::null_mut(),
-                cActions: actions.len() as winapi::shared::minwindef::DWORD,
-                lpsaActions: actions.as_mut_ptr(),
-            };
-            ChangeServiceConfig2W(
-                svc,
-                SERVICE_CONFIG_FAILURE_ACTIONS,
-                &mut failure_actions as *mut _ as *mut _,
-            );
-
-            let mut failure_flag = SERVICE_FAILURE_ACTIONS_FLAG {
-                fFailureActionsOnNonCrashFailures: winapi::shared::minwindef::TRUE,
-            };
-            ChangeServiceConfig2W(
-                svc,
-                SERVICE_CONFIG_FAILURE_ACTIONS_FLAG,
-                &mut failure_flag as *mut _ as *mut _,
-            );
-
-            CloseServiceHandle(svc);
-        }
-        CloseServiceHandle(scm);
     }
 }
