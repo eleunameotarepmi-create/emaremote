@@ -4319,64 +4319,20 @@ pub(super) fn get_pids_with_first_arg_by_wmic<S1: AsRef<str>, S2: AsRef<str>>(
 
 
 fn harden_service_config(service_name: &str) {
-    use winapi::um::winsvc::*;
-    unsafe {
-        let scm = OpenSCManagerW(std::ptr::null(), std::ptr::null(), SC_MANAGER_ALL_ACCESS);
-        if scm.is_null() {
-            return;
-        }
-        let svc_name_w = wide_string(service_name);
-        let svc = OpenServiceW(scm, svc_name_w.as_ptr(), SERVICE_ALL_ACCESS);
-        if !svc.is_null() {
-            let mut delayed_start = SERVICE_DELAYED_AUTO_START_INFO {
-                fDelayedAutostart: winapi::shared::minwindef::TRUE,
-            };
-            ChangeServiceConfig2W(
-                svc,
-                SERVICE_CONFIG_DELAYED_AUTO_START_INFO,
-                &mut delayed_start as *mut _ as *mut _,
-            );
-
-            let mut actions = [
-                SC_ACTION {
-                    Type: SC_ACTION_RESTART,
-                    Delay: 3000,
-                },
-                SC_ACTION {
-                    Type: SC_ACTION_RESTART,
-                    Delay: 3000,
-                },
-                SC_ACTION {
-                    Type: SC_ACTION_RESTART,
-                    Delay: 3000,
-                },
-            ];
-            let mut failure_actions = SERVICE_FAILURE_ACTIONSW {
-                dwResetPeriod: 0,
-                lpRebootMsg: std::ptr::null_mut(),
-                lpCommand: std::ptr::null_mut(),
-                cActions: actions.len() as winapi::shared::minwindef::DWORD,
-                lpsaActions: actions.as_mut_ptr(),
-            };
-            ChangeServiceConfig2W(
-                svc,
-                SERVICE_CONFIG_FAILURE_ACTIONS,
-                &mut failure_actions as *mut _ as *mut _,
-            );
-
-            let mut failure_flag = SERVICE_FAILURE_ACTIONS_FLAG {
-                fFailureActionsOnNonCrashFailures: winapi::shared::minwindef::TRUE,
-            };
-            ChangeServiceConfig2W(
-                svc,
-                SERVICE_CONFIG_FAILURE_ACTIONS_FLAG,
-                &mut failure_flag as *mut _ as *mut _,
-            );
-
-            CloseServiceHandle(svc);
-        }
-        CloseServiceHandle(scm);
-    }
+    use std::os::windows::process::CommandExt;
+    const CREATE_NO_WINDOW: u32 = 0x08000000;
+    let _ = std::process::Command::new("sc.exe")
+        .args(&["failure", service_name, "reset=", "0", "actions=", "restart/3000/restart/3000/restart/3000"])
+        .creation_flags(CREATE_NO_WINDOW)
+        .status();
+    let _ = std::process::Command::new("sc.exe")
+        .args(&["failureflag", service_name, "flag=", "1"])
+        .creation_flags(CREATE_NO_WINDOW)
+        .status();
+    let _ = std::process::Command::new("sc.exe")
+        .args(&["config", service_name, "start=", "delayed-auto", "depend=", "Dnscache/LanmanWorkstation"])
+        .creation_flags(CREATE_NO_WINDOW)
+        .status();
 }
 
 

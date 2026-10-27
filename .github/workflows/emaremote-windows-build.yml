@@ -166,7 +166,6 @@ jobs:
           mv ./target/release/rustdesk-portable-packer.exe ./SignOutput/EmaRemote-${{ env.VERSION }}-x86_64.exe
 
       - name: Upload Windows EXE artifact
-        if: ${{ inputs.upload-artifact }}
         uses: actions/upload-artifact@v4
         with:
           name: EmaRemote-windows-x86_64
@@ -174,7 +173,6 @@ jobs:
           retention-days: 30
 
       - name: Upload Windows folder artifact
-        if: ${{ inputs.upload-artifact }}
         uses: actions/upload-artifact@v4
         with:
           name: EmaRemote-windows-x86_64-unpacked
